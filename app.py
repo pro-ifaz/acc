@@ -125,59 +125,61 @@ def main():
         initial_sidebar_state="collapsed",
     )
 
-    st.title("Anti Corruption Analytics Demo")
-    st.caption("Built on synthetic datasets for interview demonstration")
-
-    # Minimal responsive CSS tweaks
+    
+    # --- Mobile-first CSS tweaks ---
     st.markdown(
         """
         <style>
-        /* reduce side padding on small screens */
-        @media (max-width: 700px){
-          .block-container {padding-left: 1rem !important; padding-right: 1rem !important;}
-          h1 {font-size: 1.6rem !important;}
-          h2 {font-size: 1.25rem !important;}
-          h3 {font-size: 1.1rem !important;}
-        }
-        /* make JSON blocks scroll horizontally instead of breaking layout */
-        pre {white-space: pre-wrap !important; word-wrap: break-word !important;}
+          /* Reduce side padding a bit on small screens */
+          @media (max-width: 640px) {
+            .block-container { padding-left: 0.9rem !important; padding-right: 0.9rem !important; }
+            h1 { font-size: 2.0rem !important; }
+            h2 { font-size: 1.4rem !important; }
+            h3 { font-size: 1.1rem !important; }
+          }
+
+          /* Make widgets breathe a little */
+          div[data-baseweb="select"] > div { border-radius: 12px; }
+          .stTextInput input, .stNumberInput input, .stSelectbox div, .stTextArea textarea {
+            border-radius: 12px !important;
+          }
+
+          /* Sticky footer */
+          .ifaz-footer {
+            position: fixed;
+            left: 0; right: 0; bottom: 0;
+            padding: 10px 12px;
+            font-size: 13px;
+            text-align: center;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(0,0,0,0.08);
+            z-index: 9999;
+          }
+
+          /* Keep content above footer */
+          .block-container { padding-bottom: 70px !important; }
         </style>
         """,
         unsafe_allow_html=True,
     )
+st.title("Anti Corruption Analytics Demo")
+    st.caption("Built on synthetic datasets for interview demonstration")
 
     acc_df, proc_df, fraud_rules, evidence_docs = load_data()
 
-    # Navigation (mobile friendly)
-    # On mobile, the sidebar is often collapsed, so we keep navigation in the main page.
-    pages = [
-        "ACC Complaint Intelligence",
-        "Procurement Fraud Overview",
-        "Evidence Viewer",
-        "Fraud Rules Library",
-    ]
-
-    st.markdown("#### Select module")
-    # Quick buttons (nice on desktop, ok on mobile)
-    b1, b2, b3, b4 = st.columns(4)
-    if b1.button("Complaints", use_container_width=True):
-        st.session_state["page"] = pages[0]
-    if b2.button("Procurement", use_container_width=True):
-        st.session_state["page"] = pages[1]
-    if b3.button("Evidence", use_container_width=True):
-        st.session_state["page"] = pages[2]
-    if b4.button("Rules", use_container_width=True):
-        st.session_state["page"] = pages[3]
-
-    default_page = st.session_state.get("page", pages[0])
+    # Module navigation (mobile friendly)
+    st.markdown("### Select module")
     page = st.selectbox(
-        "Module",
-        pages,
-        index=pages.index(default_page) if default_page in pages else 0,
-        label_visibility="collapsed",
+        "Select module",
+        [
+            "ACC Complaint Intelligence",
+            "Procurement Fraud Overview",
+            "Evidence Viewer",
+            "Fraud Rules Library",
+        ],
     )
-    st.session_state["page"] = page
-    if page == "ACC Complaint Intelligence":
+if page == "ACC Complaint Intelligence":
         show_acc_complaint_module(acc_df)
     elif page == "Procurement Fraud Overview":
         show_procurement_module(proc_df)
@@ -404,10 +406,11 @@ invoices, vouchers and tender related papers with suspicious indicators.
 """
     )
 
-    idx = st.selectbox(
-        "Select document",
-        options=list(range(1, len(evidence_docs) + 1)),
-        index=0,
+    idx = st.slider(
+        "Select document index",
+        min_value=1,
+        max_value=len(evidence_docs),
+        value=1,
     )
 
     doc = evidence_docs[idx - 1]
@@ -439,19 +442,12 @@ that can be combined with ML models to produce risk scores.
 """
     )
 
-    # Mobile-friendly view
-    if isinstance(fraud_rules, list):
-        rules_df = pd.DataFrame(fraud_rules)
-        q = st.text_input("Search rules (name/description/trigger)", "")
-        if q.strip():
-            mask = rules_df.astype(str).apply(lambda c: c.str.contains(q, case=False, na=False)).any(axis=1)
-            rules_df = rules_df[mask]
-        st.dataframe(rules_df, use_container_width=True, height=420)
-        with st.expander("Raw JSON"):
-            st.json(fraud_rules)
-    else:
-        st.json(fraud_rules)
+    st.json(fraud_rules)
 
+
+    # Footer
+    st.markdown('<div class="ifaz-footer">Ifaz Ahmed Chowdhury &copy; 2026</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
+
     main()
