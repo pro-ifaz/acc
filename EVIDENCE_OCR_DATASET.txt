@@ -1,0 +1,800 @@
+
+---
+EVIDENCE DOCUMENT #1
+GOVERNMENT OF BANGLADESH
+Date: 2023-09-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8817
+Contractor: M/S C
+Total Amount: 1784914 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-01-12) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #2
+GOVERNMENT OF BANGLADESH
+Date: 2023-09-22
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4777
+Contractor: M/S A
+Total Amount: 4926837 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-25) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #3
+GOVERNMENT OF BANGLADESH
+Date: 2023-11-19
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 1018
+Contractor: M/S C
+Total Amount: 4641172 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-11-13) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #4
+GOVERNMENT OF BANGLADESH
+Date: 2023-03-13
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9889
+Contractor: M/S B
+Total Amount: 849940 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-11-08) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #5
+GOVERNMENT OF BANGLADESH
+Date: 2024-02-18
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4749
+Contractor: M/S C
+Total Amount: 3860867 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-27) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #6
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-04
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4678
+Contractor: M/S B
+Total Amount: 1689421 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-04-14) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #7
+GOVERNMENT OF BANGLADESH
+Date: 2023-08-09
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 5094
+Contractor: M/S C
+Total Amount: 3520228 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-10-22) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #8
+GOVERNMENT OF BANGLADESH
+Date: 2023-08-27
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 6975
+Contractor: M/S C
+Total Amount: 4433274 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-03-14) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #9
+GOVERNMENT OF BANGLADESH
+Date: 2023-09-07
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8769
+Contractor: M/S A
+Total Amount: 2248919 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-11-01) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #10
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-07
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9841
+Contractor: M/S A
+Total Amount: 1718582 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-15) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #11
+GOVERNMENT OF BANGLADESH
+Date: 2023-10-21
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4859
+Contractor: M/S C
+Total Amount: 2804826 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-01-17) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #12
+GOVERNMENT OF BANGLADESH
+Date: 2023-10-23
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9255
+Contractor: M/S A
+Total Amount: 758491 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-03-10) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #13
+GOVERNMENT OF BANGLADESH
+Date: 2023-06-08
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3379
+Contractor: M/S C
+Total Amount: 4484580 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-02-19) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #14
+GOVERNMENT OF BANGLADESH
+Date: 2023-01-25
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9983
+Contractor: M/S A
+Total Amount: 1979861 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-17) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #15
+GOVERNMENT OF BANGLADESH
+Date: 2023-06-19
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 7676
+Contractor: M/S A
+Total Amount: 4573643 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-09) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #16
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-22
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9409
+Contractor: M/S A
+Total Amount: 3537053 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-06-07) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #17
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-23
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 7748
+Contractor: M/S B
+Total Amount: 3809121 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-04-29) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #18
+GOVERNMENT OF BANGLADESH
+Date: 2023-04-25
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4997
+Contractor: M/S A
+Total Amount: 1782799 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-05-27) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #19
+GOVERNMENT OF BANGLADESH
+Date: 2023-02-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4148
+Contractor: M/S A
+Total Amount: 4308918 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-05-26) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #20
+GOVERNMENT OF BANGLADESH
+Date: 2023-06-10
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 1590
+Contractor: M/S C
+Total Amount: 3943980 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-03-20) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #21
+GOVERNMENT OF BANGLADESH
+Date: 2023-01-30
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 2401
+Contractor: M/S C
+Total Amount: 116871 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-01-18) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #22
+GOVERNMENT OF BANGLADESH
+Date: 2024-02-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3523
+Contractor: M/S B
+Total Amount: 4111090 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-02-08) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #23
+GOVERNMENT OF BANGLADESH
+Date: 2023-02-14
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3205
+Contractor: M/S B
+Total Amount: 1072259 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-01-13) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #24
+GOVERNMENT OF BANGLADESH
+Date: 2023-04-13
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 2188
+Contractor: M/S A
+Total Amount: 452672 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-02-18) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #25
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-05
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 6924
+Contractor: M/S B
+Total Amount: 894548 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-04-01) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #26
+GOVERNMENT OF BANGLADESH
+Date: 2023-03-15
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 2133
+Contractor: M/S A
+Total Amount: 2138392 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-06-27) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #27
+GOVERNMENT OF BANGLADESH
+Date: 2023-08-23
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3976
+Contractor: M/S C
+Total Amount: 424497 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-03-16) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #28
+GOVERNMENT OF BANGLADESH
+Date: 2023-03-17
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 7702
+Contractor: M/S B
+Total Amount: 3112720 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-04-19) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #29
+GOVERNMENT OF BANGLADESH
+Date: 2023-02-21
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9943
+Contractor: M/S C
+Total Amount: 4576363 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-07-22) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #30
+GOVERNMENT OF BANGLADESH
+Date: 2023-03-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3920
+Contractor: M/S B
+Total Amount: 4014690 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-07-30) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #31
+GOVERNMENT OF BANGLADESH
+Date: 2023-04-10
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4911
+Contractor: M/S B
+Total Amount: 3015372 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-09) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #32
+GOVERNMENT OF BANGLADESH
+Date: 2023-11-08
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 2921
+Contractor: M/S A
+Total Amount: 4532418 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-09-15) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #33
+GOVERNMENT OF BANGLADESH
+Date: 2024-02-28
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4678
+Contractor: M/S B
+Total Amount: 2693128 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-02-22) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #34
+GOVERNMENT OF BANGLADESH
+Date: 2023-07-12
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 5596
+Contractor: M/S A
+Total Amount: 3402200 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-08-14) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #35
+GOVERNMENT OF BANGLADESH
+Date: 2023-03-16
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8289
+Contractor: M/S B
+Total Amount: 831741 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-07-09) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #36
+GOVERNMENT OF BANGLADESH
+Date: 2023-10-20
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8743
+Contractor: M/S A
+Total Amount: 2796522 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-07-27) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #37
+GOVERNMENT OF BANGLADESH
+Date: 2023-10-18
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 6225
+Contractor: M/S B
+Total Amount: 3260263 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-19) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #38
+GOVERNMENT OF BANGLADESH
+Date: 2024-01-10
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 7836
+Contractor: M/S C
+Total Amount: 3347525 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-06-11) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #39
+GOVERNMENT OF BANGLADESH
+Date: 2023-10-19
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 2337
+Contractor: M/S B
+Total Amount: 1279540 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-03-12) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #40
+GOVERNMENT OF BANGLADESH
+Date: 2023-09-02
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3710
+Contractor: M/S A
+Total Amount: 1181746 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-20) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #41
+GOVERNMENT OF BANGLADESH
+Date: 2023-09-17
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 6719
+Contractor: M/S B
+Total Amount: 1274971 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-08-13) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #42
+GOVERNMENT OF BANGLADESH
+Date: 2024-03-14
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8746
+Contractor: M/S C
+Total Amount: 4569094 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-12-18) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #43
+GOVERNMENT OF BANGLADESH
+Date: 2023-08-20
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3122
+Contractor: M/S A
+Total Amount: 3878316 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-10-11) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #44
+GOVERNMENT OF BANGLADESH
+Date: 2023-06-08
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4100
+Contractor: M/S A
+Total Amount: 4611589 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-10-11) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #45
+GOVERNMENT OF BANGLADESH
+Date: 2023-01-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 9883
+Contractor: M/S C
+Total Amount: 2615156 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-07-10) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #46
+GOVERNMENT OF BANGLADESH
+Date: 2023-01-22
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4120
+Contractor: M/S C
+Total Amount: 2192129 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-03-08) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #47
+GOVERNMENT OF BANGLADESH
+Date: 2023-02-06
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 3565
+Contractor: M/S C
+Total Amount: 845748 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-02-10) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #48
+GOVERNMENT OF BANGLADESH
+Date: 2023-05-07
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 8502
+Contractor: M/S B
+Total Amount: 3592391 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-02-13) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #49
+GOVERNMENT OF BANGLADESH
+Date: 2024-03-07
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 4167
+Contractor: M/S C
+Total Amount: 4066289 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2024-03-21) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.
+
+---
+EVIDENCE DOCUMENT #50
+GOVERNMENT OF BANGLADESH
+Date: 2024-01-17
+Department: LGED / PWD
+---------------------------
+Subject: Bill Payment for Work ID 5332
+Contractor: M/S C
+Total Amount: 4821564 BDT
+
+SUSPICIOUS INDICATORS:
+- Total amount in words does not match figures.
+- Date of completion (2023-06-28) is before Work Order Date.
+- Hand-written overwrite on the 'Approved Amount' field.
+- Signature of Executive Engineer appears to be scanned/copied.

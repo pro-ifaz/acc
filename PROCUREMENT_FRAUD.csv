@@ -1,0 +1,252 @@
+
+tender_id,procuring_entity,supplier,method,estimated_value,contract_value,bidders_count,district,sector,award_date,fraud_flag
+T-2001,City Corp,Khan Builders,OTM,23700000,21460527,7,Cox's Bazar,Hospital Maintenance,2023-01-06,0
+T-2002,LGED,Green Delta,RFQ,20900000,18482325,6,Feni,Hospital Maintenance,2023-08-25,0
+T-2003,Health Eng,M/S Salam Ent,OTM,13100000,11531971,5,Faridpur,ICT Equipment,2023-09-24,0
+T-2004,City Corp,Khan Builders,LTM,3800000,3532219,4,Faridpur,ICT Equipment,2023-04-12,0
+T-2005,Edu Eng,Khan Builders,OTM,24800000,21772991,5,Manikganj,Bridge,2023-03-04,0
+T-2006,WASA,Orion Tech,LTM,17700000,16111511,6,Feni,Hospital Maintenance,2023-03-13,0
+T-2007,WASA,Orion Tech,Direct,48700000,59344495,6,Dhaka,Hospital Maintenance,2023-02-21,1
+T-2008,Health Eng,Rahim Const,LTM,14900000,14066966,7,Chandpur,Building,2023-03-20,0
+T-2009,LGED,M/S Salam Ent,LTM,33700000,29292947,6,Noakhali,Bridge,2024-01-09,0
+T-2010,LGED,Build Well,Direct,9100000,11056369,6,Noakhali,Building,2023-02-20,1
+T-2011,LGED,Orion Tech,OTM,11400000,10695813,5,Cumilla,Road,2024-03-01,0
+T-2012,LGED,Rahim Const,LTM,29500000,26492999,6,Manikganj,Bridge,2023-01-08,0
+T-2013,City Corp,Orion Tech,Direct,38200000,38165104,5,Feni,Building,2023-04-29,1
+T-2014,Edu Eng,Rahim Const,LTM,9000000,8093128,5,Noakhali,Road,2023-09-29,0
+T-2015,LGED,Khan Builders,LTM,40000000,34133047,1,Tangail,Building,2023-01-12,0
+T-2016,City Corp,Khan Builders,Direct,18400000,20277840,6,Gazipur,ICT Equipment,2023-06-04,1
+T-2017,City Corp,Green Delta,OTM,50000000,42949089,2,Feni,Hospital Maintenance,2023-10-02,0
+T-2018,LGED,M/S Salam Ent,OTM,13800000,12897629,2,Cox's Bazar,Hospital Maintenance,2023-03-22,0
+T-2019,LGED,Build Well,RFQ,8500000,7699211,3,Noakhali,Hospital Maintenance,2024-03-23,0
+T-2020,Health Eng,M/S Salam Ent,Direct,17800000,17678422,8,Chattogram,Bridge,2023-04-18,1
+T-2021,PWD,Orion Tech,Direct,36500000,36561487,5,Narayanganj,Building,2023-12-20,1
+T-2022,City Corp,M/S Salam Ent,OTM,800000,741863,7,Narayanganj,Building,2024-03-01,0
+T-2023,Health Eng,Rahim Const,Direct,39500000,45650987,4,Noakhali,Road,2023-09-01,1
+T-2024,WASA,Orion Tech,Direct,2800000,2603336,3,Chandpur,Building,2023-04-29,0
+T-2025,Health Eng,Orion Tech,LTM,3200000,2881617,5,Noakhali,Hospital Maintenance,2023-12-30,0
+T-2026,Health Eng,Green Delta,OTM,6600000,6194536,5,Cumilla,Bridge,2024-03-01,0
+T-2027,Edu Eng,Rahim Const,RFQ,45600000,41316678,3,Chattogram,Building,2023-09-23,0
+T-2028,Health Eng,Build Well,RFQ,6900000,5889235,3,Manikganj,ICT Equipment,2023-10-18,0
+T-2029,PWD,Green Delta,RFQ,22400000,19315007,8,Faridpur,Building,2023-01-05,0
+T-2030,Edu Eng,Orion Tech,OTM,42500000,37705112,2,Faridpur,Bridge,2024-03-17,0
+T-2031,WASA,M/S Salam Ent,Direct,30200000,37504253,8,Faridpur,Road,2023-12-17,1
+T-2032,PWD,Khan Builders,RFQ,46100000,42136185,6,Gazipur,Hospital Maintenance,2024-03-17,0
+T-2033,Edu Eng,Orion Tech,RFQ,46400000,41763130,5,Cumilla,Building,2024-03-13,0
+T-2034,PWD,Khan Builders,Direct,44200000,44759019,1,Dhaka,Bridge,2023-06-24,1
+T-2035,LGED,M/S Salam Ent,LTM,22400000,19416100,6,Chattogram,Hospital Maintenance,2024-01-25,0
+T-2036,City Corp,Khan Builders,Direct,8400000,10375060,3,Chandpur,ICT Equipment,2023-07-14,1
+T-2037,WASA,Khan Builders,RFQ,1900000,1729942,7,Narayanganj,Building,2023-09-11,0
+T-2038,Edu Eng,M/S Salam Ent,OTM,31700000,27257980,6,Cumilla,Road,2023-11-09,0
+T-2039,Health Eng,Khan Builders,OTM,25800000,23717014,5,Noakhali,ICT Equipment,2023-03-18,0
+T-2040,Health Eng,Green Delta,Direct,16500000,18783557,4,Noakhali,Hospital Maintenance,2023-06-09,1
+T-2041,LGED,M/S Salam Ent,Direct,15600000,17799223,7,Chandpur,Road,2023-03-03,1
+T-2042,City Corp,Rahim Const,LTM,19000000,16552109,7,Feni,Building,2023-09-02,0
+T-2043,Health Eng,Khan Builders,LTM,33800000,31427407,6,Chandpur,Hospital Maintenance,2023-09-01,0
+T-2044,City Corp,Build Well,LTM,44200000,39053108,3,Narayanganj,Building,2023-12-13,0
+T-2045,Health Eng,Green Delta,LTM,37000000,32454795,4,Chandpur,Building,2023-06-16,0
+T-2046,Edu Eng,Build Well,RFQ,11600000,10958194,6,Narayanganj,Bridge,2023-02-17,0
+T-2047,Edu Eng,Build Well,LTM,16900000,14602547,2,Dhaka,Hospital Maintenance,2023-11-29,0
+T-2048,LGED,Khan Builders,LTM,3500000,3268567,1,Dhaka,Hospital Maintenance,2023-09-19,0
+T-2049,PWD,Khan Builders,LTM,45300000,40143790,4,Cumilla,Hospital Maintenance,2024-01-16,0
+T-2050,City Corp,Green Delta,Direct,45200000,50659346,1,Chandpur,ICT Equipment,2023-04-04,1
+T-2051,City Corp,Green Delta,LTM,40600000,37082753,6,Chattogram,Building,2023-01-29,0
+T-2052,Health Eng,Build Well,Direct,13200000,13371789,7,Faridpur,Bridge,2023-08-01,1
+T-2053,Health Eng,Orion Tech,Direct,49000000,53448893,4,Feni,Bridge,2023-12-08,1
+T-2054,Edu Eng,Green Delta,OTM,23700000,22488314,3,Chandpur,Road,2024-03-01,0
+T-2055,Health Eng,Green Delta,OTM,39900000,34169226,5,Manikganj,Building,2023-09-13,0
+T-2056,LGED,Khan Builders,RFQ,35100000,32685680,8,Cumilla,Hospital Maintenance,2023-12-06,0
+T-2057,Health Eng,Rahim Const,LTM,10900000,9563492,4,Faridpur,Building,2024-02-16,0
+T-2058,LGED,Khan Builders,Direct,6600000,8577449,7,Narayanganj,Road,2023-09-13,1
+T-2059,LGED,Orion Tech,OTM,42800000,39734785,4,Tangail,Bridge,2023-04-29,0
+T-2060,Health Eng,Orion Tech,OTM,43000000,38811791,6,Manikganj,Building,2024-02-07,0
+T-2061,WASA,Green Delta,RFQ,22100000,20191980,2,Cumilla,Bridge,2023-06-14,0
+T-2062,PWD,Build Well,OTM,46900000,40031629,7,Faridpur,ICT Equipment,2023-01-01,0
+T-2063,City Corp,Build Well,Direct,49600000,57510246,5,Chandpur,Building,2023-02-14,1
+T-2064,City Corp,Build Well,RFQ,35000000,32852833,3,Gazipur,ICT Equipment,2023-10-01,0
+T-2065,City Corp,Green Delta,OTM,8200000,7788689,5,Cumilla,Road,2024-03-19,0
+T-2066,WASA,Green Delta,LTM,23200000,21092441,8,Narayanganj,Hospital Maintenance,2023-05-13,0
+T-2067,WASA,M/S Salam Ent,LTM,32800000,30254427,7,Cox's Bazar,Building,2023-04-12,0
+T-2068,PWD,Khan Builders,OTM,13800000,13003947,2,Tangail,Road,2023-11-01,0
+T-2069,PWD,Green Delta,Direct,33000000,34305238,7,Gazipur,Bridge,2023-06-25,1
+T-2070,Edu Eng,Rahim Const,OTM,49300000,43500639,8,Manikganj,Hospital Maintenance,2023-09-25,0
+T-2071,PWD,Orion Tech,OTM,41700000,35471988,5,Gazipur,Hospital Maintenance,2023-12-08,0
+T-2072,PWD,Build Well,Direct,44000000,52848910,1,Tangail,Hospital Maintenance,2023-10-27,1
+T-2073,WASA,M/S Salam Ent,OTM,12800000,11017426,5,Gazipur,Hospital Maintenance,2024-03-15,0
+T-2074,Health Eng,Orion Tech,OTM,18600000,16248972,2,Cox's Bazar,Building,2023-04-08,0
+T-2075,City Corp,Rahim Const,LTM,20500000,18163888,1,Feni,Road,2023-04-12,0
+T-2076,City Corp,Build Well,OTM,38500000,35802714,5,Cox's Bazar,Road,2023-02-28,0
+T-2077,WASA,Khan Builders,LTM,22600000,19323232,8,Gazipur,ICT Equipment,2024-03-16,0
+T-2078,PWD,Build Well,LTM,28900000,26506713,3,Narayanganj,Bridge,2023-02-22,0
+T-2079,City Corp,Build Well,Direct,14600000,14401851,2,Chattogram,Hospital Maintenance,2024-02-20,1
+T-2080,Edu Eng,Rahim Const,Direct,800000,719609,2,Noakhali,Road,2023-05-26,0
+T-2081,LGED,Green Delta,RFQ,12200000,11532170,5,Manikganj,Building,2023-01-05,0
+T-2082,PWD,Orion Tech,RFQ,24300000,22441103,5,Manikganj,Road,2023-07-20,0
+T-2083,Health Eng,M/S Salam Ent,LTM,34300000,30817642,5,Faridpur,Road,2023-04-07,0
+T-2084,Edu Eng,M/S Salam Ent,OTM,4100000,3578836,3,Chattogram,ICT Equipment,2023-07-23,0
+T-2085,LGED,Orion Tech,OTM,16300000,17194480,1,Gazipur,Hospital Maintenance,2023-03-22,1
+T-2086,LGED,Build Well,Direct,10300000,10863256,1,Cox's Bazar,Hospital Maintenance,2023-06-25,1
+T-2087,LGED,M/S Salam Ent,OTM,21400000,18718458,4,Chattogram,Building,2023-09-06,0
+T-2088,WASA,Build Well,OTM,32700000,29244964,7,Noakhali,ICT Equipment,2024-02-20,0
+T-2089,Health Eng,Green Delta,Direct,41200000,51007303,1,Feni,Building,2023-11-05,1
+T-2090,Edu Eng,Build Well,LTM,34000000,32095071,6,Cox's Bazar,Hospital Maintenance,2023-01-15,0
+T-2091,PWD,Orion Tech,OTM,6800000,6062653,4,Faridpur,ICT Equipment,2023-04-22,0
+T-2092,Edu Eng,Khan Builders,LTM,1500000,1279665,7,Narayanganj,Road,2023-04-14,0
+T-2093,WASA,Build Well,Direct,29500000,35625858,4,Narayanganj,Bridge,2023-08-10,1
+T-2094,WASA,M/S Salam Ent,LTM,44200000,40000616,4,Faridpur,ICT Equipment,2023-03-02,0
+T-2095,WASA,Orion Tech,LTM,35000000,31526421,1,Cox's Bazar,Road,2024-03-05,0
+T-2096,WASA,Build Well,RFQ,16700000,14750919,5,Tangail,Road,2023-05-04,0
+T-2097,PWD,Build Well,OTM,500000,473731,8,Dhaka,Bridge,2023-07-06,0
+T-2098,Health Eng,Khan Builders,Direct,20000000,25180039,7,Faridpur,Bridge,2024-03-30,1
+T-2099,Edu Eng,M/S Salam Ent,LTM,4200000,3827905,5,Gazipur,ICT Equipment,2023-06-16,0
+T-2100,WASA,M/S Salam Ent,RFQ,25000000,21669695,6,Tangail,Bridge,2023-01-08,0
+T-2101,LGED,Rahim Const,Direct,31200000,35908796,1,Narayanganj,Bridge,2023-04-22,1
+T-2102,LGED,Rahim Const,Direct,6200000,6401832,6,Faridpur,Building,2024-01-27,1
+T-2103,WASA,Green Delta,Direct,33800000,36881928,3,Dhaka,Bridge,2023-01-14,1
+T-2104,City Corp,Khan Builders,OTM,38300000,34609049,4,Feni,Road,2023-04-01,0
+T-2105,WASA,Orion Tech,RFQ,3200000,2907173,4,Chattogram,Building,2023-01-12,0
+T-2106,LGED,Rahim Const,Direct,24800000,29460276,2,Dhaka,ICT Equipment,2023-08-19,1
+T-2107,Edu Eng,Green Delta,RFQ,15600000,14060383,1,Chandpur,Building,2023-12-22,0
+T-2108,City Corp,Rahim Const,OTM,16100000,14581058,6,Chattogram,Road,2023-03-20,0
+T-2109,Edu Eng,Build Well,Direct,47500000,58184932,4,Chandpur,Bridge,2023-11-04,1
+T-2110,PWD,M/S Salam Ent,Direct,27100000,29580327,3,Dhaka,ICT Equipment,2023-04-16,1
+T-2111,WASA,M/S Salam Ent,OTM,33700000,30046971,3,Cumilla,Road,2023-03-18,0
+T-2112,Health Eng,Green Delta,OTM,38900000,35208440,3,Chattogram,Road,2023-03-09,0
+T-2113,PWD,Rahim Const,Direct,48200000,58612174,3,Faridpur,Road,2023-12-15,1
+T-2114,PWD,Build Well,OTM,40900000,37641060,5,Gazipur,Bridge,2023-08-08,0
+T-2115,WASA,Build Well,RFQ,19700000,17223542,4,Faridpur,ICT Equipment,2024-03-16,0
+T-2116,WASA,M/S Salam Ent,OTM,37200000,33654910,5,Chandpur,Road,2023-04-05,0
+T-2117,Edu Eng,Green Delta,RFQ,10400000,9756637,5,Chattogram,Bridge,2023-09-04,0
+T-2118,LGED,Orion Tech,RFQ,43200000,36913325,3,Feni,Bridge,2024-03-03,0
+T-2119,City Corp,Rahim Const,Direct,45500000,49199981,8,Feni,Building,2024-02-25,1
+T-2120,LGED,Green Delta,LTM,21800000,18651981,1,Gazipur,Building,2024-03-24,0
+T-2121,WASA,Rahim Const,Direct,36100000,40807424,2,Narayanganj,Building,2023-12-25,1
+T-2122,LGED,Green Delta,RFQ,17700000,15231174,4,Dhaka,Building,2023-02-26,0
+T-2123,Edu Eng,M/S Salam Ent,OTM,43500000,38737682,2,Manikganj,Bridge,2023-09-27,0
+T-2124,WASA,Green Delta,Direct,34700000,36887514,8,Narayanganj,Building,2023-02-20,1
+T-2125,LGED,Green Delta,RFQ,6000000,5316629,8,Manikganj,Building,2023-02-16,0
+T-2126,Edu Eng,Khan Builders,Direct,44100000,52365229,2,Gazipur,Bridge,2023-09-10,1
+T-2127,WASA,Build Well,RFQ,2800000,2564798,6,Manikganj,Building,2024-02-04,0
+T-2128,Health Eng,Build Well,OTM,23900000,22129225,2,Dhaka,ICT Equipment,2024-02-22,0
+T-2129,LGED,Rahim Const,RFQ,44500000,40364390,6,Cox's Bazar,Road,2023-03-21,0
+T-2130,Health Eng,Orion Tech,RFQ,40800000,35845665,2,Manikganj,Bridge,2024-02-11,0
+T-2131,Edu Eng,Khan Builders,LTM,16500000,15208792,3,Noakhali,Bridge,2023-06-22,0
+T-2132,City Corp,Green Delta,LTM,37800000,32189340,7,Dhaka,ICT Equipment,2023-07-02,0
+T-2133,WASA,Rahim Const,LTM,43600000,38224038,2,Chattogram,Building,2023-09-16,0
+T-2134,LGED,Green Delta,Direct,46400000,56672610,6,Manikganj,Road,2023-09-17,1
+T-2135,City Corp,Khan Builders,Direct,11400000,12658439,5,Gazipur,Road,2023-01-09,1
+T-2136,Health Eng,M/S Salam Ent,OTM,15300000,14034382,3,Feni,Hospital Maintenance,2023-06-25,0
+T-2137,Edu Eng,Rahim Const,RFQ,36100000,32173923,7,Faridpur,Building,2023-09-12,0
+T-2138,Health Eng,Khan Builders,RFQ,20200000,17658403,6,Feni,Road,2023-10-31,0
+T-2139,LGED,Orion Tech,LTM,34700000,32908377,8,Dhaka,Road,2023-07-16,0
+T-2140,City Corp,Khan Builders,Direct,8500000,9717722,1,Faridpur,ICT Equipment,2023-07-30,1
+T-2141,Health Eng,Khan Builders,LTM,6800000,5916448,6,Chattogram,Building,2023-06-12,0
+T-2142,PWD,M/S Salam Ent,LTM,18700000,16158529,8,Noakhali,Building,2023-06-01,0
+T-2143,Health Eng,Orion Tech,Direct,16600000,17485076,7,Feni,Road,2023-10-19,1
+T-2144,PWD,M/S Salam Ent,Direct,44000000,52229859,3,Chattogram,Bridge,2023-06-08,1
+T-2145,WASA,M/S Salam Ent,LTM,11600000,10692455,7,Cox's Bazar,Hospital Maintenance,2023-03-04,0
+T-2146,LGED,Green Delta,Direct,1200000,1033137,3,Feni,Bridge,2023-07-21,0
+T-2147,Health Eng,Green Delta,LTM,21300000,18443711,7,Cumilla,Hospital Maintenance,2023-01-14,0
+T-2148,LGED,M/S Salam Ent,RFQ,1200000,1049829,6,Narayanganj,Hospital Maintenance,2023-02-10,0
+T-2149,PWD,Rahim Const,OTM,6700000,6044532,5,Feni,Building,2023-10-29,0
+T-2150,Edu Eng,Orion Tech,Direct,10400000,13316864,5,Gazipur,ICT Equipment,2023-02-05,1
+T-2151,Edu Eng,Rahim Const,RFQ,1900000,1615812,8,Feni,ICT Equipment,2023-04-08,0
+T-2152,City Corp,Build Well,OTM,39000000,36186317,8,Gazipur,Building,2023-11-08,0
+T-2153,LGED,Orion Tech,RFQ,15300000,13995649,2,Manikganj,Bridge,2023-12-13,0
+T-2154,LGED,Khan Builders,LTM,40500000,35980902,8,Narayanganj,Building,2024-03-02,0
+T-2155,Health Eng,Rahim Const,RFQ,20100000,18111069,4,Feni,Bridge,2023-01-02,0
+T-2156,City Corp,Rahim Const,OTM,1000000,938039,7,Tangail,Hospital Maintenance,2023-04-23,0
+T-2157,Health Eng,M/S Salam Ent,Direct,43900000,49417887,2,Cox's Bazar,Bridge,2023-10-25,1
+T-2158,Health Eng,Green Delta,Direct,25200000,32445299,6,Tangail,ICT Equipment,2023-01-04,1
+T-2159,Health Eng,Rahim Const,OTM,38000000,35310117,8,Narayanganj,Hospital Maintenance,2023-05-10,0
+T-2160,PWD,Green Delta,Direct,40900000,42512497,1,Narayanganj,Bridge,2024-02-13,1
+T-2161,LGED,Khan Builders,Direct,4800000,4350620,5,Dhaka,ICT Equipment,2023-10-06,0
+T-2162,LGED,Khan Builders,RFQ,13600000,11786473,5,Cumilla,Hospital Maintenance,2024-02-01,0
+T-2163,PWD,Build Well,Direct,2500000,2366502,8,Narayanganj,Hospital Maintenance,2023-03-22,0
+T-2164,Edu Eng,Rahim Const,OTM,47000000,60742627,1,Dhaka,Hospital Maintenance,2023-06-14,1
+T-2165,LGED,Khan Builders,RFQ,700000,659865,4,Chandpur,Hospital Maintenance,2023-11-01,0
+T-2166,LGED,Build Well,Direct,2900000,2489672,2,Chattogram,ICT Equipment,2023-12-28,0
+T-2167,LGED,M/S Salam Ent,OTM,22900000,21299761,5,Chandpur,Building,2023-11-24,0
+T-2168,Edu Eng,Khan Builders,Direct,48800000,61888489,7,Chattogram,Bridge,2023-01-15,1
+T-2169,City Corp,Orion Tech,OTM,7000000,6273797,2,Cox's Bazar,Bridge,2023-04-23,0
+T-2170,Health Eng,M/S Salam Ent,LTM,34500000,32526951,1,Chattogram,ICT Equipment,2024-02-09,0
+T-2171,City Corp,Orion Tech,Direct,10600000,11111141,8,Dhaka,Building,2023-06-25,1
+T-2172,City Corp,Rahim Const,LTM,37100000,32491071,3,Faridpur,Hospital Maintenance,2023-01-15,0
+T-2173,LGED,Build Well,OTM,41300000,45575216,1,Dhaka,ICT Equipment,2024-01-28,1
+T-2174,LGED,Build Well,LTM,26500000,24925274,8,Dhaka,Road,2023-05-17,0
+T-2175,WASA,Orion Tech,LTM,15700000,14849971,2,Cumilla,Bridge,2023-02-10,0
+T-2176,LGED,Khan Builders,OTM,1700000,1496434,8,Faridpur,Hospital Maintenance,2023-03-15,0
+T-2177,City Corp,Build Well,LTM,37700000,34030428,3,Cox's Bazar,Building,2024-03-16,0
+T-2178,WASA,Green Delta,RFQ,2800000,2412008,4,Cumilla,Building,2023-08-17,0
+T-2179,Health Eng,M/S Salam Ent,LTM,10600000,9652640,7,Dhaka,ICT Equipment,2023-01-13,0
+T-2180,Edu Eng,Rahim Const,Direct,22500000,28642981,5,Dhaka,Road,2024-02-06,1
+T-2181,LGED,Green Delta,Direct,42700000,50781617,7,Chattogram,Building,2024-01-18,1
+T-2182,Health Eng,M/S Salam Ent,LTM,5900000,5059050,1,Chandpur,Building,2023-06-10,0
+T-2183,WASA,Orion Tech,LTM,8500000,7962119,2,Chattogram,Bridge,2023-08-25,0
+T-2184,WASA,Khan Builders,Direct,38600000,43098324,2,Cumilla,Bridge,2023-09-24,1
+T-2185,City Corp,Khan Builders,OTM,45100000,42757933,3,Narayanganj,ICT Equipment,2023-03-13,0
+T-2186,Health Eng,Build Well,RFQ,36800000,31717072,5,Manikganj,ICT Equipment,2023-06-28,0
+T-2187,PWD,Green Delta,OTM,44700000,44412916,1,Gazipur,Building,2023-01-15,1
+T-2188,PWD,Build Well,RFQ,49800000,46608888,4,Tangail,Hospital Maintenance,2023-04-07,0
+T-2189,PWD,Orion Tech,OTM,33100000,40722095,1,Cox's Bazar,Road,2023-03-09,1
+T-2190,Edu Eng,Green Delta,LTM,9200000,8339454,5,Tangail,ICT Equipment,2023-11-05,0
+T-2191,City Corp,M/S Salam Ent,LTM,32400000,30471348,2,Chandpur,ICT Equipment,2023-10-14,0
+T-2192,Health Eng,Build Well,LTM,21900000,19529505,7,Feni,Hospital Maintenance,2023-11-30,0
+T-2193,City Corp,Rahim Const,OTM,15000000,18872754,1,Dhaka,Bridge,2023-03-06,1
+T-2194,Edu Eng,Green Delta,OTM,14300000,12706492,4,Chandpur,Bridge,2023-04-05,0
+T-2195,LGED,Khan Builders,LTM,31800000,27350617,6,Cumilla,ICT Equipment,2023-04-18,0
+T-2196,Health Eng,Khan Builders,RFQ,23700000,20996903,2,Dhaka,ICT Equipment,2023-08-16,0
+T-2197,City Corp,Khan Builders,RFQ,38300000,34783698,2,Chattogram,Hospital Maintenance,2023-09-04,0
+T-2198,LGED,M/S Salam Ent,OTM,29800000,26829581,7,Manikganj,Hospital Maintenance,2023-01-30,0
+T-2199,Health Eng,Build Well,Direct,11400000,12818921,6,Gazipur,Road,2023-07-25,1
+T-2200,City Corp,M/S Salam Ent,RFQ,9600000,8817118,4,Tangail,Road,2023-08-12,0
+T-2201,Edu Eng,Khan Builders,LTM,25600000,23152629,2,Cumilla,Bridge,2023-05-31,0
+T-2202,LGED,M/S Salam Ent,Direct,24700000,30503131,1,Cumilla,Building,2023-05-29,1
+T-2203,LGED,Khan Builders,OTM,4300000,3869602,4,Tangail,Bridge,2023-10-21,0
+T-2204,Edu Eng,Orion Tech,OTM,24900000,29002641,1,Faridpur,Bridge,2023-08-04,1
+T-2205,Health Eng,M/S Salam Ent,Direct,38500000,44444572,6,Gazipur,Road,2024-01-13,1
+T-2206,PWD,Orion Tech,LTM,3900000,3562060,6,Feni,Building,2024-02-20,0
+T-2207,Health Eng,M/S Salam Ent,OTM,44500000,39979485,2,Cumilla,Road,2023-04-06,0
+T-2208,Health Eng,M/S Salam Ent,OTM,22900000,19535861,8,Manikganj,Bridge,2023-09-19,0
+T-2209,PWD,Orion Tech,Direct,6900000,7418985,1,Dhaka,Bridge,2023-01-16,1
+T-2210,WASA,Orion Tech,OTM,37900000,35903388,7,Manikganj,Road,2024-01-01,0
+T-2211,WASA,Green Delta,RFQ,33200000,28701883,7,Gazipur,Building,2023-10-10,0
+T-2212,WASA,Orion Tech,LTM,49400000,44832483,6,Chattogram,Bridge,2023-12-07,0
+T-2213,Edu Eng,Khan Builders,LTM,34700000,31438874,7,Manikganj,Road,2023-09-22,0
+T-2214,Health Eng,Green Delta,OTM,43800000,37474017,5,Cumilla,Road,2023-05-28,0
+T-2215,WASA,Orion Tech,Direct,600000,551590,8,Dhaka,ICT Equipment,2024-02-04,0
+T-2216,LGED,Orion Tech,RFQ,29800000,27601573,6,Chattogram,Road,2023-07-13,0
+T-2217,Edu Eng,Khan Builders,RFQ,31400000,29003856,2,Noakhali,Hospital Maintenance,2023-06-10,0
+T-2218,Health Eng,M/S Salam Ent,LTM,15900000,14092648,2,Manikganj,Building,2023-10-20,0
+T-2219,Health Eng,M/S Salam Ent,RFQ,10200000,9141077,7,Gazipur,Road,2023-07-15,0
+T-2220,City Corp,Rahim Const,LTM,9500000,8662484,3,Feni,Road,2023-07-20,0
+T-2221,PWD,Orion Tech,Direct,16500000,18703738,3,Cox's Bazar,Building,2023-03-05,1
+T-2222,City Corp,Green Delta,LTM,18400000,16552269,3,Gazipur,ICT Equipment,2023-10-29,0
+T-2223,City Corp,Build Well,OTM,15400000,17478272,1,Cumilla,ICT Equipment,2023-11-25,1
+T-2224,PWD,M/S Salam Ent,RFQ,22900000,19638168,1,Tangail,Bridge,2024-03-04,0
+T-2225,Edu Eng,Khan Builders,RFQ,31000000,29427649,7,Tangail,Bridge,2023-10-05,0
+T-2226,WASA,Build Well,Direct,46200000,47538787,7,Chandpur,ICT Equipment,2023-07-08,1
+T-2227,Health Eng,Build Well,LTM,38900000,33523589,2,Tangail,Road,2023-03-28,0
+T-2228,LGED,M/S Salam Ent,Direct,5600000,7010245,5,Narayanganj,ICT Equipment,2023-01-11,1
+T-2229,Edu Eng,Build Well,OTM,31200000,28416290,4,Cumilla,Building,2023-12-02,0
+T-2230,Edu Eng,M/S Salam Ent,Direct,20700000,20428983,2,Manikganj,ICT Equipment,2023-06-12,1
+T-2231,PWD,Green Delta,LTM,36400000,33998495,1,Gazipur,Road,2023-05-03,0
+T-2232,LGED,Khan Builders,OTM,3300000,3978453,1,Feni,Hospital Maintenance,2023-11-08,1
+T-2233,City Corp,Green Delta,Direct,48500000,52178719,5,Chandpur,Road,2024-01-03,1
+T-2234,PWD,Rahim Const,Direct,45600000,57412494,3,Chandpur,Road,2023-09-04,1
+T-2235,Health Eng,Rahim Const,LTM,16300000,15287159,1,Noakhali,Hospital Maintenance,2023-09-26,0
+T-2236,PWD,Rahim Const,Direct,39800000,40669627,4,Tangail,Bridge,2023-03-25,1
+T-2237,City Corp,M/S Salam Ent,RFQ,8000000,6966849,7,Narayanganj,Building,2023-02-04,0
+T-2238,PWD,M/S Salam Ent,Direct,12700000,15097967,5,Cumilla,ICT Equipment,2023-05-11,1
+T-2239,Edu Eng,Rahim Const,OTM,29500000,34911521,1,Noakhali,Bridge,2024-02-11,1
+T-2240,Health Eng,Rahim Const,RFQ,33800000,30091696,6,Tangail,Building,2023-02-14,0
+T-2241,PWD,Rahim Const,OTM,10700000,9386548,8,Dhaka,Bridge,2023-06-08,0
+T-2242,LGED,Orion Tech,LTM,43000000,40107870,5,Faridpur,ICT Equipment,2023-05-09,0
+T-2243,Health Eng,Build Well,RFQ,47700000,41072123,8,Narayanganj,Bridge,2023-02-17,0
+T-2244,PWD,M/S Salam Ent,RFQ,41100000,36185505,6,Cox's Bazar,Building,2023-01-03,0
+T-2245,PWD,Build Well,OTM,15300000,14082627,5,Noakhali,ICT Equipment,2023-05-06,0
+T-2246,Health Eng,Build Well,OTM,36700000,31640972,3,Narayanganj,Hospital Maintenance,2023-12-17,0
+T-2247,LGED,Build Well,LTM,41700000,37920366,2,Cox's Bazar,Road,2023-12-20,0
+T-2248,WASA,Orion Tech,OTM,38600000,36328123,6,Narayanganj,Road,2024-02-03,0
+T-2249,Edu Eng,Orion Tech,LTM,19100000,17599362,3,Faridpur,ICT Equipment,2024-03-22,0
+T-2250,WASA,Green Delta,Direct,13900000,16988485,1,Tangail,Hospital Maintenance,2023-10-23,1

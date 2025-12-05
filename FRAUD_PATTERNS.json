@@ -1,0 +1,122 @@
+[
+  {
+    "rule_name": "Single_Bidder_Anomaly",
+    "description": "Tender awarded to single bidder in OTM.",
+    "trigger": "method == 'OTM' AND bidders_count == 1",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Cost_Inflation",
+    "description": "Contract value > 25% of estimate.",
+    "trigger": "contract_value > (estimated_value * 1.25)",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Ghost_Project",
+    "description": "Payment made but complaint says no work.",
+    "trigger": "complaint_text contains 'no work' AND status == 'paid'",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Repeated_Winner",
+    "description": "Same supplier wins 3+ consecutive tenders.",
+    "trigger": "winner_history count > 3",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Round_Figure_Bribe",
+    "description": "Transaction amount is suspicious round figure.",
+    "trigger": "amount % 100000 == 0 AND type == 'personal'",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Holiday_Procurement",
+    "description": "Tender awarded on Friday/Govt Holiday.",
+    "trigger": "is_holiday(award_date)",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Splitting_Packages",
+    "description": "Breaking large tender into small RFQs.",
+    "trigger": "method == 'RFQ' AND count > 5 AND total > 5cr",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Benami_Transaction",
+    "description": "Contract awarded to relative.",
+    "trigger": "relationship_check == True",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Impossible_Fuel_Use",
+    "description": "Fuel bill exceeds vehicle capacity.",
+    "trigger": "fuel > mileage_limit",
+    "severity": "Low"
+  },
+  {
+    "rule_name": "Duplicate_Invoice",
+    "description": "Same invoice number submitted twice.",
+    "trigger": "invoice_id is duplicate",
+    "severity": "High"
+  },
+  {
+    "rule_name": "Generic_Anomaly_11",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_12",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_13",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_14",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_15",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_16",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_17",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_18",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_19",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  },
+  {
+    "rule_name": "Generic_Anomaly_20",
+    "description": "Pattern based anomaly detection.",
+    "trigger": "score > threshold",
+    "severity": "Medium"
+  }
+]

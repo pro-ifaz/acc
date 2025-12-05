@@ -1,0 +1,352 @@
+
+complaint_id,date,division,district,channel,sector,accused_type,amount,complaint_text,risk_label
+C-1001,2024-01-24,Khulna,Kushtia,Hotline 106,Police,Inspector,100000,Assets of Inspector increased abnormally in last 2 years.,Medium
+C-1002,2023-11-14,Khulna,Satkhira,Hotline 106,Recruitment,Chairman,200000,Illegal transaction of 200000 taka caught on tape by Chairman.,High
+C-1003,2023-05-01,Rangpur,Rangpur,Written Application,Banking,Loan Officer,100000,Loan Officer hired his own relative for the post of mortgage release.,Medium
+C-1004,2023-08-14,Rajshahi,Bogura,Email,Education,Teacher,20000,"Sir, the Teacher demanded 20000 taka for admission.",Low
+C-1005,2023-07-01,Khulna,Bagerhat,Written Application,Recruitment,Headmaster,500000,Headmaster took money but did not give the service.,Medium
+C-1006,2023-10-01,Rangpur,Gaibandha,Online Form,Municipality,Engineer,20000,Refusing to do work without extra payment of 20000.,Low
+C-1007,2023-03-16,Mymensingh,Mymensingh,Hotline 106,Police,OC,200000,Bill passed for passport verification but no work done by OC.,Medium
+C-1008,2024-01-20,Khulna,Satkhira,Written Application,Health,Store Keeper,1000000,Illegal transaction of 1000000 taka caught on tape by Store Keeper.,Medium
+C-1009,2024-02-01,Dhaka,Dhaka,Written Application,Banking,Loan Officer,50000,Used low quality materials in SME loan construction.,Low
+C-1010,2023-09-23,Rajshahi,Bogura,Email,Tender/Procurement,Project Director,400000,Project Director hired his own relative for the post of bridge repair.,Medium
+C-1011,2023-09-27,Khulna,Jashore,Online Form,Municipality,Mayor,1000000,Used low quality materials in birth registration construction.,Medium
+C-1012,2023-12-09,Sylhet,Moulvibazar,Written Application,Land,Surveyor,5000000,Surveyor hired his own relative for the post of namjari.,High
+C-1013,2023-03-16,Chattogram,Cox's Bazar,Hotline 106,Land,Land Officer,50000,Land Officer hired his own relative for the post of namjari.,Low
+C-1014,2023-11-06,Khulna,Khulna,Written Application,Health,Nurse,20000,Government fund for surgery misappropriated by Nurse.,Low
+C-1015,2024-02-28,Mymensingh,Sherpur,Online Form,Health,Doctor,1000000,Assets of Doctor increased abnormally in last 2 years.,Medium
+C-1016,2023-01-06,Mymensingh,Jamalpur,Online Form,Education,Clerk,10000,Assets of Clerk increased abnormally in last 2 years.,Low
+C-1017,2023-07-10,Sylhet,Moulvibazar,Online Form,Municipality,Councilor,10000,Councilor hired his own relative for the post of holding tax.,Low
+C-1018,2023-12-07,Chattogram,Chandpur,Written Application,Health,Doctor,100000,Government fund for surgery misappropriated by Doctor.,Medium
+C-1019,2024-03-13,Rangpur,Kurigram,Online Form,Banking,Loan Officer,20000,Illegal transaction of 20000 taka caught on tape by Loan Officer.,Low
+C-1020,2023-04-07,Barishal,Barishal,Hotline 106,Tender/Procurement,Contractor,500000,Contractor hired his own relative for the post of supply of computers.,Medium
+C-1021,2024-02-25,Sylhet,Moulvibazar,Email,Recruitment,Ministry Official,100000,Used low quality materials in primary teacher job construction.,Medium
+C-1022,2023-10-02,Barishal,Barishal,Written Application,Police,Constable,100000,Assets of Constable increased abnormally in last 2 years.,Medium
+C-1023,2023-07-18,Dhaka,Manikganj,Written Application,Health,Doctor,500000,"Sir, the Doctor demanded 500000 taka for medicine supply.",Medium
+C-1024,2024-02-29,Sylhet,Sunamganj,Online Form,Recruitment,Chairman,50000,Used low quality materials in office assistant job construction.,High
+C-1025,2023-03-03,Rajshahi,Pabna,Email,Municipality,Councilor,200000,Councilor asks for speed money to move the file.,Medium
+C-1026,2023-02-16,Chattogram,Noakhali,Written Application,Police,OC,5000000,Refusing to do work without extra payment of 5000000.,High
+C-1027,2023-02-15,Sylhet,Moulvibazar,Email,Health,Ward Boy,20000,Ward Boy took money but did not give the service.,Low
+C-1028,2023-03-09,Barishal,Pirojpur,Hotline 106,Municipality,Mayor,500000,Bill passed for birth registration but no work done by Mayor.,Medium
+C-1029,2023-02-26,Barishal,Pirojpur,Email,Municipality,Councilor,5000,Councilor asks for speed money to move the file.,Low
+C-1030,2023-11-04,Khulna,Bagerhat,Email,Education,Teacher,100000,Teacher hired his own relative for the post of admission.,Medium
+C-1031,2023-06-19,Barishal,Barishal,Email,Land,Sub-Registrar,50000,Bill passed for namjari but no work done by Sub-Registrar.,Low
+C-1032,2023-12-10,Rangpur,Dinajpur,Email,Education,Teacher,50000,Teacher asks for speed money to move the file.,Low
+C-1033,2023-12-19,Dhaka,Manikganj,Online Form,Police,OC,1000000,"Sir, the OC demanded 1000000 taka for case filing.",Medium
+C-1034,2023-07-04,Chattogram,Feni,Online Form,Health,Ward Boy,500000,Ward Boy is harassing me for 500000 taka.,Medium
+C-1035,2024-03-06,Rangpur,Gaibandha,Hotline 106,Tender/Procurement,Executive Engineer,10000,Refusing to do work without extra payment of 10000.,Low
+C-1036,2023-04-29,Rangpur,Gaibandha,Email,Banking,Loan Officer,5000,Loan Officer took money but did not give the service.,Low
+C-1037,2023-11-15,Rangpur,Rangpur,Email,Tender/Procurement,Contractor,50000,Contractor hired his own relative for the post of bridge repair.,Low
+C-1038,2024-01-15,Dhaka,Narayanganj,Written Application,Land,Tehsildar,5000000,"Sir, the Tehsildar demanded 5000000 taka for khatian issue.",High
+C-1039,2023-08-27,Barishal,Bhola,Written Application,Municipality,Tax Collector,5000,"Sir, the Tax Collector demanded 5000 taka for holding tax.",Low
+C-1040,2023-01-11,Mymensingh,Mymensingh,Written Application,Police,OC,500000,OC hired his own relative for the post of GD entry.,Medium
+C-1041,2024-03-02,Sylhet,Habiganj,Hotline 106,Municipality,Councilor,50000,Assets of Councilor increased abnormally in last 2 years.,Low
+C-1042,2023-06-17,Chattogram,Cumilla,Hotline 106,Police,SI,5000,SI asks for speed money to move the file.,Low
+C-1043,2023-07-05,Sylhet,Moulvibazar,Email,Land,Surveyor,20000,Surveyor is harassing me for 20000 taka.,Low
+C-1044,2023-01-29,Barishal,Barishal,Hotline 106,Municipality,Councilor,100000,Assets of Councilor increased abnormally in last 2 years.,Medium
+C-1045,2023-05-21,Rajshahi,Rajshahi,Hotline 106,Land,Land Officer,50000,Government fund for khatian issue misappropriated by Land Officer.,Low
+C-1046,2023-07-07,Sylhet,Sylhet,Written Application,Banking,Cashier,5000000,Cashier hired his own relative for the post of loan sanction.,High
+C-1047,2023-04-08,Chattogram,Chandpur,Hotline 106,Police,Inspector,500000,Government fund for GD entry misappropriated by Inspector.,Medium
+C-1048,2023-04-28,Khulna,Jashore,Email,Land,Tehsildar,20000,Tehsildar asks for speed money to move the file.,Low
+C-1049,2023-12-29,Khulna,Satkhira,Online Form,Health,Store Keeper,50000,Store Keeper took money but did not give the service.,Low
+C-1050,2023-08-15,Rangpur,Kurigram,Online Form,Police,Inspector,10000,Inspector is harassing me for 10000 taka.,Low
+C-1051,2024-02-16,Sylhet,Sunamganj,Email,Police,SI,20000,Huge corruption in passport verification by SI. Amount embezzled approx 20000.,Low
+C-1052,2023-01-18,Rajshahi,Rajshahi,Online Form,Education,Clerk,2000000,Huge corruption in admission by Clerk. Amount embezzled approx 2000000.,High
+C-1053,2024-01-16,Mymensingh,Mymensingh,Written Application,Municipality,Councilor,10000,Bill passed for holding tax but no work done by Councilor.,Low
+C-1054,2024-03-16,Chattogram,Noakhali,Email,Police,Constable,1000000,Government fund for case filing misappropriated by Constable.,Medium
+C-1055,2023-08-14,Dhaka,Manikganj,Email,Banking,Loan Officer,100000,Assets of Loan Officer increased abnormally in last 2 years.,Medium
+C-1056,2023-06-13,Barishal,Patuakhali,Written Application,Health,Store Keeper,20000,Huge corruption in medicine supply by Store Keeper. Amount embezzled approx 20000.,Low
+C-1057,2023-01-17,Mymensingh,Jamalpur,Email,Recruitment,Civil Surgeon,100000,Used low quality materials in office assistant job construction.,Medium
+C-1058,2023-05-18,Mymensingh,Jamalpur,Hotline 106,Banking,Cashier,500000,"Sir, the Cashier demanded 500000 taka for mortgage release.",Medium
+C-1059,2023-07-21,Rangpur,Rangpur,Email,Recruitment,Chairman,1000000,Assets of Chairman increased abnormally in last 2 years.,High
+C-1060,2023-09-16,Dhaka,Dhaka,Written Application,Police,Inspector,5000000,Huge corruption in GD entry by Inspector. Amount embezzled approx 5000000.,High
+C-1061,2024-02-04,Dhaka,Dhaka,Written Application,Recruitment,Civil Surgeon,10000,Huge corruption in primary teacher job by Civil Surgeon. Amount embezzled approx 10000.,Low
+C-1062,2023-03-17,Sylhet,Sunamganj,Written Application,Banking,Bank Manager,100000,Bank Manager took money but did not give the service.,Medium
+C-1063,2023-01-16,Rajshahi,Pabna,Written Application,Tender/Procurement,Executive Engineer,500000,Executive Engineer hired his own relative for the post of supply of computers.,Medium
+C-1064,2024-03-02,Chattogram,Cox's Bazar,Written Application,Municipality,Mayor,4000000,Used low quality materials in birth registration construction.,High
+C-1065,2023-12-15,Khulna,Jashore,Written Application,Land,Broker,25000,Broker asks for speed money to move the file.,Low
+C-1066,2023-04-21,Rajshahi,Naogaon,Written Application,Banking,Loan Officer,500000,"Sir, the Loan Officer demanded 500000 taka for SME loan.",Medium
+C-1067,2023-07-09,Sylhet,Habiganj,Email,Education,Education Officer,300000,Refusing to do work without extra payment of 300000.,Medium
+C-1068,2023-08-23,Chattogram,Chandpur,Hotline 106,Municipality,Mayor,500000,"Sir, the Mayor demanded 500000 taka for holding tax.",Medium
+C-1069,2023-04-22,Khulna,Khulna,Written Application,Land,Surveyor,5000,Surveyor took money but did not give the service.,Low
+C-1070,2024-03-12,Khulna,Bagerhat,Online Form,Recruitment,Civil Surgeon,100000,Assets of Civil Surgeon increased abnormally in last 2 years.,Medium
+C-1071,2023-01-28,Khulna,Bagerhat,Online Form,Education,Clerk,10000,Illegal transaction of 10000 taka caught on tape by Clerk.,Low
+C-1072,2023-02-02,Chattogram,Feni,Email,Education,Headmaster,200000,Assets of Headmaster increased abnormally in last 2 years.,Medium
+C-1073,2024-01-14,Khulna,Satkhira,Hotline 106,Health,Ward Boy,200000,Government fund for patient admission misappropriated by Ward Boy.,Medium
+C-1074,2024-02-09,Sylhet,Sylhet,Hotline 106,Recruitment,Headmaster,1000000,Headmaster asks for speed money to move the file.,Medium
+C-1075,2023-02-21,Rangpur,Dinajpur,Written Application,Land,Broker,5000,"Sir, the Broker demanded 5000 taka for khatian issue.",Low
+C-1076,2023-02-15,Rangpur,Dinajpur,Hotline 106,Tender/Procurement,Executive Engineer,10000,Executive Engineer asks for speed money to move the file.,Low
+C-1077,2023-10-07,Chattogram,Chandpur,Email,Police,OC,100000,Illegal transaction of 100000 taka caught on tape by OC.,Medium
+C-1078,2024-02-13,Mymensingh,Jamalpur,Online Form,Banking,Loan Officer,1000000,"Sir, the Loan Officer demanded 1000000 taka for loan sanction.",Medium
+C-1079,2023-12-23,Rangpur,Gaibandha,Online Form,Police,Constable,100000,"Sir, the Constable demanded 100000 taka for GD entry.",Medium
+C-1080,2024-03-13,Barishal,Pirojpur,Online Form,Municipality,Mayor,50000,Huge corruption in birth registration by Mayor. Amount embezzled approx 50000.,Low
+C-1081,2023-06-21,Rajshahi,Rajshahi,Written Application,Recruitment,Chairman,50000,Chairman is harassing me for 50000 taka.,High
+C-1082,2023-05-27,Chattogram,Feni,Hotline 106,Police,OC,20000,OC hired his own relative for the post of passport verification.,Low
+C-1083,2024-01-25,Mymensingh,Netrokona,Online Form,Education,Teacher,25000000,Assets of Teacher increased abnormally in last 2 years.,High
+C-1084,2023-08-08,Dhaka,Tangail,Email,Banking,Bank Manager,5000000,Illegal transaction of 5000000 taka caught on tape by Bank Manager.,High
+C-1085,2023-04-08,Chattogram,Chattogram,Online Form,Education,Headmaster,1000000,Headmaster asks for speed money to move the file.,Medium
+C-1086,2023-04-04,Dhaka,Tangail,Written Application,Recruitment,Civil Surgeon,20000,Civil Surgeon hired his own relative for the post of office assistant job.,Low
+C-1087,2024-02-09,Barishal,Bhola,Written Application,Banking,Cashier,5000000,Huge corruption in mortgage release by Cashier. Amount embezzled approx 5000000.,High
+C-1088,2023-09-11,Barishal,Barishal,Hotline 106,Banking,Loan Officer,1000000,Bill passed for SME loan but no work done by Loan Officer.,Medium
+C-1089,2024-03-12,Sylhet,Sunamganj,Email,Land,Tehsildar,1000000,Illegal transaction of 1000000 taka caught on tape by Tehsildar.,Medium
+C-1090,2024-03-24,Sylhet,Sylhet,Email,Land,Land Officer,10000,Bill passed for land registration but no work done by Land Officer.,Low
+C-1091,2023-06-11,Dhaka,Manikganj,Online Form,Health,Doctor,500000,Illegal transaction of 500000 taka caught on tape by Doctor.,Medium
+C-1092,2023-07-18,Rangpur,Kurigram,Email,Health,Nurse,5000000,Nurse asks for speed money to move the file.,High
+C-1093,2023-05-19,Khulna,Bagerhat,Email,Banking,Cashier,2000000,Cashier asks for speed money to move the file.,High
+C-1094,2023-07-15,Khulna,Jashore,Online Form,Tender/Procurement,Contractor,5000,Huge corruption in bridge repair by Contractor. Amount embezzled approx 5000.,Low
+C-1095,2024-01-28,Mymensingh,Jamalpur,Written Application,Banking,Cashier,15000000,Illegal transaction of 15000000 taka caught on tape by Cashier.,High
+C-1096,2023-04-22,Barishal,Patuakhali,Written Application,Municipality,Tax Collector,30000,Illegal transaction of 30000 taka caught on tape by Tax Collector.,Low
+C-1097,2023-10-24,Rangpur,Gaibandha,Written Application,Recruitment,Civil Surgeon,20000,Used low quality materials in office assistant job construction.,Low
+C-1098,2023-08-26,Mymensingh,Netrokona,Email,Municipality,Mayor,20000,Mayor took money but did not give the service.,Low
+C-1099,2023-09-20,Chattogram,Feni,Online Form,Health,Store Keeper,60000,Bill passed for patient admission but no work done by Store Keeper.,Medium
+C-1100,2023-09-18,Mymensingh,Mymensingh,Written Application,Tender/Procurement,Project Director,5000,Assets of Project Director increased abnormally in last 2 years.,Low
+C-1101,2023-07-01,Rajshahi,Bogura,Hotline 106,Tender/Procurement,Contractor,5000000,Refusing to do work without extra payment of 5000000.,High
+C-1102,2023-12-22,Rangpur,Gaibandha,Written Application,Banking,Cashier,50000,Assets of Cashier increased abnormally in last 2 years.,Low
+C-1103,2023-02-01,Sylhet,Sylhet,Online Form,Education,Teacher,10000,Teacher is harassing me for 10000 taka.,Low
+C-1104,2024-01-22,Barishal,Bhola,Written Application,Police,Inspector,20000,Assets of Inspector increased abnormally in last 2 years.,Low
+C-1105,2023-12-21,Dhaka,Dhaka,Written Application,Police,Constable,1000000,Assets of Constable increased abnormally in last 2 years.,Medium
+C-1106,2023-10-03,Rangpur,Kurigram,Written Application,Education,Teacher,20000,Government fund for admission misappropriated by Teacher.,Low
+C-1107,2023-03-22,Sylhet,Sylhet,Written Application,Recruitment,Civil Surgeon,1000000,Civil Surgeon asks for speed money to move the file.,Medium
+C-1108,2023-08-03,Rajshahi,Naogaon,Written Application,Banking,Loan Officer,500000,"Sir, the Loan Officer demanded 500000 taka for SME loan.",Medium
+C-1109,2023-02-13,Dhaka,Manikganj,Online Form,Health,Nurse,100000,Assets of Nurse increased abnormally in last 2 years.,Medium
+C-1110,2023-10-27,Mymensingh,Sherpur,Email,Banking,Cashier,100000,Assets of Cashier increased abnormally in last 2 years.,Medium
+C-1111,2023-06-29,Barishal,Barishal,Email,Banking,Bank Manager,5000000,Bank Manager took money but did not give the service.,High
+C-1112,2024-03-29,Chattogram,Cumilla,Email,Recruitment,Chairman,100000,Chairman asks for speed money to move the file.,High
+C-1113,2023-06-20,Mymensingh,Sherpur,Email,Land,AC Land,4000000,"Sir, the AC Land demanded 4000000 taka for land registration.",High
+C-1114,2023-08-19,Rangpur,Kurigram,Online Form,Recruitment,Chairman,10000,Bill passed for primary teacher job but no work done by Chairman.,High
+C-1115,2023-09-20,Khulna,Khulna,Hotline 106,Municipality,Mayor,50000,Used low quality materials in holding tax construction.,Low
+C-1116,2023-09-28,Sylhet,Moulvibazar,Written Application,Recruitment,Ministry Official,300000,Refusing to do work without extra payment of 300000.,Medium
+C-1117,2023-01-16,Mymensingh,Mymensingh,Written Application,Land,AC Land,10000,AC Land is harassing me for 10000 taka.,Low
+C-1118,2023-02-14,Mymensingh,Netrokona,Email,Recruitment,Ministry Official,100000,Ministry Official took money but did not give the service.,Medium
+C-1119,2023-09-29,Sylhet,Sylhet,Online Form,Health,Doctor,100000,Government fund for medicine supply misappropriated by Doctor.,Medium
+C-1120,2023-01-28,Chattogram,Chattogram,Email,Recruitment,Chairman,5000000,Illegal transaction of 5000000 taka caught on tape by Chairman.,High
+C-1121,2023-07-04,Sylhet,Sunamganj,Online Form,Recruitment,Chairman,1000000,Refusing to do work without extra payment of 1000000.,High
+C-1122,2023-11-27,Sylhet,Moulvibazar,Online Form,Banking,Bank Manager,100000,Government fund for mortgage release misappropriated by Bank Manager.,Medium
+C-1123,2023-01-02,Rangpur,Dinajpur,Written Application,Health,Store Keeper,20000,Refusing to do work without extra payment of 20000.,Low
+C-1124,2023-11-17,Mymensingh,Jamalpur,Written Application,Recruitment,Civil Surgeon,10000,Used low quality materials in peon recruitment construction.,Low
+C-1125,2024-01-09,Mymensingh,Netrokona,Online Form,Municipality,Engineer,500000,Engineer took money but did not give the service.,Medium
+C-1126,2024-02-16,Mymensingh,Jamalpur,Written Application,Police,Constable,10000,Illegal transaction of 10000 taka caught on tape by Constable.,Low
+C-1127,2023-10-07,Dhaka,Faridpur,Online Form,Education,Education Officer,30000,Education Officer hired his own relative for the post of exam fees.,Low
+C-1128,2023-06-15,Khulna,Jashore,Email,Education,Education Officer,20000,Education Officer asks for speed money to move the file.,Low
+C-1129,2023-02-04,Barishal,Bhola,Email,Education,Clerk,5000,Assets of Clerk increased abnormally in last 2 years.,Low
+C-1130,2023-01-05,Dhaka,Tangail,Hotline 106,Land,Land Officer,20000,Used low quality materials in mutation construction.,Low
+C-1131,2023-12-07,Chattogram,Feni,Email,Police,OC,500000,Huge corruption in GD entry by OC. Amount embezzled approx 500000.,Medium
+C-1132,2023-09-28,Sylhet,Moulvibazar,Written Application,Recruitment,Headmaster,100000,Bill passed for office assistant job but no work done by Headmaster.,Medium
+C-1133,2023-04-19,Sylhet,Moulvibazar,Written Application,Education,Headmaster,500000,Government fund for exam fees misappropriated by Headmaster.,Medium
+C-1134,2023-01-17,Mymensingh,Mymensingh,Email,Education,Headmaster,25000000,Bill passed for admission but no work done by Headmaster.,High
+C-1135,2023-12-09,Khulna,Jashore,Written Application,Police,Inspector,500000,Illegal transaction of 500000 taka caught on tape by Inspector.,Medium
+C-1136,2023-10-03,Rajshahi,Rajshahi,Email,Recruitment,Headmaster,80000,Bill passed for office assistant job but no work done by Headmaster.,Medium
+C-1137,2023-04-23,Rajshahi,Naogaon,Hotline 106,Education,Teacher,50000,Teacher is harassing me for 50000 taka.,Low
+C-1138,2023-02-02,Mymensingh,Netrokona,Hotline 106,Education,Clerk,50000,Used low quality materials in MPO enlistment construction.,Low
+C-1139,2023-03-17,Rangpur,Rangpur,Hotline 106,Police,OC,10000,Bill passed for GD entry but no work done by OC.,Low
+C-1140,2023-08-13,Mymensingh,Sherpur,Online Form,Land,Broker,15000,Broker is harassing me for 15000 taka.,Low
+C-1141,2023-11-26,Rangpur,Gaibandha,Email,Health,Doctor,500000,Huge corruption in surgery by Doctor. Amount embezzled approx 500000.,Medium
+C-1142,2023-09-25,Mymensingh,Jamalpur,Email,Banking,Bank Manager,5000000,Bank Manager asks for speed money to move the file.,High
+C-1143,2023-07-29,Rangpur,Dinajpur,Written Application,Recruitment,Headmaster,10000,Assets of Headmaster increased abnormally in last 2 years.,Low
+C-1144,2023-06-15,Rajshahi,Rajshahi,Email,Health,Ward Boy,1000000,Refusing to do work without extra payment of 1000000.,Medium
+C-1145,2023-10-26,Khulna,Kushtia,Written Application,Police,Inspector,50000,Refusing to do work without extra payment of 50000.,Low
+C-1146,2023-11-13,Rangpur,Dinajpur,Online Form,Police,OC,100000,OC took money but did not give the service.,Medium
+C-1147,2023-11-19,Dhaka,Faridpur,Hotline 106,Banking,Loan Officer,20000,Government fund for mortgage release misappropriated by Loan Officer.,Low
+C-1148,2023-10-31,Barishal,Pirojpur,Hotline 106,Land,Sub-Registrar,20000000,Refusing to do work without extra payment of 20000000.,High
+C-1149,2023-04-10,Rangpur,Kurigram,Hotline 106,Municipality,Councilor,50000,Government fund for birth registration misappropriated by Councilor.,Low
+C-1150,2023-12-13,Sylhet,Habiganj,Online Form,Tender/Procurement,Project Director,2500000,Project Director is harassing me for 2500000 taka.,High
+C-1151,2023-12-09,Rangpur,Rangpur,Email,Banking,Bank Manager,1000000,Bill passed for loan sanction but no work done by Bank Manager.,Medium
+C-1152,2023-06-23,Sylhet,Moulvibazar,Online Form,Tender/Procurement,Executive Engineer,2000000,Refusing to do work without extra payment of 2000000.,High
+C-1153,2024-03-27,Khulna,Jashore,Email,Recruitment,Headmaster,5000000,"Sir, the Headmaster demanded 5000000 taka for office assistant job.",High
+C-1154,2023-01-17,Barishal,Pirojpur,Email,Health,Nurse,5000000,Assets of Nurse increased abnormally in last 2 years.,High
+C-1155,2023-06-10,Chattogram,Cox's Bazar,Online Form,Health,Ward Boy,20000,Used low quality materials in medicine supply construction.,Low
+C-1156,2023-07-12,Mymensingh,Mymensingh,Written Application,Recruitment,Ministry Official,20000,Illegal transaction of 20000 taka caught on tape by Ministry Official.,Low
+C-1157,2023-07-28,Rajshahi,Naogaon,Email,Education,Clerk,1500000,Clerk hired his own relative for the post of exam fees.,High
+C-1158,2023-02-28,Chattogram,Cumilla,Written Application,Recruitment,Chairman,500000,Bill passed for peon recruitment but no work done by Chairman.,High
+C-1159,2023-01-08,Chattogram,Noakhali,Email,Police,Constable,4000000,Illegal transaction of 4000000 taka caught on tape by Constable.,High
+C-1160,2024-01-11,Rangpur,Rangpur,Email,Banking,Cashier,1000000,Bill passed for SME loan but no work done by Cashier.,Medium
+C-1161,2023-05-02,Rangpur,Rangpur,Written Application,Municipality,Engineer,1000000,Assets of Engineer increased abnormally in last 2 years.,Medium
+C-1162,2024-01-30,Rajshahi,Sirajganj,Online Form,Municipality,Tax Collector,50000,Assets of Tax Collector increased abnormally in last 2 years.,Low
+C-1163,2023-11-13,Rajshahi,Sirajganj,Email,Education,Education Officer,10000,Assets of Education Officer increased abnormally in last 2 years.,Low
+C-1164,2023-12-27,Khulna,Khulna,Written Application,Tender/Procurement,Project Director,100000,Illegal transaction of 100000 taka caught on tape by Project Director.,Medium
+C-1165,2023-04-05,Dhaka,Faridpur,Hotline 106,Recruitment,Headmaster,5000000,Assets of Headmaster increased abnormally in last 2 years.,High
+C-1166,2023-07-09,Barishal,Barishal,Online Form,Tender/Procurement,Supplier,1000000,Supplier asks for speed money to move the file.,Medium
+C-1167,2023-09-03,Sylhet,Habiganj,Online Form,Police,Constable,5000,Constable is harassing me for 5000 taka.,Low
+C-1168,2024-02-06,Barishal,Barishal,Online Form,Tender/Procurement,Project Director,1000000,Project Director hired his own relative for the post of bridge repair.,Medium
+C-1169,2023-10-15,Sylhet,Sylhet,Hotline 106,Health,Nurse,20000,Huge corruption in surgery by Nurse. Amount embezzled approx 20000.,Low
+C-1170,2023-12-03,Mymensingh,Jamalpur,Online Form,Banking,Cashier,10000,Bill passed for SME loan but no work done by Cashier.,Low
+C-1171,2023-08-15,Chattogram,Noakhali,Online Form,Education,Clerk,50000,Bill passed for MPO enlistment but no work done by Clerk.,Low
+C-1172,2023-10-21,Chattogram,Cox's Bazar,Written Application,Health,Doctor,20000,Doctor hired his own relative for the post of medicine supply.,Low
+C-1173,2023-07-19,Mymensingh,Sherpur,Online Form,Banking,Loan Officer,1000000,Bill passed for mortgage release but no work done by Loan Officer.,Medium
+C-1174,2023-02-03,Barishal,Pirojpur,Hotline 106,Tender/Procurement,Contractor,5000000,Bill passed for school building but no work done by Contractor.,High
+C-1175,2023-05-01,Mymensingh,Netrokona,Written Application,Municipality,Mayor,500000,Government fund for trade license misappropriated by Mayor.,Medium
+C-1176,2024-01-12,Mymensingh,Netrokona,Written Application,Police,OC,10000,"Sir, the OC demanded 10000 taka for GD entry.",Low
+C-1177,2023-09-19,Rangpur,Rangpur,Online Form,Tender/Procurement,Supplier,5000,Bill passed for road construction but no work done by Supplier.,Low
+C-1178,2023-02-25,Mymensingh,Netrokona,Online Form,Health,Nurse,500000,Illegal transaction of 500000 taka caught on tape by Nurse.,Medium
+C-1179,2023-10-14,Barishal,Barishal,Written Application,Municipality,Tax Collector,10000,Tax Collector is harassing me for 10000 taka.,Low
+C-1180,2023-10-31,Sylhet,Sylhet,Email,Municipality,Engineer,5000000,Refusing to do work without extra payment of 5000000.,High
+C-1181,2023-03-12,Rangpur,Kurigram,Written Application,Municipality,Mayor,20000,Mayor is harassing me for 20000 taka.,Low
+C-1182,2023-03-11,Barishal,Barishal,Written Application,Tender/Procurement,Supplier,10000,Used low quality materials in bridge repair construction.,Low
+C-1183,2023-11-08,Barishal,Bhola,Online Form,Health,Store Keeper,1000000,Used low quality materials in patient admission construction.,Medium
+C-1184,2024-01-30,Dhaka,Narayanganj,Written Application,Tender/Procurement,Contractor,5000,Contractor asks for speed money to move the file.,Low
+C-1185,2023-01-03,Rangpur,Gaibandha,Online Form,Health,Store Keeper,5000,Huge corruption in surgery by Store Keeper. Amount embezzled approx 5000.,Low
+C-1186,2023-04-01,Rajshahi,Naogaon,Email,Land,AC Land,500000,AC Land hired his own relative for the post of land registration.,Medium
+C-1187,2023-04-15,Dhaka,Narayanganj,Written Application,Banking,Bank Manager,50000,Assets of Bank Manager increased abnormally in last 2 years.,Low
+C-1188,2023-01-10,Rajshahi,Pabna,Written Application,Recruitment,Headmaster,10000,Refusing to do work without extra payment of 10000.,Low
+C-1189,2023-02-28,Sylhet,Moulvibazar,Hotline 106,Education,Headmaster,25000000,Headmaster asks for speed money to move the file.,High
+C-1190,2023-08-26,Sylhet,Moulvibazar,Written Application,Police,Constable,5000000,Assets of Constable increased abnormally in last 2 years.,High
+C-1191,2023-02-23,Sylhet,Sunamganj,Written Application,Police,OC,5000,Bill passed for case filing but no work done by OC.,Low
+C-1192,2023-05-11,Barishal,Bhola,Email,Health,Store Keeper,200000,Store Keeper hired his own relative for the post of patient admission.,Medium
+C-1193,2023-09-28,Rangpur,Gaibandha,Written Application,Tender/Procurement,Project Director,5000000,Project Director is harassing me for 5000000 taka.,High
+C-1194,2023-04-01,Sylhet,Sylhet,Email,Tender/Procurement,Contractor,1000000,Government fund for road construction misappropriated by Contractor.,Medium
+C-1195,2023-04-07,Mymensingh,Netrokona,Online Form,Municipality,Councilor,1000000,Councilor hired his own relative for the post of holding tax.,Medium
+C-1196,2023-10-12,Khulna,Satkhira,Email,Health,Doctor,1500000,Huge corruption in surgery by Doctor. Amount embezzled approx 1500000.,High
+C-1197,2024-01-12,Sylhet,Sylhet,Email,Health,Ward Boy,5000,Ward Boy hired his own relative for the post of surgery.,Low
+C-1198,2023-02-07,Mymensingh,Sherpur,Online Form,Banking,Cashier,100000,Bill passed for SME loan but no work done by Cashier.,Medium
+C-1199,2023-11-17,Mymensingh,Jamalpur,Written Application,Tender/Procurement,Supplier,10000,Supplier is harassing me for 10000 taka.,Low
+C-1200,2023-06-23,Rajshahi,Pabna,Online Form,Tender/Procurement,Project Director,500000,Project Director asks for speed money to move the file.,Medium
+C-1201,2023-08-05,Khulna,Bagerhat,Hotline 106,Banking,Loan Officer,300000,Illegal transaction of 300000 taka caught on tape by Loan Officer.,Medium
+C-1202,2024-03-01,Rangpur,Rangpur,Hotline 106,Tender/Procurement,Supplier,25000000,Huge corruption in bridge repair by Supplier. Amount embezzled approx 25000000.,High
+C-1203,2023-05-16,Khulna,Satkhira,Hotline 106,Health,Store Keeper,20000,Store Keeper took money but did not give the service.,Low
+C-1204,2023-10-11,Rajshahi,Naogaon,Written Application,Health,Store Keeper,40000,Used low quality materials in medicine supply construction.,Low
+C-1205,2023-05-29,Chattogram,Chandpur,Online Form,Banking,Cashier,20000,Cashier asks for speed money to move the file.,Low
+C-1206,2024-02-10,Rangpur,Gaibandha,Online Form,Health,Store Keeper,5000000,Huge corruption in medicine supply by Store Keeper. Amount embezzled approx 5000000.,High
+C-1207,2024-03-11,Khulna,Bagerhat,Hotline 106,Health,Nurse,5000000,Huge corruption in surgery by Nurse. Amount embezzled approx 5000000.,High
+C-1208,2023-11-13,Rangpur,Rangpur,Written Application,Recruitment,Ministry Official,250000,Ministry Official took money but did not give the service.,Medium
+C-1209,2023-07-04,Rajshahi,Bogura,Online Form,Education,Education Officer,100000,Assets of Education Officer increased abnormally in last 2 years.,Medium
+C-1210,2023-02-01,Chattogram,Feni,Hotline 106,Health,Ward Boy,10000,"Sir, the Ward Boy demanded 10000 taka for medicine supply.",Low
+C-1211,2023-10-12,Khulna,Bagerhat,Email,Tender/Procurement,Executive Engineer,100000,Executive Engineer hired his own relative for the post of supply of computers.,Medium
+C-1212,2023-08-24,Rajshahi,Bogura,Email,Recruitment,Ministry Official,1000000,Assets of Ministry Official increased abnormally in last 2 years.,Medium
+C-1213,2024-03-25,Rangpur,Gaibandha,Email,Police,SI,1000000,Bill passed for GD entry but no work done by SI.,Medium
+C-1214,2023-10-02,Khulna,Jashore,Online Form,Land,Land Officer,5000000,"Sir, the Land Officer demanded 5000000 taka for khatian issue.",High
+C-1215,2023-05-24,Rajshahi,Sirajganj,Online Form,Recruitment,Headmaster,5000000,Assets of Headmaster increased abnormally in last 2 years.,High
+C-1216,2024-01-03,Dhaka,Manikganj,Hotline 106,Municipality,Engineer,50000,Engineer is harassing me for 50000 taka.,Low
+C-1217,2023-06-23,Khulna,Bagerhat,Email,Land,AC Land,500000,AC Land hired his own relative for the post of land registration.,Medium
+C-1218,2023-08-06,Rajshahi,Pabna,Online Form,Municipality,Engineer,5000000,Illegal transaction of 5000000 taka caught on tape by Engineer.,High
+C-1219,2023-04-02,Rangpur,Gaibandha,Written Application,Health,Store Keeper,100000,Illegal transaction of 100000 taka caught on tape by Store Keeper.,Medium
+C-1220,2023-11-06,Sylhet,Moulvibazar,Written Application,Education,Headmaster,500000,Used low quality materials in exam fees construction.,Medium
+C-1221,2023-08-25,Barishal,Bhola,Hotline 106,Land,Sub-Registrar,5000,Used low quality materials in land registration construction.,Low
+C-1222,2023-05-13,Rangpur,Rangpur,Online Form,Land,Surveyor,50000,Assets of Surveyor increased abnormally in last 2 years.,Low
+C-1223,2023-11-22,Mymensingh,Sherpur,Email,Police,SI,50000,Bill passed for case filing but no work done by SI.,Low
+C-1224,2023-06-10,Dhaka,Faridpur,Online Form,Tender/Procurement,Project Director,100000,Project Director hired his own relative for the post of school building.,Medium
+C-1225,2023-05-30,Dhaka,Faridpur,Written Application,Tender/Procurement,Project Director,10000,Project Director is harassing me for 10000 taka.,Low
+C-1226,2023-11-10,Sylhet,Habiganj,Online Form,Recruitment,Ministry Official,10000,Ministry Official asks for speed money to move the file.,Low
+C-1227,2023-01-31,Rangpur,Kurigram,Email,Banking,Cashier,1000000,Illegal transaction of 1000000 taka caught on tape by Cashier.,Medium
+C-1228,2024-01-31,Mymensingh,Sherpur,Written Application,Education,Teacher,10000,"Sir, the Teacher demanded 10000 taka for admission.",Low
+C-1229,2023-01-16,Chattogram,Chandpur,Email,Education,Headmaster,10000,Assets of Headmaster increased abnormally in last 2 years.,Low
+C-1230,2023-11-03,Chattogram,Chandpur,Written Application,Recruitment,Headmaster,100000,Headmaster asks for speed money to move the file.,Medium
+C-1231,2024-01-16,Rangpur,Dinajpur,Email,Health,Doctor,3000000,Used low quality materials in patient admission construction.,High
+C-1232,2023-02-16,Khulna,Satkhira,Hotline 106,Health,Store Keeper,5000,Store Keeper asks for speed money to move the file.,Low
+C-1233,2023-10-20,Chattogram,Chandpur,Email,Banking,Cashier,50000,Illegal transaction of 50000 taka caught on tape by Cashier.,Low
+C-1234,2023-11-16,Dhaka,Dhaka,Written Application,Education,Education Officer,10000,Education Officer is harassing me for 10000 taka.,Low
+C-1235,2023-08-20,Rangpur,Dinajpur,Online Form,Health,Ward Boy,5000000,Government fund for surgery misappropriated by Ward Boy.,High
+C-1236,2023-01-04,Khulna,Satkhira,Written Application,Municipality,Mayor,5000000,Mayor took money but did not give the service.,High
+C-1237,2024-03-17,Barishal,Bhola,Written Application,Tender/Procurement,Supplier,500000,Used low quality materials in school building construction.,Medium
+C-1238,2024-03-20,Sylhet,Sunamganj,Written Application,Municipality,Mayor,1000000,Refusing to do work without extra payment of 1000000.,Medium
+C-1239,2023-12-05,Chattogram,Feni,Email,Police,OC,50000,OC hired his own relative for the post of case filing.,Low
+C-1240,2023-08-30,Rajshahi,Naogaon,Hotline 106,Tender/Procurement,Executive Engineer,20000,Refusing to do work without extra payment of 20000.,Low
+C-1241,2023-12-07,Mymensingh,Sherpur,Written Application,Health,Doctor,10000,Refusing to do work without extra payment of 10000.,Low
+C-1242,2023-04-18,Barishal,Barishal,Hotline 106,Education,Clerk,10000,Clerk hired his own relative for the post of exam fees.,Low
+C-1243,2023-10-18,Sylhet,Habiganj,Hotline 106,Municipality,Tax Collector,50000,Bill passed for trade license but no work done by Tax Collector.,Low
+C-1244,2023-03-29,Sylhet,Sylhet,Email,Banking,Cashier,20000,Bill passed for SME loan but no work done by Cashier.,Low
+C-1245,2023-08-01,Khulna,Kushtia,Online Form,Land,AC Land,10000,Refusing to do work without extra payment of 10000.,Low
+C-1246,2023-02-15,Khulna,Khulna,Written Application,Health,Doctor,500000,Government fund for patient admission misappropriated by Doctor.,Medium
+C-1247,2023-10-12,Dhaka,Narayanganj,Hotline 106,Police,OC,50000,Illegal transaction of 50000 taka caught on tape by OC.,Low
+C-1248,2023-08-21,Rangpur,Kurigram,Email,Tender/Procurement,Project Director,500000,Assets of Project Director increased abnormally in last 2 years.,Medium
+C-1249,2023-09-02,Barishal,Barishal,Email,Land,AC Land,100000,Government fund for namjari misappropriated by AC Land.,Medium
+C-1250,2023-08-27,Sylhet,Sunamganj,Email,Banking,Loan Officer,20000,"Sir, the Loan Officer demanded 20000 taka for SME loan.",Low
+C-1251,2023-06-16,Mymensingh,Mymensingh,Online Form,Banking,Cashier,10000000,Cashier asks for speed money to move the file.,High
+C-1252,2023-06-06,Sylhet,Moulvibazar,Email,Land,Land Officer,5000,Refusing to do work without extra payment of 5000.,Low
+C-1253,2023-10-29,Khulna,Jashore,Online Form,Education,Clerk,500000,Clerk hired his own relative for the post of exam fees.,Medium
+C-1254,2023-12-17,Chattogram,Chattogram,Hotline 106,Police,Inspector,100000,Huge corruption in passport verification by Inspector. Amount embezzled approx 100000.,Medium
+C-1255,2023-05-29,Dhaka,Narayanganj,Written Application,Police,OC,10000,"Sir, the OC demanded 10000 taka for GD entry.",Low
+C-1256,2023-08-29,Sylhet,Moulvibazar,Email,Education,Clerk,1000000,Huge corruption in MPO enlistment by Clerk. Amount embezzled approx 1000000.,Medium
+C-1257,2023-08-25,Chattogram,Feni,Email,Municipality,Engineer,80000,Bill passed for birth registration but no work done by Engineer.,Medium
+C-1258,2024-01-31,Chattogram,Chattogram,Hotline 106,Health,Doctor,10000,Refusing to do work without extra payment of 10000.,Low
+C-1259,2023-06-11,Mymensingh,Netrokona,Written Application,Police,Constable,5000,Used low quality materials in GD entry construction.,Low
+C-1260,2023-05-15,Barishal,Patuakhali,Hotline 106,Tender/Procurement,Supplier,500000,"Sir, the Supplier demanded 500000 taka for supply of computers.",Medium
+C-1261,2023-06-17,Rangpur,Kurigram,Email,Municipality,Engineer,100000,Huge corruption in holding tax by Engineer. Amount embezzled approx 100000.,Medium
+C-1262,2023-09-07,Barishal,Pirojpur,Email,Recruitment,Headmaster,1000000,Illegal transaction of 1000000 taka caught on tape by Headmaster.,Medium
+C-1263,2023-03-25,Barishal,Pirojpur,Written Application,Police,Inspector,100000,Inspector is harassing me for 100000 taka.,Medium
+C-1264,2023-05-14,Rangpur,Kurigram,Hotline 106,Banking,Cashier,10000,"Sir, the Cashier demanded 10000 taka for mortgage release.",Low
+C-1265,2023-05-22,Rajshahi,Pabna,Written Application,Tender/Procurement,Supplier,500000,Assets of Supplier increased abnormally in last 2 years.,Medium
+C-1266,2023-05-13,Rajshahi,Rajshahi,Written Application,Banking,Bank Manager,50000,Refusing to do work without extra payment of 50000.,Low
+C-1267,2023-06-04,Chattogram,Chandpur,Written Application,Health,Doctor,5000000,Doctor asks for speed money to move the file.,High
+C-1268,2023-10-29,Rangpur,Gaibandha,Written Application,Recruitment,Headmaster,100000,Bill passed for office assistant job but no work done by Headmaster.,Medium
+C-1269,2023-12-24,Mymensingh,Netrokona,Online Form,Banking,Bank Manager,25000000,Bank Manager took money but did not give the service.,High
+C-1270,2023-05-25,Barishal,Barishal,Hotline 106,Recruitment,Ministry Official,10000,Used low quality materials in peon recruitment construction.,Low
+C-1271,2023-04-19,Mymensingh,Jamalpur,Written Application,Banking,Loan Officer,1000000,Bill passed for mortgage release but no work done by Loan Officer.,Medium
+C-1272,2023-04-30,Barishal,Bhola,Email,Land,Land Officer,50000,Refusing to do work without extra payment of 50000.,Low
+C-1273,2024-02-02,Mymensingh,Netrokona,Email,Health,Ward Boy,500000,Government fund for patient admission misappropriated by Ward Boy.,Medium
+C-1274,2023-10-09,Dhaka,Manikganj,Email,Education,Headmaster,5000000,Huge corruption in exam fees by Headmaster. Amount embezzled approx 5000000.,High
+C-1275,2023-03-14,Khulna,Kushtia,Email,Tender/Procurement,Supplier,5000,Government fund for road construction misappropriated by Supplier.,Low
+C-1276,2024-01-28,Rajshahi,Bogura,Email,Municipality,Engineer,50000,Illegal transaction of 50000 taka caught on tape by Engineer.,Low
+C-1277,2023-02-15,Rangpur,Gaibandha,Email,Health,Ward Boy,20000,Government fund for surgery misappropriated by Ward Boy.,Low
+C-1278,2023-10-25,Dhaka,Faridpur,Written Application,Recruitment,Chairman,15000,Government fund for primary teacher job misappropriated by Chairman.,High
+C-1279,2023-02-07,Rangpur,Dinajpur,Written Application,Land,AC Land,10000,AC Land asks for speed money to move the file.,Low
+C-1280,2023-07-18,Dhaka,Dhaka,Written Application,Land,Sub-Registrar,5000,Used low quality materials in khatian issue construction.,Low
+C-1281,2024-02-11,Rangpur,Gaibandha,Hotline 106,Banking,Loan Officer,500000,Used low quality materials in mortgage release construction.,Medium
+C-1282,2023-11-28,Sylhet,Moulvibazar,Written Application,Municipality,Councilor,5000,Councilor took money but did not give the service.,Low
+C-1283,2023-02-21,Rajshahi,Sirajganj,Hotline 106,Education,Headmaster,5000,Government fund for admission misappropriated by Headmaster.,Low
+C-1284,2023-08-17,Mymensingh,Netrokona,Written Application,Tender/Procurement,Project Director,500000,Refusing to do work without extra payment of 500000.,Medium
+C-1285,2023-07-18,Sylhet,Sunamganj,Email,Land,Broker,30000,Huge corruption in khatian issue by Broker. Amount embezzled approx 30000.,Low
+C-1286,2023-05-03,Mymensingh,Mymensingh,Hotline 106,Recruitment,Civil Surgeon,1000000,Government fund for peon recruitment misappropriated by Civil Surgeon.,Medium
+C-1287,2023-06-07,Sylhet,Sylhet,Email,Police,Constable,100000,Huge corruption in GD entry by Constable. Amount embezzled approx 100000.,Medium
+C-1288,2023-10-20,Khulna,Jashore,Written Application,Recruitment,Headmaster,1000000,Assets of Headmaster increased abnormally in last 2 years.,Medium
+C-1289,2023-08-10,Khulna,Bagerhat,Email,Police,Inspector,1000000,Inspector is harassing me for 1000000 taka.,Medium
+C-1290,2023-04-12,Sylhet,Habiganj,Written Application,Health,Nurse,100000,Nurse is harassing me for 100000 taka.,Medium
+C-1291,2023-02-18,Rangpur,Rangpur,Hotline 106,Police,SI,1000000,SI took money but did not give the service.,Medium
+C-1292,2023-04-29,Dhaka,Dhaka,Hotline 106,Banking,Loan Officer,5000000,Refusing to do work without extra payment of 5000000.,High
+C-1293,2023-10-15,Barishal,Bhola,Hotline 106,Municipality,Mayor,50000,"Sir, the Mayor demanded 50000 taka for birth registration.",Low
+C-1294,2023-02-25,Khulna,Satkhira,Written Application,Education,Teacher,100000,Assets of Teacher increased abnormally in last 2 years.,Medium
+C-1295,2023-01-29,Khulna,Khulna,Hotline 106,Banking,Bank Manager,50000,Government fund for mortgage release misappropriated by Bank Manager.,Low
+C-1296,2023-01-20,Dhaka,Faridpur,Online Form,Municipality,Tax Collector,5000000,Tax Collector is harassing me for 5000000 taka.,High
+C-1297,2023-03-31,Dhaka,Gazipur,Written Application,Health,Ward Boy,2000000,Assets of Ward Boy increased abnormally in last 2 years.,High
+C-1298,2023-05-28,Rajshahi,Pabna,Online Form,Municipality,Mayor,50000,Used low quality materials in holding tax construction.,Low
+C-1299,2023-03-21,Barishal,Patuakhali,Hotline 106,Land,Broker,5000,Broker is harassing me for 5000 taka.,Low
+C-1300,2023-02-13,Chattogram,Noakhali,Written Application,Banking,Cashier,100000,Huge corruption in mortgage release by Cashier. Amount embezzled approx 100000.,Medium
+C-1301,2024-03-02,Sylhet,Moulvibazar,Hotline 106,Land,Surveyor,500000,Illegal transaction of 500000 taka caught on tape by Surveyor.,Medium
+C-1302,2023-08-16,Barishal,Barishal,Email,Banking,Bank Manager,1000000,Used low quality materials in SME loan construction.,Medium
+C-1303,2023-05-24,Rajshahi,Rajshahi,Online Form,Health,Ward Boy,5000000,Government fund for surgery misappropriated by Ward Boy.,High
+C-1304,2023-10-10,Rajshahi,Pabna,Email,Municipality,Tax Collector,5000000,Tax Collector hired his own relative for the post of birth registration.,High
+C-1305,2024-01-02,Rangpur,Gaibandha,Online Form,Police,OC,500000,OC asks for speed money to move the file.,Medium
+C-1306,2023-10-27,Sylhet,Sunamganj,Written Application,Tender/Procurement,Supplier,100000,Assets of Supplier increased abnormally in last 2 years.,Medium
+C-1307,2024-03-11,Mymensingh,Netrokona,Online Form,Education,Clerk,1000000,Government fund for MPO enlistment misappropriated by Clerk.,Medium
+C-1308,2023-12-28,Sylhet,Habiganj,Email,Land,Sub-Registrar,50000,Bill passed for khatian issue but no work done by Sub-Registrar.,Low
+C-1309,2023-12-08,Chattogram,Noakhali,Written Application,Police,Inspector,5000,Huge corruption in GD entry by Inspector. Amount embezzled approx 5000.,Low
+C-1310,2023-01-28,Mymensingh,Jamalpur,Online Form,Municipality,Engineer,20000,Engineer took money but did not give the service.,Low
+C-1311,2023-06-03,Barishal,Barishal,Email,Land,Tehsildar,1500000,Refusing to do work without extra payment of 1500000.,High
+C-1312,2023-11-03,Dhaka,Dhaka,Written Application,Police,SI,5000000,Government fund for passport verification misappropriated by SI.,High
+C-1313,2023-07-28,Chattogram,Cox's Bazar,Hotline 106,Municipality,Engineer,10000,Assets of Engineer increased abnormally in last 2 years.,Low
+C-1314,2023-02-24,Khulna,Jashore,Hotline 106,Banking,Bank Manager,5000,"Sir, the Bank Manager demanded 5000 taka for loan sanction.",Low
+C-1315,2023-04-12,Rajshahi,Naogaon,Hotline 106,Land,Land Officer,5000,Illegal transaction of 5000 taka caught on tape by Land Officer.,Low
+C-1316,2023-05-07,Dhaka,Tangail,Online Form,Education,Education Officer,1000000,"Sir, the Education Officer demanded 1000000 taka for admission.",Medium
+C-1317,2023-04-14,Barishal,Pirojpur,Hotline 106,Health,Doctor,5000,Bill passed for surgery but no work done by Doctor.,Low
+C-1318,2023-09-24,Chattogram,Feni,Hotline 106,Education,Clerk,5000000,Assets of Clerk increased abnormally in last 2 years.,High
+C-1319,2023-05-15,Mymensingh,Sherpur,Email,Health,Doctor,1000000,Doctor is harassing me for 1000000 taka.,Medium
+C-1320,2023-09-07,Mymensingh,Mymensingh,Online Form,Education,Clerk,5000,"Sir, the Clerk demanded 5000 taka for MPO enlistment.",Low
+C-1321,2023-05-20,Mymensingh,Jamalpur,Written Application,Banking,Loan Officer,10000000,Government fund for mortgage release misappropriated by Loan Officer.,High
+C-1322,2023-02-25,Barishal,Pirojpur,Email,Police,Inspector,5000,Used low quality materials in passport verification construction.,Low
+C-1323,2023-01-08,Chattogram,Feni,Hotline 106,Education,Education Officer,500000,Education Officer hired his own relative for the post of MPO enlistment.,Medium
+C-1324,2023-04-06,Khulna,Jashore,Written Application,Tender/Procurement,Project Director,5000000,Huge corruption in supply of computers by Project Director. Amount embezzled approx 5000000.,High
+C-1325,2023-07-26,Rajshahi,Naogaon,Written Application,Land,Tehsildar,5000,Used low quality materials in mutation construction.,Low
+C-1326,2023-01-17,Rajshahi,Pabna,Email,Police,Constable,20000,Assets of Constable increased abnormally in last 2 years.,Low
+C-1327,2024-01-19,Chattogram,Cumilla,Written Application,Municipality,Mayor,50000,Illegal transaction of 50000 taka caught on tape by Mayor.,Low
+C-1328,2023-03-06,Barishal,Bhola,Hotline 106,Land,Tehsildar,1000000,Tehsildar is harassing me for 1000000 taka.,Medium
+C-1329,2023-12-24,Chattogram,Chattogram,Written Application,Municipality,Councilor,400000,Councilor is harassing me for 400000 taka.,Medium
+C-1330,2024-02-12,Mymensingh,Mymensingh,Email,Education,Headmaster,500000,Bill passed for exam fees but no work done by Headmaster.,Medium
+C-1331,2023-07-06,Rajshahi,Rajshahi,Hotline 106,Land,AC Land,100000,Illegal transaction of 100000 taka caught on tape by AC Land.,Medium
+C-1332,2023-08-30,Rajshahi,Bogura,Online Form,Recruitment,Headmaster,100000,Bill passed for primary teacher job but no work done by Headmaster.,Medium
+C-1333,2023-03-09,Mymensingh,Mymensingh,Hotline 106,Tender/Procurement,Contractor,5000000,Illegal transaction of 5000000 taka caught on tape by Contractor.,High
+C-1334,2024-02-14,Sylhet,Sunamganj,Online Form,Recruitment,Headmaster,5000000,Used low quality materials in peon recruitment construction.,High
+C-1335,2023-04-18,Dhaka,Manikganj,Hotline 106,Education,Education Officer,1000000,Huge corruption in admission by Education Officer. Amount embezzled approx 1000000.,Medium
+C-1336,2023-07-06,Mymensingh,Mymensingh,Written Application,Health,Store Keeper,30000,Illegal transaction of 30000 taka caught on tape by Store Keeper.,Low
+C-1337,2023-10-18,Rangpur,Gaibandha,Written Application,Banking,Bank Manager,1000000,Refusing to do work without extra payment of 1000000.,Medium
+C-1338,2023-10-07,Sylhet,Moulvibazar,Online Form,Tender/Procurement,Contractor,100000,Huge corruption in supply of computers by Contractor. Amount embezzled approx 100000.,Medium
+C-1339,2023-09-23,Barishal,Bhola,Online Form,Education,Education Officer,500000,Huge corruption in admission by Education Officer. Amount embezzled approx 500000.,Medium
+C-1340,2023-01-05,Sylhet,Sunamganj,Hotline 106,Education,Education Officer,5000,"Sir, the Education Officer demanded 5000 taka for admission.",Low
+C-1341,2024-01-02,Rajshahi,Bogura,Written Application,Municipality,Councilor,40000,Councilor took money but did not give the service.,Low
+C-1342,2023-05-02,Barishal,Barishal,Hotline 106,Banking,Cashier,10000000,Cashier took money but did not give the service.,High
+C-1343,2023-01-21,Dhaka,Gazipur,Email,Land,Land Officer,20000,Land Officer asks for speed money to move the file.,Low
+C-1344,2023-09-01,Sylhet,Moulvibazar,Hotline 106,Education,Headmaster,2000000,Illegal transaction of 2000000 taka caught on tape by Headmaster.,High
+C-1345,2023-05-21,Khulna,Khulna,Hotline 106,Health,Doctor,50000,Doctor took money but did not give the service.,Low
+C-1346,2023-11-22,Sylhet,Sunamganj,Email,Education,Education Officer,5000000,Government fund for exam fees misappropriated by Education Officer.,High
+C-1347,2023-08-02,Dhaka,Dhaka,Email,Recruitment,Chairman,5000,Refusing to do work without extra payment of 5000.,High
+C-1348,2023-01-20,Khulna,Khulna,Email,Recruitment,Civil Surgeon,5000,Civil Surgeon is harassing me for 5000 taka.,Low
+C-1349,2023-04-20,Rangpur,Gaibandha,Online Form,Banking,Loan Officer,100000,Assets of Loan Officer increased abnormally in last 2 years.,Medium
+C-1350,2023-12-04,Dhaka,Manikganj,Online Form,Recruitment,Headmaster,5000,Headmaster took money but did not give the service.,Low
