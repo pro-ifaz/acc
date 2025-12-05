@@ -10,92 +10,14 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 
-
-APP_TITLE = "Anti Corruption Analytics Demo"
-APP_SUBTITLE = "Synthetic datasets plus a simple ML and rules engine for interview demonstration"
-FOOTER_TEXT = "Ifaz Ahmed Chowdhury © 2026"
-
-
-def inject_css():
-    st.markdown(
-        """
-<style>
-/* Hide Streamlit default UI bits */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
-
-/* Global spacing so fixed footer does not overlap content */
-.block-container {padding-bottom: 3.5rem;}
-
-/* Nicer sidebar */
-section[data-testid="stSidebar"] {
-  border-right: 1px solid rgba(255,255,255,0.08);
-}
-section[data-testid="stSidebar"] .stRadio label {
-  padding: 0.35rem 0.4rem;
-  border-radius: 0.65rem;
-}
-
-/* Card-ish look for metrics */
-div[data-testid="stMetric"] {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 0.85rem 0.9rem;
-  border-radius: 1rem;
-}
-div[data-testid="stMetric"] > div {gap: 0.15rem;}
-
-/* Tables and dataframes */
-div[data-testid="stDataFrame"] {
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-/* Subtle section header */
-.k-section {
-  padding: 0.85rem 1rem;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.03);
-  border-radius: 1rem;
-  margin: 0.25rem 0 1rem 0;
-}
-
-/* Fixed footer */
-.k-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255,255,255,0.10);
-  padding: 0.6rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  z-index: 9999;
-}
-</style>
-""",
-        unsafe_allow_html=True,
-    )
-
-
 # -------------------------
 # Data loading
 # -------------------------
 
 @st.cache_data
 def load_data():
-    try:
-        acc_df = pd.read_csv("ACC_COMPLAINTS.csv")
-        proc_df = pd.read_csv("PROCUREMENT_FRAUD.csv")
-    except FileNotFoundError as e:
-        raise FileNotFoundError(
-            "Missing dataset files. Keep ACC_COMPLAINTS.csv and PROCUREMENT_FRAUD.csv "
-            "in the same folder as app.py when running or deploying."
-        ) from e
+    acc_df = pd.read_csv("ACC_COMPLAINTS.csv")
+    proc_df = pd.read_csv("PROCUREMENT_FRAUD.csv")
 
     with open("FRAUD_PATTERNS.json", "r", encoding="utf-8") as f:
         fraud_rules = json.load(f)
@@ -103,6 +25,7 @@ def load_data():
     with open("EVIDENCE_OCR_DATASET.txt", "r", encoding="utf-8") as f:
         raw_text = f.read()
 
+    # Split OCR documents by separator ---
     docs = [block.strip() for block in raw_text.split("---") if block.strip()]
 
     return acc_df, proc_df, fraud_rules, docs
@@ -116,11 +39,7 @@ def load_data():
 def train_risk_model(acc_df: pd.DataFrame):
     df = acc_df.copy()
 
-    required_cols = ["amount", "sector", "accused_type", "channel", "division", "risk_label"]
-    for c in required_cols:
-        if c not in df.columns:
-            raise ValueError(f"ACC_COMPLAINTS.csv missing required column: {c}")
-
+    # Features and target
     X = df[["amount", "sector", "accused_type", "channel", "division"]]
     y = df["risk_label"]
 
@@ -153,9 +72,9 @@ def train_risk_model(acc_df: pd.DataFrame):
     return model, report
 
 
+# Utility to show classification report nicely
 def show_classification_report(report_dict):
-    st.subheader("Model quality (risk label)")
-
+    st.subheader("Risk label classification quality")
     rows = []
     for label, metrics in report_dict.items():
         if label in ["accuracy", "macro avg", "weighted avg"]:
@@ -172,129 +91,196 @@ def show_classification_report(report_dict):
             }
         )
     if rows:
-        rep_df = pd.DataFrame(rows).sort_values("label")
-        st.dataframe(rep_df, use_container_width=True, hide_index=True)
+        rep_df = pd.DataFrame(rows)
+        st.table(rep_df)
 
 
 # -------------------------
-# Rules engine for procurement fraud (simple)
+# Rules engine for procurement fraud (optional)
 # -------------------------
 
 def apply_simple_rules(proc_df: pd.DataFrame) -> pd.DataFrame:
     df = proc_df.copy()
 
-    needed = ["bidders_count", "contract_value", "estimated_value"]
-    for c in needed:
-        if c not in df.columns:
-            return df
-
+    # Basic rule signals
     df["rule_single_bidder"] = (df["bidders_count"] == 1).astype(int)
-    df["rule_high_inflation"] = (df["contract_value"] > df["estimated_value"] * 1.25).astype(int)
+    df["rule_high_inflation"] = (
+        df["contract_value"] > df["estimated_value"] * 1.25
+    ).astype(int)
 
+    # Rough flag score
     df["rule_score"] = df["rule_single_bidder"] * 2 + df["rule_high_inflation"] * 1
 
     return df
 
 
 # -------------------------
-# UI modules
+# Streamlit UI
 # -------------------------
 
-def page_header():
+def main():
+    st.set_page_config(
+        page_title="Anti Corruption Analytics Demo",
+        layout="wide",
+        initial_sidebar_state="collapsed",
+    )
+
+    st.title("Anti Corruption Analytics Demo")
+    st.caption("Built on synthetic datasets for interview demonstration")
+
+    # Minimal responsive CSS tweaks
     st.markdown(
-        f"""
-<div class="k-section">
-  <div style="font-size: 2rem; font-weight: 800; line-height: 1.1;">{APP_TITLE}</div>
-  <div style="opacity: 0.80; margin-top: 0.35rem;">{APP_SUBTITLE}</div>
-</div>
-""",
+        """
+        <style>
+        /* reduce side padding on small screens */
+        @media (max-width: 700px){
+          .block-container {padding-left: 1rem !important; padding-right: 1rem !important;}
+          h1 {font-size: 1.6rem !important;}
+          h2 {font-size: 1.25rem !important;}
+          h3 {font-size: 1.1rem !important;}
+        }
+        /* make JSON blocks scroll horizontally instead of breaking layout */
+        pre {white-space: pre-wrap !important; word-wrap: break-word !important;}
+        </style>
+        """,
         unsafe_allow_html=True,
     )
+
+    acc_df, proc_df, fraud_rules, evidence_docs = load_data()
+
+    # Navigation (mobile friendly)
+    # On mobile, the sidebar is often collapsed, so we keep navigation in the main page.
+    pages = [
+        "ACC Complaint Intelligence",
+        "Procurement Fraud Overview",
+        "Evidence Viewer",
+        "Fraud Rules Library",
+    ]
+
+    st.markdown("#### Select module")
+    # Quick buttons (nice on desktop, ok on mobile)
+    b1, b2, b3, b4 = st.columns(4)
+    if b1.button("Complaints", use_container_width=True):
+        st.session_state["page"] = pages[0]
+    if b2.button("Procurement", use_container_width=True):
+        st.session_state["page"] = pages[1]
+    if b3.button("Evidence", use_container_width=True):
+        st.session_state["page"] = pages[2]
+    if b4.button("Rules", use_container_width=True):
+        st.session_state["page"] = pages[3]
+
+    default_page = st.session_state.get("page", pages[0])
+    page = st.selectbox(
+        "Module",
+        pages,
+        index=pages.index(default_page) if default_page in pages else 0,
+        label_visibility="collapsed",
+    )
+    st.session_state["page"] = page
+    if page == "ACC Complaint Intelligence":
+        show_acc_complaint_module(acc_df)
+    elif page == "Procurement Fraud Overview":
+        show_procurement_module(proc_df)
+    elif page == "Evidence Viewer":
+        show_evidence_module(evidence_docs)
+    elif page == "Fraud Rules Library":
+        show_fraud_rules_module(fraud_rules)
 
 
 def show_acc_complaint_module(acc_df: pd.DataFrame):
     st.header("ACC Complaint Intelligence")
 
     st.markdown(
-        "Explore complaint inflow, filter by region and sector, then test a simple model that predicts risk labels."
+        """
+This page demonstrates how incoming complaints can be
+analyzed, filtered, and scored using data features and a simple ML model.
+"""
     )
 
+    # Basic stats
     col1, col2, col3, col4 = st.columns(4)
+
     with col1:
         st.metric("Total complaints", len(acc_df))
+
     with col2:
         st.metric("High risk", int((acc_df["risk_label"] == "High").sum()))
+
     with col3:
         st.metric("Medium risk", int((acc_df["risk_label"] == "Medium").sum()))
+
     with col4:
         st.metric("Low risk", int((acc_df["risk_label"] == "Low").sum()))
 
-    st.subheader("Quick charts")
-    c1, c2 = st.columns(2)
-
-    with c1:
-        st.caption("Risk labels distribution")
-        st.bar_chart(acc_df["risk_label"].value_counts(), use_container_width=True)
-
-    with c2:
-        st.caption("Top sectors by complaint count")
-        st.bar_chart(acc_df["sector"].value_counts().head(10), use_container_width=True)
-
-    st.divider()
+    # Filters
     st.subheader("Filter complaints")
 
-    col_f1, col_f2, col_f3, col_f4 = st.columns([1, 1, 1, 1])
+    col_f1, col_f2, col_f3 = st.columns(3)
+
     with col_f1:
-        division = st.selectbox("Division", options=["All"] + sorted(acc_df["division"].unique().tolist()))
+        division = st.selectbox(
+            "Division",
+            options=["All"] + sorted(acc_df["division"].unique().tolist()),
+        )
+
     with col_f2:
-        district = st.selectbox("District", options=["All"] + sorted(acc_df["district"].unique().tolist()))
+        sector = st.selectbox(
+            "Sector",
+            options=["All"] + sorted(acc_df["sector"].unique().tolist()),
+        )
+
     with col_f3:
-        sector = st.selectbox("Sector", options=["All"] + sorted(acc_df["sector"].unique().tolist()))
-    with col_f4:
-        risk = st.selectbox("Risk label", options=["All"] + sorted(acc_df["risk_label"].unique().tolist()))
+        risk = st.selectbox(
+            "Risk label",
+            options=["All"] + sorted(acc_df["risk_label"].unique().tolist()),
+        )
 
     filtered = acc_df.copy()
+
     if division != "All":
         filtered = filtered[filtered["division"] == division]
-    if district != "All":
-        filtered = filtered[filtered["district"] == district]
     if sector != "All":
         filtered = filtered[filtered["sector"] == sector]
     if risk != "All":
         filtered = filtered[filtered["risk_label"] == risk]
 
-    st.write(f"Showing {len(filtered)} complaints after filtering")
+    st.write(f"Showing {len(filtered)} complaints after filter")
 
     st.dataframe(
         filtered[
-            ["complaint_id", "date", "division", "district", "sector", "accused_type", "amount", "risk_label"]
+            [
+                "complaint_id",
+                "date",
+                "division",
+                "district",
+                "sector",
+                "accused_type",
+                "amount",
+                "risk_label",
+            ]
         ].sort_values("date", ascending=False),
         use_container_width=True,
-        height=340,
-        hide_index=True,
+        height=300,
     )
 
-    st.divider()
-    st.subheader("Risk prediction model")
+    # ML model
+    st.subheader("Risk prediction model on complaint features")
     with st.spinner("Training model..."):
         model, report = train_risk_model(acc_df)
 
     show_classification_report(report)
 
-    st.markdown("### Inspect one complaint with model prediction")
+    st.markdown("### Inspect single complaint with model prediction")
 
-    ids = filtered["complaint_id"].unique().tolist()
-    if not ids:
-        st.info("No complaints in the current filter. Change filters to inspect a complaint.")
-        return
+    selected_id = st.selectbox(
+        "Select complaint id",
+        options=filtered["complaint_id"].unique().tolist(),
+    )
 
-    selected_id = st.selectbox("Complaint id", options=ids)
     row = acc_df[acc_df["complaint_id"] == selected_id].iloc[0]
 
-    left, right = st.columns([1.4, 1])
-    with left:
-        st.write("**Complaint text**")
-        st.write(row["complaint_text"])
+    st.write("**Complaint text:**")
+    st.write(row["complaint_text"])
 
     features = pd.DataFrame(
         [
@@ -312,177 +298,159 @@ def show_acc_complaint_module(acc_df: pd.DataFrame):
     proba = model.predict_proba(features)[0]
     proba_dict = dict(zip(model.classes_, proba))
 
-    with right:
-        st.write(f"True label: **{row['risk_label']}**")
-        st.write(f"Predicted: **{pred}**")
-        st.caption("Class probabilities")
-        st.json({cls: float(np.round(p, 3)) for cls, p in proba_dict.items()})
+    col_a, col_b = st.columns(2)
+
+    with col_a:
+        st.write(f"True risk label: **{row['risk_label']}**")
+        st.write(f"Model predicted: **{pred}**")
+
+    with col_b:
+        st.write("Prediction probabilities:")
+        st.json({cls: round(p, 3) for cls, p in proba_dict.items()})
 
 
 def show_procurement_module(proc_df: pd.DataFrame):
     st.header("Procurement Fraud Overview")
 
     st.markdown(
-        "Summarize tenders and highlight suspicious entries using simple rule signals and the dataset fraud flag."
+        """
+This page summarizes tender data and highlights entries that look suspicious
+according to simple rules and existing fraud flags.
+"""
     )
 
     enhanced = apply_simple_rules(proc_df)
 
     col1, col2, col3, col4 = st.columns(4)
+
     with col1:
         st.metric("Total tenders", len(enhanced))
+
     with col2:
-        st.metric("Flagged by dataset", int(enhanced.get("fraud_flag", pd.Series([0]*len(enhanced))).sum()))
+        st.metric("Flagged by dataset", int(enhanced["fraud_flag"].sum()))
+
     with col3:
-        st.metric("Single bidder cases", int(enhanced.get("rule_single_bidder", pd.Series([0]*len(enhanced))).sum()))
+        st.metric(
+            "Single bidder cases",
+            int(enhanced["rule_single_bidder"].sum()),
+        )
+
     with col4:
-        st.metric("High inflation cases", int(enhanced.get("rule_high_inflation", pd.Series([0]*len(enhanced))).sum()))
+        st.metric(
+            "High inflation cases",
+            int(enhanced["rule_high_inflation"].sum()),
+        )
 
-    st.subheader("Quick charts")
-    c1, c2 = st.columns(2)
-    with c1:
-        if "method" in enhanced.columns:
-            st.caption("Procurement methods")
-            st.bar_chart(enhanced["method"].value_counts(), use_container_width=True)
-        else:
-            st.info("No method column found in dataset.")
-    with c2:
-        if "fraud_flag" in enhanced.columns:
-            st.caption("Fraud flag distribution")
-            st.bar_chart(enhanced["fraud_flag"].value_counts(), use_container_width=True)
-        else:
-            st.info("No fraud_flag column found in dataset.")
+    # Filters
+    col_f1, col_f2, col_f3 = st.columns(3)
 
-    st.divider()
-    col_f1, col_f2, col_f3, col_f4 = st.columns([1, 1, 1, 1])
     with col_f1:
-        entity = st.selectbox("Procuring entity", ["All"] + sorted(enhanced["procuring_entity"].unique().tolist()))
+        entity = st.selectbox(
+            "Procuring entity",
+            ["All"] + sorted(enhanced["procuring_entity"].unique().tolist()),
+        )
+
     with col_f2:
-        sector = st.selectbox("Sector", ["All"] + sorted(enhanced["sector"].unique().tolist()))
+        sector = st.selectbox(
+            "Sector",
+            ["All"] + sorted(enhanced["sector"].unique().tolist()),
+        )
+
     with col_f3:
-        district = st.selectbox("District", ["All"] + sorted(enhanced["district"].unique().tolist()))
-    with col_f4:
         only_suspicious = st.checkbox("Show suspicious only", value=False)
 
     df = enhanced.copy()
+
     if entity != "All":
         df = df[df["procuring_entity"] == entity]
     if sector != "All":
         df = df[df["sector"] == sector]
-    if district != "All":
-        df = df[df["district"] == district]
     if only_suspicious:
-        if "fraud_flag" in df.columns and "rule_score" in df.columns:
-            df = df[(df["fraud_flag"] == 1) | (df["rule_score"] > 0)]
-        elif "fraud_flag" in df.columns:
-            df = df[df["fraud_flag"] == 1]
+        df = df[(df["fraud_flag"] == 1) | (df["rule_score"] > 0)]
 
-    st.write(f"Showing {len(df)} tenders after filtering")
+    st.write(f"Showing {len(df)} tenders after filter")
 
-    cols = [
-        "tender_id",
-        "procuring_entity",
-        "supplier",
-        "method",
-        "estimated_value",
-        "contract_value",
-        "bidders_count",
-        "district",
-        "sector",
-        "award_date",
-        "fraud_flag",
-        "rule_single_bidder",
-        "rule_high_inflation",
-        "rule_score",
-    ]
-    existing_cols = [c for c in cols if c in df.columns]
-
-    if "award_date" in df.columns:
-        df_sorted = df.sort_values("award_date", ascending=False)
-    else:
-        df_sorted = df
-
-    st.dataframe(df_sorted[existing_cols], use_container_width=True, height=380, hide_index=True)
+    st.dataframe(
+        df[
+            [
+                "tender_id",
+                "procuring_entity",
+                "supplier",
+                "method",
+                "estimated_value",
+                "contract_value",
+                "bidders_count",
+                "district",
+                "sector",
+                "award_date",
+                "fraud_flag",
+                "rule_single_bidder",
+                "rule_high_inflation",
+                "rule_score",
+            ]
+        ].sort_values("award_date", ascending=False),
+        use_container_width=True,
+        height=350,
+    )
 
 
 def show_evidence_module(evidence_docs):
     st.header("Evidence OCR Document Viewer")
 
-    st.markdown("Browse sample OCR-like document text and surface suspicious lines using a simple keyword scan.")
+    st.markdown(
+        """
+This page shows sample OCR text of government documents such as
+invoices, vouchers and tender related papers with suspicious indicators.
+"""
+    )
 
-    if not evidence_docs:
-        st.info("No evidence docs found in EVIDENCE_OCR_DATASET.txt.")
-        return
+    idx = st.selectbox(
+        "Select document",
+        options=list(range(1, len(evidence_docs) + 1)),
+        index=0,
+    )
 
-    idx = st.slider("Document index", min_value=1, max_value=len(evidence_docs), value=1)
     doc = evidence_docs[idx - 1]
 
     st.subheader(f"Document {idx}")
-    st.code(doc, language="text")
+    st.text(doc)
 
-    st.markdown("### Suspicious lines (simple match)")
+    # Simple highlight for suspicious lines
+    st.markdown("### Detected suspicious lines (simple text match)")
+
     suspicious_lines = [
-        line
-        for line in doc.splitlines()
-        if ("SUSPICIOUS" in line.upper())
-        or ("indicator" in line.lower())
-        or ("overwrite" in line.lower())
-        or ("scanned" in line.lower())
-        or ("does not match" in line.lower())
+        line for line in doc.splitlines() if "SUSPICIOUS" in line.upper() or "indicator" in line.lower()
     ]
+
     if suspicious_lines:
         for line in suspicious_lines:
-            st.write(f"- {line.strip()}")
+            st.write(f"- {line}")
     else:
-        st.write("No suspicious keyword matches found in this document.")
+        st.write("No explicit suspicious line markers found in this sample.")
 
 
 def show_fraud_rules_module(fraud_rules):
     st.header("Fraud Rules Library")
 
-    st.markdown("A small knowledge base of fraud indicators that can complement ML scoring.")
-
-    if isinstance(fraud_rules, list) and fraud_rules:
-        df = pd.DataFrame(fraud_rules)
-        st.dataframe(df, use_container_width=True, hide_index=True)
-    else:
-        st.json(fraud_rules)
-
-
-def render_footer():
     st.markdown(
-        f"""<div class="k-footer">{FOOTER_TEXT}</div>""",
-        unsafe_allow_html=True,
+        """
+The rules below represent a knowledge base of fraud indicators
+that can be combined with ML models to produce risk scores.
+"""
     )
 
-
-def main():
-    st.set_page_config(page_title=APP_TITLE, layout="wide")
-    inject_css()
-    page_header()
-
-    acc_df, proc_df, fraud_rules, evidence_docs = load_data()
-
-    with st.sidebar:
-        st.markdown("### Modules")
-        page = st.radio(
-            "Navigate",
-            ["ACC Complaint Intelligence", "Procurement Fraud Overview", "Evidence Viewer", "Fraud Rules Library"],
-            label_visibility="collapsed",
-        )
-        st.markdown("---")
-        st.caption("Tip: Use filters to narrow down results fast.")
-
-    if page == "ACC Complaint Intelligence":
-        show_acc_complaint_module(acc_df)
-    elif page == "Procurement Fraud Overview":
-        show_procurement_module(proc_df)
-    elif page == "Evidence Viewer":
-        show_evidence_module(evidence_docs)
-    elif page == "Fraud Rules Library":
-        show_fraud_rules_module(fraud_rules)
-
-    render_footer()
+    # Mobile-friendly view
+    if isinstance(fraud_rules, list):
+        rules_df = pd.DataFrame(fraud_rules)
+        q = st.text_input("Search rules (name/description/trigger)", "")
+        if q.strip():
+            mask = rules_df.astype(str).apply(lambda c: c.str.contains(q, case=False, na=False)).any(axis=1)
+            rules_df = rules_df[mask]
+        st.dataframe(rules_df, use_container_width=True, height=420)
+        with st.expander("Raw JSON"):
+            st.json(fraud_rules)
+    else:
+        st.json(fraud_rules)
 
 
 if __name__ == "__main__":
