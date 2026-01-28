@@ -1,0 +1,292 @@
+sample_id,doc_type,issuing_entity,date_raw,primary_amount_bdt,red_flag,raw_text
+E-0001,GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH,Local Government Engineering Department (LGED),12 Oct 2023,865000,"Total amount overwritten manually and does not match the sum of items (565,000 BDT).","GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH
+Local Government Engineering Department (LGED)
+District: Dhaka
+---------------------------------------------------
+BILL NO: LGED/DK/2023/504
+DATE: 12 Oct 2023
+PROJECT: Rural Road Maintenance (Road ID: 4502)
+CONTRACTOR: M/S Bhuiyan Constructions
+ENGINEER: Md. Rafiqul Islam
+DESCRIPTION OF WORK:
+1. Earth filling: 5000 cft @ 45 BDT = 225,000 BDT
+2. Brick Soling: 2000 sqft @ 80 BDT = 160,000 BDT
+3. Bituminous Carpeting: 1500 sqft @ 120 BDT = 180,000 BDT
+TOTAL: 665,000 BDT (Handwritten correction: 865,000 BDT)
+PASSED FOR PAYMENT: 865,000 BDT
+SIGNATURE: [Illegible Scrawl]"
+E-0002,INVOICE,Vendor: Star Tech Solutions,05/11/2023,2045000,Unit prices are inflated approx 2-3x higher than local market rate.,"INVOICE
+Vendor: Star Tech Solutions
+Date: 05/11/2023
+To: Project Director, ICT Division Project
+Items:
+1. Dell Laptops (Core i5) - Qty 10 - Unit Price: 150,000 BDT - Total: 1,500,000 BDT
+2. HP Laser Printer - Qty 5 - Unit Price: 85,000 BDT - Total: 425,000 BDT
+3. UPS 650VA - Qty 10 - Unit Price: 12,000 BDT - Total: 120,000 BDT
+Grand Total: 2,045,000 BDT"
+E-0003,PAYMENT VOUCHER,Ministry of Health & Family Welfare,22/09/2023,5000000,"Amount in words 'Five Crore' (50,000,000) does not match figure '5,000,000' (50 Lakh).","PAYMENT VOUCHER
+Ministry of Health & Family Welfare
+Date: 22/09/2023
+Voucher No: MH/DEV/299
+Pay to: Global Medico Ltd.
+Amount: 5,000,000 BDT (Five Crore Taka Only)
+Purpose: Supply of ICU Ventilators
+Note: Advance payment processed without delivery challan.
+Approval: Director General (Signed)"
+E-0004,WORK COMPLETION CERTIFICATE,Department of Public Health Engineering (DPHE),30 Feb 2023,,Date '30 Feb 2023' is an impossible date.,"WORK COMPLETION CERTIFICATE
+Department of Public Health Engineering (DPHE)
+District: Barishal
+Contract Name: Installation of 50 Deep Tube Wells
+Contractor: Hasan Traders
+Date of Completion: 30 Feb 2023
+This is to certify that the work has been completed satisfactorily.
+Signed:
+Executive Engineer"
+E-0005,SUPPLY CHALLAN,Received From: Master Builders,15-08-2023,,Goods received on a national holiday when government offices are typically closed.,"SUPPLY CHALLAN
+Challan No: 0045
+Date: 15-08-2023 (National Mourning Day Holiday)
+Received From: Master Builders
+Material:
+- Cement: 500 Bags
+- Sand: 1000 cft
+Received By: Store Keeper, PWD"
+E-0006,MUSTER ROLL (LABOR PAYMENT),1. Rahim Mia - Thumb Impression,01 Nov - 07 Nov 2023,,All thumb impressions appear to be identical (cloned smudge patterns).,"MUSTER ROLL (LABOR PAYMENT)
+Project: Canal Re-excavation, Noakhali
+Period: 01 Nov - 07 Nov 2023
+1. Rahim Mia - Thumb Impression
+2. Karim Ullah - Thumb Impression
+3. Salam Sheikh - Thumb Impression
+4. Jamal Uddin - Thumb Impression
+...
+[List of 50 laborers]"
+E-0007,TENDER EVALUATION REPORT,Procuring Entity: City Corporation,10 Dec 2023,,Lowest bidder (Gamma) disqualified on flimsy grounds to favor Alpha.,"TENDER EVALUATION REPORT
+Procuring Entity: City Corporation
+Tender ID: 55021
+Date: 10 Dec 2023
+Bidders:
+1. M/S Alpha Construction - Price: 1.20 Crore
+2. M/S Beta Builders - Price: 1.25 Crore
+3. M/S Gamma Tech - Price: 1.15 Crore
+Evaluation: Gamma Tech disqualified for missing trade license. Beta Builders disqualified for spelling error in form.
+Recommended for Award: M/S Alpha Construction (Bid Price 1.20 Crore)"
+E-0008,PETTY CASH VOUCHER,Department: Land Record Office,18-10-2023,40000,Exorbitant amount for 'Refreshment' and 'Chair Repair' via petty cash to extract funds.,"PETTY CASH VOUCHER
+Date: 18-10-2023
+Department: Land Record Office
+Description:
+- Refreshment for Guest: 15,000 BDT
+- Stationery: 5,000 BDT
+- Repair of Chair: 20,000 BDT
+Total: 40,000 BDT
+Approved By: AC Land"
+E-0009,INVOICE,Vendor: National Furnitures,01/12/2023,500000,Same invoice number '1122' was submitted for a different claim in November 2023.,"INVOICE
+Vendor: National Furnitures
+Date: 01/12/2023
+Invoice No: 1122
+Item: Decorative Wooden Chair
+Qty: 10
+Rate: 50,000 BDT
+Total: 500,000 BDT"
+E-0010,BANK STATEMENT EXTRACT,"Account: Project Fund Account, Sonali Bank",,,Large cash withdrawal (20 Lakh) from project fund account is suspicious.,"BANK STATEMENT EXTRACT
+Account: Project Fund Account, Sonali Bank
+Period: Dec 2023
+Date       Particulars          Debit       Credit
+10-12-23   Trf to Contractor    50,00,000
+10-12-23   Cash Withdrawal      20,00,000   (Self)
+12-12-23   Trf to Contractor    30,00,000"
+E-0011,MEASUREMENT BOOK (MB) PAGE,Page No: 45,,,Executive Engineer signed/approved before the Sub-Assistant Engineer measured.,"MEASUREMENT BOOK (MB) PAGE
+Project: School Boundary Wall
+Page No: 45
+Measurements:
+Length: 100 ft
+Height: 6 ft
+Width: 10 inch
+Calculation: 100 x 6 x 0.83 = 498 cft
+Previous Bill Quantity: 300 cft
+Since Previous Bill: 198 cft
+Signature of SAE: Signed (15/01/2024)
+Signature of XEN: Signed (10/01/2024)"
+E-0012,QUOTATION SUMMARY,Procurement of Office Supplies,,99900,"All quotes are suspiciously close to the 1 Lakh limit for RFQ and close to each other, indicating collusion.","QUOTATION SUMMARY
+Procurement of Office Supplies
+Method: RFQ
+1. Supplier A: 99,500 BDT
+2. Supplier B: 99,800 BDT
+3. Supplier C: 99,900 BDT
+Winner: Supplier A"
+E-0013,VEHICLE LOG BOOK,Vehicle No: Dhaka Metro Gha-15-2233,05-01-2024,,Excessive fuel consumption recorded (indicates fuel theft).,"VEHICLE LOG BOOK
+Vehicle No: Dhaka Metro Gha-15-2233
+Date: 05-01-2024
+Route: Dhaka to Chittagong and back.
+Distance Recorded: 600 KM
+Fuel Consumed: 200 Liters
+Calculated Mileage: 3 km/liter
+Standard Mileage: 8-10 km/liter"
+E-0014,APPOINTMENT LETTER,Ref: REC/2023/501,25 Dec 2023,,Official letter issued on a public holiday.,"APPOINTMENT LETTER
+Ref: REC/2023/501
+Date: 25 Dec 2023 (Christmas Day)
+To: Mr. X
+Position: Office Assistant
+You are hereby appointed..."
+E-0015,CHECK COUNTERFOIL,Check No: 455011,12/11/2023,1500000,Bearer check of large amount with blank payee.,"CHECK COUNTERFOIL
+Check No: 455011
+Date: 12/11/2023
+Payee: [Blank]
+Amount: 1,500,000 BDT
+Note: ""For office expenses"""
+E-0016,STOCK REGISTER,Item: Bleaching Powder,,,Stock balance shows negative quantity (physically impossible).,"STOCK REGISTER
+Item: Bleaching Powder
+Date       In     Out    Balance
+01-01-24   100kg  -      100kg
+05-01-24   -      200kg  -100kg"
+E-0017,TRAINING ATTENDANCE SHEET,Name              Signature,15 Oct 2023,,Fake attendance sheet created to claim training allowance.,"TRAINING ATTENDANCE SHEET
+Project: Skill Development
+Date: 15 Oct 2023
+Name              Signature
+1. Abdur Rahman   [Signed]
+2. Kamal Hossain  [Signed]
+3. ...
+40. ...
+Note: All signatures appear to be in the same handwriting/ink."
+E-0018,REPAIR ESTIMATE,Vehicle: Toyota Prado,,1200000,Major engine overhaul claimed for a brand new vehicle.,"REPAIR ESTIMATE
+Vehicle: Toyota Prado
+Component: Engine Overhaul
+Estimated Cost: 1,200,000 BDT
+Note: Vehicle was purchased new 6 months ago."
+E-0019,ELECTRICITY BILL (Office),Month: January 2024,January 2024,500000,High consumption during closed/renovation period.,"ELECTRICITY BILL (Office)
+Month: January 2024
+Units Consumed: 50,000 Units
+Amount: 500,000 BDT
+Note: Office was closed for renovation during January."
+E-0020,LEASE AGREEMENT,Property: Govt Khas Land Plot 55,,,Conflict of interest (leased to officer's wife) and undervaluation.,"LEASE AGREEMENT
+Property: Govt Khas Land Plot 55
+Lessee: Mrs. Y (Wife of UNO)
+Rent: 100 BDT / year
+Duration: 99 years"
+E-0021,AUDIT OBJECTION REPLY,Ref: Audit/2023/Obj-5,20-11-2023,,Absurd explanation for missing asset.,"AUDIT OBJECTION REPLY
+Ref: Audit/2023/Obj-5
+Date: 20-11-2023
+Subject: Missing Laptop
+Reply: ""The laptop was eaten by termites."""
+E-0022,MONEY RECEIPT,Received from: Mr. Client,,50000,Explicit admission of bribe.,"MONEY RECEIPT
+Received from: Mr. Client
+Amount: 50,000 BDT
+Purpose: ""Speed Money for File 303""
+Signed: Office Peon"
+E-0023,COMPARATIVE STATEMENT (CS),Item: Generator 50KVA,,1600000,Lowest bidder rejected on minor technicality to award contract at 3x price.,"COMPARATIVE STATEMENT (CS)
+Item: Generator 50KVA
+1. Company X: 500,000 BDT
+2. Company Y: 1,500,000 BDT
+3. Company Z: 1,600,000 BDT
+Selection: Company Y (Reason: Company X machine specs not matching - minor deviation)"
+E-0024,TRAVEL ALLOWANCE BILL,Name: Project Director,,,Foreign trip for inspection of locally available materials.,"TRAVEL ALLOWANCE BILL
+Name: Project Director
+Route: Dhaka -> London -> Dhaka
+Purpose: Inspection of Bridge Construction Materials
+Date: 10-15 Oct 2023
+Note: Materials are locally sourced (Brick/Sand)."
+E-0025,HOSPITAL DIET BILL,Patients Admitted: 50,15-11-2023,,Diet supplied exceeds number of patients significantly.,"HOSPITAL DIET BILL
+Date: 15-11-2023
+Patients Admitted: 50
+Diet Supplied: 200 packets (Lunch)"
+E-0026,PROMOTION ORDER,Name: Mr. A,,,Backdated promotion order to claim arrears illegally.,"PROMOTION ORDER
+Name: Mr. A
+Post: Clerk to Section Officer
+Date: Backdated to 2020
+Note: Issued in 2023 but backdated to give arrears benefit."
+E-0027,CONSTABLE DEPLOYMENT ROSTER,Location: VIP House,,,Illegal deployment of force for personal service.,"CONSTABLE DEPLOYMENT ROSTER
+Location: VIP House
+Number of Constables: 20
+Note: VIP is not entitled to house guard."
+E-0028,TAX ASSESSMENT FORM,"Property: 5 Story Building, Gulshan",,50000,Gross undervaluation of prime property to evade tax.,"TAX ASSESSMENT FORM
+Property: 5 Story Building, Gulshan
+Assessed Annual Value: 50,000 BDT
+Tax: 6,000 BDT"
+E-0029,BANK LOAN COLLATERAL,"Property: 10 Katha Land, Savar",,,Inflated valuation of collateral to secure larger loan.,"BANK LOAN COLLATERAL
+Property: 10 Katha Land, Savar
+Valuation Report: 10 Crore BDT
+Actual Market Value: 50 Lakh BDT"
+E-0030,GD ENTRY,Police Station: Dhanmondi,12-12-2023,,Convenient loss of critical evidence files.,"GD ENTRY
+Police Station: Dhanmondi
+Date: 12-12-2023
+Subject: Lost File
+""The file containing original tender documents for Project X is lost from the secure locker."""
+E-0031,SERVICE BOOK,Employee: Mr. B,,,Tampering with age to extend service period.,"SERVICE BOOK
+Employee: Mr. B
+Date of Birth: 01-01-1980 (Corrected from 01-01-1975)
+Note: Correction made with white fluid, no countersign."
+E-0032,FUEL SLIP,Station: XYZ Filling Station,,,"Crane runs on Diesel, slip shows Octane (petrol personal car usage).","FUEL SLIP
+Station: XYZ Filling Station
+Vehicle: Crane
+Fuel: Octane"
+E-0033,LIBRARY BOOK PURCHASE LIST,"1. ""Advanced Physics"" - 50 copies - Rate: 5000 BDT",,5000,Book price inflated by 10x.,"LIBRARY BOOK PURCHASE LIST
+1. ""Advanced Physics"" - 50 copies - Rate: 5000 BDT
+Actual Rate on Book Cover: 500 BDT"
+E-0034,SALARY SHEET (Master Roll),Name: Ghost Employee 1,,,Multiple employees having the same bank account number.,"SALARY SHEET (Master Roll)
+Name: Ghost Employee 1
+Account No: 123456
+Name: Ghost Employee 2
+Account No: 123456"
+E-0035,PROJECT SIGNBOARD PHOTO,"Cost of Signboard: 50,000 BDT",,50000,Excessive billing for trivial items.,"PROJECT SIGNBOARD PHOTO
+Cost of Signboard: 50,000 BDT
+Actual Cost estimate: 2,000 BDT"
+E-0036,LAB TEST REPORT (Roads),Sample: Bitumen,10-02-2024,,Quality control test done after work completion.,"LAB TEST REPORT (Roads)
+Sample: Bitumen
+Result: 80/100 Grade (Pass)
+Date of Test: 15-02-2024
+Work Completion Date: 10-02-2024"
+E-0037,FOOD GRAIN DISTRIBUTION LIST,Beneficiary: Rahim (NID 111),,,Same NID number used for multiple beneficiaries.,"FOOD GRAIN DISTRIBUTION LIST
+Beneficiary: Rahim (NID 111)
+Beneficiary: Karim (NID 111)
+Beneficiary: Sadek (NID 111)"
+E-0038,MEETING MINUTES,"""Decided to award contract to M/S Z directly due to urgency.""",10-10-2023,,Misuse of 'Urgency' clause to bypass competitive tendering.,"MEETING MINUTES
+Project Implementation Committee
+Date: 10-10-2023
+""Decided to award contract to M/S Z directly due to urgency.""
+Urgency Reason: ""Minister is visiting next month."""
+E-0039,EQUIPMENT USAGE LOG,X-Ray Machine,01-11-2023,,Machine sabotaged to refer patients to private business.,"EQUIPMENT USAGE LOG
+X-Ray Machine
+Date: 01-11-2023
+Status: ""Out of Order""
+Private Clinic Receipt (Same Date)
+Referred by: Dr. (Govt Hospital)
+Test: X-Ray"
+E-0040,TELEPHONE BILL,Office Landline,,50000,Personal international calls on office expense.,"TELEPHONE BILL
+Office Landline
+Amount: 50,000 BDT
+Call Log: International calls to Canada (Personal)."
+E-0041,SECURITY DEPOSIT RELEASE,Contractor: M/S Fail Construction,,,Releasing security money before work completion.,"SECURITY DEPOSIT RELEASE
+Contractor: M/S Fail Construction
+Status: Work Incomplete
+Action: Security Deposit Released"
+E-0042,OVERTIME SHEET,Employee: Driver,,,Physically impossible overtime hours claimed.,"OVERTIME SHEET
+Employee: Driver
+Hours: 20 hours/day for 30 days"
+E-0043,ASSET DECLARATION,Officer: Mr. C,,,Abnormal wealth accumulation with dubious source.,"ASSET DECLARATION
+Officer: Mr. C
+Year 2022: Wealth 50 Lakh
+Year 2023: Wealth 5 Crore
+Source: ""Gift from mother-in-law"""
+E-0044,INSPECTION REPORT,School Building,,,Discrepancy between report and physical reality.,"INSPECTION REPORT
+School Building
+""Found 10 fans installed.""
+Physical Verification: Found 2 fans."
+E-0045,RECEIPT OF DOCUMENTS,"""Received 5 sealed tender bids.""",,,Accepting bids after closing time.,"RECEIPT OF DOCUMENTS
+""Received 5 sealed tender bids.""
+Time: 2:05 PM
+Closing Time: 2:00 PM"
+E-0046,BANK CHEQUE,"Pay to: ""Self""",,,Cash withdrawal from restricted development fund.,"BANK CHEQUE
+Pay to: ""Self""
+Signed by: School Headmaster
+Account: School Development Fund"
+E-0047,COMPUTER GENERATED ESTIMATE,"Total: 1,000,000",,,"Manipulation of tax calculation (7.5% of 1M is 75,000, not 7,500).","COMPUTER GENERATED ESTIMATE
+Total: 1,000,000
+VAT (7.5%): 7,500"
+E-0048,LETTER OF CREDIT (LC),Goods: Capital Machinery,,,Money laundering via over-invoicing/shipping junk.,"LETTER OF CREDIT (LC)
+Goods: Capital Machinery
+Inspection: ""Old and rusty machinery arrived.""
+Bill of Entry: New Machinery Declared."
+E-0049,NOTE SHEET,"""File put up for approval.""",,,Officer signing files while officially on leave.,"NOTE SHEET
+""File put up for approval.""
+""Approved."" (Signed by officer on leave)"
+E-0050,CONTRACT AGREEMENT,"Clause 5: ""Warranty 1 year""",,,Unauthorized alteration of contract terms.,"CONTRACT AGREEMENT
+Clause 5: ""Warranty 1 year""
+Modified to: ""Warranty 1 month"" (Handwritten)"

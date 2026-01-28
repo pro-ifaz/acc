@@ -1,0 +1,302 @@
+complaint_id,date,division,district,channel,sector,accused_type,amount,complaint_text,risk_label C-1001,2023-10-15,Dhaka,Gazipur,Hotline 106,Land,Land Officer,50000,"Sir, the AC Land office in Gazipur Sadar is demanding 50,000 BDT for a simple mutation (namjari). Officer said 'mishti khaoar taka lagen'.",Medium C-1002,2023-10-16,Chattogram,Cumilla,Written Application,Tender/Procurement,Engineer,1200000,"LGED Executive Engineer passed a bill for road carpeting but no work was done in Ward 4. The contractor is his relative.",High C-1003,2023-10-16,Rajshahi,Naogaon,Online Form,Recruitment,Teacher,800000,"Headmaster of local high school took 8 lakh taka for the post of peon but gave the job to someone else. Taka ferot dicche na.",Medium C-1004,2023-10-17,Khulna,Jashore,Hotline 106,Police,Inspector,20000,"Traffic inspector seized my truck legally but demanded 20k to release it without a case. I have audio recording.",Medium C-1005,2023-10-17,Sylhet,Sylhet,Email,Health,Doctor,5000,"Government hospital doctor refusing to see patients without visiting his private chamber first. Very poor service.",Low C-1006,2023-10-18,Barishal,Bhola,Written Application,Municipality,Union Chairman,3500000,"Chairman embezzled VGF rice allocation meant for fishermen. He is selling the rice in the open market.",High C-1007,2023-10-19,Rangpur,Dinajpur,Hotline 106,Land,Sub-Registrar,150000,"Sub-registrar office is a den of dalals. Without paying extra 1.5 lakh, they don't register land deeds.",High C-1008,2023-10-20,Mymensingh,Jamalpur,Online Form,Education,Clerk,2000,"Education office clerk asking for speed money to process pension file.",Low C-1009,2023-10-21,Dhaka,Narayanganj,Written Application,Banking,Bank Officer,50000000,"Manager of Sonali Bank branch approved a loan of 5 crore against fake land documents. The land doesn't exist.",High C-1010,2023-10-22,Chattogram,Feni,Hotline 106,Tender/Procurement,Contractor,2500000,"Contractor used very low quality bricks for the school building construction. Plaster is falling off within 2 months.",Medium C-1011,2023-10-23,Khulna,Kushtia,Email,Land,Land Officer,10000,"Tehsildar asking for extra money for khajna receipt.",Low C-1012,2023-10-24,Rajshahi,Bogura,Written Application,Health,Accounts Officer,500000,"Hospital accounts officer takes commission from medicine suppliers to pass their bills.",Medium C-1013,2023-10-25,Sylhet,Habiganj,Hotline 106,Police,OC,100000,"OC demanded 1 lakh taka to record a GD regarding a land dispute.",Medium C-1014,2023-10-26,Dhaka,Tangail,Online Form,Recruitment,Union Chairman,300000,"Chairman took money for providing birth registration certificates to Rohingyas.",High C-1015,2023-10-27,Barishal,Pirojpur,Written Application,Municipality,Engineer,4500000,"Municipality engineer showed fake expenses for drainage cleaning before monsoon. No cleaning happened.",High C-1016,2023-10-28,Rangpur,Rangpur,Hotline 106,Education,Headmaster,50000,"Headmaster selling free textbooks provided by the government to local scrap shops.",Medium C-1017,2023-10-29,Mymensingh,Netrokona,Email,Land,Surveyor,25000,"Surveyor intentionally measured my land wrong to favor the neighbor who paid him bribe.",Medium C-1018,2023-10-30,Chattogram,Cox's Bazar,Written Application,Land,Land Officer,5000000,"AC Land illegally leased government khas land to a resort owner in exchange for a flat in Dhaka.",High C-1019,2023-10-31,Dhaka,Dhaka,Hotline 106,Tender/Procurement,Project Director,20000000,"Project Director of Mega Project purchased laptops at 1.5 lakh each where market price is 60k.",High C-1020,2023-11-01,Khulna,Satkhira,Online Form,Banking,Loan Officer,20000,"Loan officer asking for 2% cut to process SME loan for my farm.",Low C-1021,2023-11-02,Rajshahi,Pabna,Written Application,Recruitment,Civil Surgeon,1500000,"Civil surgeon office took huge bribes for the recruitment of health assistants. List was pre-made.",High C-1022,2023-11-03,Sylhet,Sunamganj,Hotline 106,Municipality,Mayor,10000000,"Mayor allocated tender to his own brother's company. Work quality is terrible.",High C-1023,2023-11-04,Barishal,Patuakhali,Email,Police,Sub-Inspector,5000,"SI asking for chai-pani khoroch to verify passport address.",Low C-1024,2023-11-05,Rangpur,Gaibandha,Written Application,Land,Clerk,8000,"Record room clerk hides files and demands money to find them.",Low C-1025,2023-11-06,Dhaka,Faridpur,Hotline 106,Health,Nurse,500,"Nurses in Govt hospital asking for tips to give medicine to patients.",Low C-1026,2023-11-07,Chattogram,Brahmanbaria,Online Form,Tender/Procurement,Engineer,600000,"Sub-Assistant Engineer signed the completion certificate for a bridge but the railing is missing.",Medium C-1027,2023-11-08,Mymensingh,Sherpur,Written Application,Recruitment,Principal,1200000,"College principal took 12 lakh for lecturer post. Appointment letter was fake.",High C-1028,2023-11-09,Khulna,Bagerhat,Hotline 106,Land,Land Officer,30000,"Demand for extra money during hearing of a mutation case.",Low C-1029,2023-11-10,Rajshahi,Sirajganj,Email,Municipality,Tax Collector,5000,"Tax collector didn't give receipt after taking trade license fee.",Low C-1030,2023-11-11,Sylhet,Moulvibazar,Written Application,Land,Sub-Registrar,200000,"Sub-registrar undervalued the land price in the deed to evade tax and took the difference in cash.",High C-1031,2023-11-12,Dhaka,Manikganj,Hotline 106,Tender/Procurement,Contractor,800000,"Road repair work stopped halfway. Contractor says fund finished but bill was fully paid.",Medium C-1032,2023-11-13,Barishal,Jhalokati,Online Form,Police,Constable,1000,"Highway police taking money from every auto-rickshaw.",Low C-1033,2023-11-14,Rangpur,Kurigram,Written Application,Education,Teacher,200000,"Primary school teacher not coming to school for 6 months, hiring a proxy teacher. EO knows but takes money.",Medium C-1034,2023-11-15,Chattogram,Chandpur,Hotline 106,Banking,Manager,1000000,"Bank Manager sanctioned loan to a defaulter company by changing the CIB report.",High C-1035,2023-11-16,Mymensingh,Mymensingh,Email,Land,AC Land,50000,"AC Land delaying file signature for 3 months just to get a bribe.",Medium C-1036,2023-11-17,Dhaka,Narsingdi,Written Application,Tender/Procurement,Supplier,3000000,"Supplier provided refurbished computers instead of new ones to the training center.",High C-1037,2023-11-18,Khulna,Meherpur,Hotline 106,Health,Store Keeper,200000,"Medicine store keeper selling govt insulin to outside pharmacies.",Medium C-1038,2023-11-19,Rajshahi,Natore,Online Form,Land,Land Officer,15000,"Asked for money to correct a spelling mistake in the khatian.",Low C-1039,2023-11-20,Sylhet,Sylhet,Written Application,Police,Inspector,50000,"Detective Branch officer threatened to put yaba in my pocket if I don't pay.",High C-1040,2023-11-21,Barishal,Barguna,Hotline 106,Municipality,Councilor,700000,"Councilor took money for allocating shops in the new market but gave no allotment.",Medium C-1041,2023-11-22,Rangpur,Lalmonirhat,Email,Recruitment,Office Peon,100000,"Peon promised to get me a job in the DC office and took 1 lakh.",Low C-1042,2023-11-23,Dhaka,Kishoreganj,Written Application,Land,Broker,40000,"Dalal claiming he is the brother of AC Land and demanding money for file processing.",Low C-1043,2023-11-24,Chattogram,Lakshmipur,Hotline 106,Tender/Procurement,Executive Engineer,5000000,"Executive Engineer gave 5 tenders to the same company owned by his wife's brother.",High C-1044,2023-11-25,Mymensingh,Jamalpur,Online Form,Education,Headmaster,30000,"Headmaster taking admission fee without giving receipt.",Low C-1045,2023-11-26,Khulna,Chuadanga,Written Application,Banking,Cashier,5000,"Cashier creates artificial delay if tips are not given during withdrawal.",Low C-1046,2023-11-27,Rajshahi,Chapainawabganj,Hotline 106,Land,Tehsildar,60000,"Tehsildar threatens to auction my land if I don't pay him bribe.",Medium C-1047,2023-11-28,Sylhet,Habiganj,Email,Municipality,Engineer,200000,"Street lights installed are of very cheap quality, stopped working in 1 week.",Medium C-1048,2023-11-29,Barishal,Bhola,Written Application,Tender/Procurement,Contractor,1500000,"Contractor used sand instead of cement in the deep tube well platform construction.",Medium C-1049,2023-11-30,Rangpur,Panchagarh,Hotline 106,Police,OC,200000,"OC took money to release a drug dealer.",High C-1050,2023-12-01,Dhaka,Munshiganj,Online Form,Recruitment,DG,5000000,"DG of the department took massive bribes for 3rd class employee recruitment.",High C-1051,2023-12-02,Chattogram,Rangamati,Written Application,Land,Headman,50000,"Headman asking for money to issue recommendation for land title.",Medium C-1052,2023-12-03,Khulna,Magura,Hotline 106,Health,Ward Boy,500,"Ward boy demands money to take patient to the operation theatre.",Low C-1053,2023-12-04,Rajshahi,Joypurhat,Email,Banking,Officer,1000000,"Bank officer sanctioned agricultural loan to fake farmers.",High C-1054,2023-12-05,Sylhet,Sunamganj,Written Application,Tender/Procurement,Upazila Chairman,2500000,"Upazila Chairman manipulated the tender process for the community center.",High C-1055,2023-12-06,Dhaka,Gopalganj,Hotline 106,Land,Sub-Registrar,80000,"Refusing to register Heba Dalil without bribe.",Medium C-1056,2023-12-07,Mymensingh,Sherpur,Online Form,Education,Upazila Education Officer,100000,"Officer demands monthly commission from schools for slip grant approval.",Medium C-1057,2023-12-08,Barishal,Pirojpur,Written Application,Police,SI,15000,"SI asking for money to submit final report in a false case.",Medium C-1058,2023-12-09,Rangpur,Thakurgaon,Hotline 106,Municipality,Sanitary Inspector,5000,"Inspector taking money from hotels to ignore unhygienic food.",Low C-1059,2023-12-10,Chattogram,Khagrachari,Email,Land,Surveyor,20000,"Surveyor asking for travel allowance 20k to come for field visit.",Low C-1060,2023-12-11,Dhaka,Madaripur,Written Application,Tender/Procurement,Contractor,4000000,"Embankment protection work was billed but no geo-bags were placed.",High C-1061,2023-12-12,Khulna,Narail,Hotline 106,Recruitment,Member,200000,"Union member took money promising a job in Ansar VDP.",Medium C-1062,2023-12-13,Rajshahi,Naogaon,Online Form,Banking,Manager,300000,"Manager asking for 5% bribe to release the stimulus package fund.",High C-1063,2023-12-14,Sylhet,Sylhet,Written Application,Health,Doctor,10000,"Government doctor performing surgery at private clinic during office hours.",Medium C-1064,2023-12-15,Barishal,Barishal,Hotline 106,Land,AC Land,100000,"AC Land office lost my file, now asking 1 lakh to reconstruct it.",Medium C-1065,2023-12-16,Rangpur,Nilphamari,Email,Police,Traffic Sergeant,2000,"Traffic sergeant taking bribes from trucks carrying stones.",Low C-1066,2023-12-17,Dhaka,Shariatpur,Written Application,Municipality,Mayor,5000000,"Mayor accumulated assets worth crores within 2 years of election. Please investigate.",High C-1067,2023-12-18,Chattogram,Bandarban,Hotline 106,Tender/Procurement,Project Officer,1200000,"Project officer for hill tract development embezzled funds meant for water supply.",High C-1068,2023-12-19,Mymensingh,Netrokona,Online Form,Land,Land Officer,35000,"Nayeb asking for money to update record of rights.",Medium C-1069,2023-12-20,Khulna,Jhenaidah,Written Application,Education,Teacher,50000,"Teacher taking money to help students cheat in board exams.",Medium C-1070,2023-12-21,Rajshahi,Rajshahi,Hotline 106,Recruitment,VC,2000000,"University VC appointing his relatives to section officer posts.",High C-1071,2023-12-22,Sylhet,Moulvibazar,Email,Banking,Officer,50000,"Officer delaying remittance payment to ask for bribe.",Low C-1072,2023-12-23,Dhaka,Gazipur,Written Application,Tender/Procurement,Engineer,1500000,"Waste management tender awarded to a blacklisted company.",High C-1073,2023-12-24,Barishal,Patuakhali,Hotline 106,Police,OC,50000,"OC refuses to register FIR for robbery case unless paid.",Medium C-1074,2023-12-25,Rangpur,Dinajpur,Online Form,Land,Muhuri,10000,"Deed writer (Muhuri) charging 3 times the government rate.",Low C-1075,2023-12-26,Chattogram,Chattogram,Written Application,Health,Director,10000000,"Hospital Director purchasing medical equipment at 10x price.",High C-1076,2023-12-27,Khulna,Khulna,Hotline 106,Municipality,Engineer,300000,"Building plan approval stuck for 6 months for bribe.",Medium C-1077,2023-12-28,Rajshahi,Bogura,Email,Land,Land Officer,25000,"Asking for money to issue mutation khatian.",Medium C-1078,2023-12-29,Mymensingh,Jamalpur,Written Application,Tender/Procurement,Contractor,900000,"Road carpeting peeling off by hand within 1 week of work.",Medium C-1079,2023-12-30,Dhaka,Dhaka,Hotline 106,Recruitment,Ministry Official,800000,"Official in Ministry asking for 8 lakh for office assistant job.",High C-1080,2024-01-01,Sylhet,Sylhet,Online Form,Police,SI,20000,"SI demanded money to not harass my family.",Medium C-1081,2024-01-02,Barishal,Bhola,Written Application,Land,Tehsildar,12000,"Tehsildar refuses to take land tax without extra tips.",Low C-1082,2024-01-03,Rangpur,Rangpur,Hotline 106,Banking,Manager,500000,"Manager asking for 10% commission on loan sanction.",High C-1083,2024-01-04,Chattogram,Cumilla,Email,Tender/Procurement,Engineer,2200000,"Bridge construction bill paid 100% but only 40% work done.",High C-1084,2024-01-05,Dhaka,Manikganj,Written Application,Education,Teacher,5000,"Teacher forces students to buy notes from him.",Low C-1085,2024-01-06,Khulna,Jashore,Hotline 106,Municipality,Chairman,150000,"Chairman took money for Tube-well but never installed it.",Medium C-1086,2024-01-07,Rajshahi,Pabna,Online Form,Land,Sub-Registrar,60000,"Sub-registrar office staff demanding 5000 per deed as 'office cost'.",Medium C-1087,2024-01-08,Mymensingh,Mymensingh,Written Application,Health,Technician,10000,"X-ray technician says machine is broken but does it if paid privately.",Low C-1088,2024-01-09,Dhaka,Narayanganj,Hotline 106,Recruitment,Factory Inspector,50000,"Inspector asking for bribe to ignore safety violations.",Medium C-1089,2024-01-10,Chattogram,Noakhali,Email,Police,Constable,2000,"Passport verification police asking for money.",Low C-1090,2024-01-11,Sylhet,Habiganj,Written Application,Tender/Procurement,Contractor,700000,"Contractor used bamboo instead of iron rods in the wall.",High C-1091,2024-01-12,Barishal,Barguna,Hotline 106,Land,Surveyor,15000,"Surveyor asking for lunch money 15000 taka.",Low C-1092,2024-01-13,Rangpur,Kurigram,Online Form,Municipality,Member,50000,"Member took money for VGD card.",Medium C-1093,2024-01-14,Khulna,Kushtia,Written Application,Banking,Officer,100000,"Officer asks for bribe to process pension pay order.",Medium C-1094,2024-01-15,Rajshahi,Sirajganj,Hotline 106,Education,Project Officer,4000000,"School building fund misappropriated by officer and contractor.",High C-1095,2024-01-16,Dhaka,Tangail,Email,Land,AC Land,30000,"AC Land hearing date keeps changing, clerk says pay to fix date.",Low C-1096,2024-01-17,Chattogram,Feni,Written Application,Police,OC,80000,"OC demanded bribe to release innocent boy arrested under Section 54.",Medium C-1097,2024-01-18,Mymensingh,Sherpur,Hotline 106,Recruitment,Chairman,250000,"Chairman taking money for job in Union Parishad.",Medium C-1098,2024-01-19,Barishal,Pirojpur,Online Form,Health,Doctor,20000,"Doctor prescribes medicines only available at specific pharmacy for commission.",Low C-1099,2024-01-20,Sylhet,Sunamganj,Written Application,Tender/Procurement,Engineer,1800000,"Culvert construction shows usage of high grade cement, actually used bulk expired cement.",High C-1100,2024-01-21,Dhaka,Dhaka,Hotline 106,Land,Record Keeper,50000,"Record keeper demanded 50k to provide certified copy of CS khatian.",Medium C-1101,2024-01-22,Chattogram,Cox's Bazar,Email,Municipality,Mayor,5000000,"Mayor's nephew getting all contracts for beach beautification.",High C-1102,2024-01-23,Khulna,Satkhira,Written Application,Banking,Field Officer,10000,"Field officer asking for bribe to disburse micro-credit loan.",Low C-1103,2024-01-24,Rajshahi,Natore,Hotline 106,Education,Headmaster,25000,"Headmaster collecting exam fees without receipt and pocketing it.",Low C-1104,2024-01-25,Rangpur,Gaibandha,Online Form,Land,Land Officer,40000,"Land officer asking for money to separate holding number.",Medium C-1105,2024-01-26,Barishal,Jhalokati,Written Application,Police,SI,15000,"SI demanded money to exclude name from charge sheet.",Medium C-1106,2024-01-27,Dhaka,Narsingdi,Hotline 106,Tender/Procurement,Contractor,600000,"Contractor left the drain work open for 6 months after taking bill.",Medium C-1107,2024-01-28,Mymensingh,Netrokona,Email,Recruitment,Official,100000,"Taken bribe for outputting false police verification report.",Medium C-1108,2024-01-29,Sylhet,Sylhet,Written Application,Health,Nurse,1000,"Nurse rude to patient, asks for money to change bed sheets.",Low C-1109,2024-01-30,Chattogram,Chandpur,Hotline 106,Land,Sub-Registrar,100000,"Sub-registrar office runs a syndicate. No work without paying the syndicate.",High C-1110,2024-01-31,Khulna,Bagerhat,Online Form,Municipality,Engineer,400000,"Engineer approved a risky building plan for money.",High C-1111,2024-02-01,Rajshahi,Chapainawabganj,Written Application,Banking,Manager,200000,"Manager asking for bribe to reschedule defaulted loan.",High C-1112,2024-02-02,Rangpur,Lalmonirhat,Hotline 106,Tender/Procurement,Official,800000,"Procurement of office furniture at 5 times market price.",Medium C-1113,2024-02-03,Dhaka,Gazipur,Email,Police,Sergeant,3000,"Traffic sergeant took money but didn't give case slip.",Low C-1114,2024-02-04,Barishal,Patuakhali,Written Application,Land,Land Officer,20000,"Asking for money to accept land development tax.",Low C-1115,2024-02-05,Chattogram,Brahmanbaria,Hotline 106,Education,Clerk,5000,"Clerk demands money to release scholarship money to students.",Low C-1116,2024-02-06,Mymensingh,Jamalpur,Online Form,Recruitment,Member,150000,"Member took money for giving government house to poor.",Medium C-1117,2024-02-07,Sylhet,Moulvibazar,Written Application,Health,Doctor,200000,"Doctor refers patients to specific diagnostic center for 40% commission.",Medium C-1118,2024-02-08,Dhaka,Dhaka,Hotline 106,Tender/Procurement,DG,10000000,"DG of Directorate bought software worth 20 lakh for 1 crore.",High C-1119,2024-02-09,Khulna,Magura,Email,Land,Broker,10000,"Broker harassing people in front of land office, officers are silent.",Low C-1120,2024-02-10,Rajshahi,Rajshahi,Written Application,Municipality,Tax Officer,20000,"Tax officer asking for bribe to reduce holding tax assessment.",Medium C-1121,2024-02-11,Rangpur,Dinajpur,Hotline 106,Banking,Cashier,2000,"Cashier deducts 100 taka from every old age allowance payment.",Low C-1122,2024-02-12,Chattogram,Chattogram,Online Form,Police,OC,100000,"OC taking monthly masohara from illegal casinos.",High C-1123,2024-02-13,Barishal,Bhola,Written Application,Tender/Procurement,Contractor,3000000,"Contractor abandoned the cyclone shelter project after taking mobilization money.",High C-1124,2024-02-14,Dhaka,Faridpur,Hotline 106,Land,AC Land,45000,"AC Land asks for AC to be installed in his room for passing the file.",Medium C-1125,2024-02-15,Sylhet,Habiganj,Email,Recruitment,Teacher,600000,"High school teacher recruitment exam paper was leaked by the headmaster.",High C-1126,2024-02-16,Khulna,Narail,Written Application,Education,Officer,50000,"Education officer embezzled fund for sports competition.",Medium C-1127,2024-02-17,Rajshahi,Joypurhat,Hotline 106,Health,Store Keeper,100000,"Hospital store keeper shows false consumption of reagents.",Medium C-1128,2024-02-18,Mymensingh,Mymensingh,Online Form,Municipality,Engineer,500000,"Engineer demands 2% of total estimated cost for technical sanction.",High C-1129,2024-02-19,Chattogram,Noakhali,Written Application,Land,Surveyor,25000,"Surveyor intentionally delaying field measurement.",Low C-1130,2024-02-20,Dhaka,Madaripur,Hotline 106,Police,SI,10000,"SI demanded money to verify passport.",Low C-1131,2024-02-21,Rangpur,Panchagarh,Email,Tender/Procurement,Contractor,400000,"Contractor used thin tin sheets for school roofing.",Medium C-1132,2024-02-22,Barishal,Pirojpur,Written Application,Banking,Officer,30000,"Bank officer asking for money to open LC.",Medium C-1133,2024-02-23,Khulna,Chuadanga,Hotline 106,Land,Land Officer,15000,"Land officer asking for bribe to issue rent receipt.",Low C-1134,2024-02-24,Sylhet,Sunamganj,Online Form,Recruitment,Chairman,100000,"Chairman taking money for distributing government blankets.",Medium C-1135,2024-02-25,Dhaka,Kishoreganj,Written Application,Municipality,Mayor,2000000,"Mayor spending municipality fund on personal car fuel and driver.",High C-1136,2024-02-26,Rajshahi,Naogaon,Hotline 106,Health,Doctor,5000,"Doctor charging for free government medicine.",Low C-1137,2024-02-27,Chattogram,Lakshmipur,Email,Tender/Procurement,Engineer,1200000,"Engineer certified false bills for canal re-excavation.",High C-1138,2024-02-28,Mymensingh,Sherpur,Written Application,Land,Sub-Registrar,90000,"Sub-registrar does not sit in office, works from home through broker.",Medium C-1139,2024-02-29,Rangpur,Thakurgaon,Hotline 106,Police,OC,50000,"OC taking bribe to settle village arbitration.",Medium C-1140,2024-03-01,Dhaka,Dhaka,Online Form,Education,VC,50000000,"VC involved in massive construction corruption of university halls.",High C-1141,2024-03-02,Barishal,Barishal,Written Application,Banking,Manager,200000,"Manager demands bribe to release mortgage deeds after loan repayment.",High C-1142,2024-03-03,Khulna,Kushtia,Hotline 106,Recruitment,Officer,80000,"Officer took money for transfer to desired location.",Medium C-1143,2024-03-04,Sylhet,Sylhet,Email,Land,AC Land,60000,"AC Land misbehaving and asking for money to sign miss case verdict.",Medium C-1144,2024-03-05,Chattogram,Cumilla,Written Application,Municipality,Contractor,500000,"Contractor piled garbage in residential area instead of dumping station.",Medium C-1145,2024-03-06,Rajshahi,Bogra,Hotline 106,Tender/Procurement,Executive Engineer,2500000,"Executive Engineer split one large tender into 20 small RFQs to favor one person.",High C-1146,2024-03-07,Dhaka,Munshiganj,Online Form,Police,SI,15000,"SI asking for money to return seized motorcycle.",Low C-1147,2024-03-08,Mymensingh,Netrokona,Written Application,Health,Civil Surgeon,100000,"Civil Surgeon taking money for licensing private clinics.",High C-1148,2024-03-09,Rangpur,Kurigram,Hotline 106,Land,Clerk,5000,"Clerk asking for baksheesh to move file to the next table.",Low C-1149,2024-03-10,Khulna,Jhenaidah,Email,Banking,Loan Officer,40000,"Loan officer asking for bribe to waive interest.",Medium C-1150,2024-03-11,Chattogram,Cox's Bazar,Written Application,Recruitment,Officer,500000,"Forest officer took money to recruit guards.",High tender_id,procuring_entity,supplier,method,estimated_value,contract_value,bidders_count,district,sector,award_date,fraud_flag T-2001,LGED,M/S Salam Enterprise,OTM,5000000,4800000,4,Dhaka,Road,2023-01-15,0 T-2002,PWD,Khan Builders,LTM,12000000,11950000,1,Chattogram,Building,2023-01-20,1 T-2003,WASA,Aqua Tech Solutions,Direct,500000,495000,1,Dhaka,Hospital Maintenance,2023-02-05,0 T-2004,Education Engineering,Rainbow Construction,OTM,25000000,24800000,3,Sylhet,School Repair,2023-02-12,0 T-2005,City Corporation,Green Delta Traders,RFQ,800000,1500000,1,Rajshahi,ICT Equipment,2023-02-18,1 T-2006,Health Engineering,MediCare Supplies,OTM,15000000,14900000,5,Khulna,Hospital Maintenance,2023-03-01,0 T-2007,LGED,M/S Salam Enterprise,LTM,6000000,5900000,1,Dhaka,Road,2023-03-10,1 T-2008,PWD,Build Well Ltd,OTM,50000000,45000000,6,Barishal,Building,2023-03-15,0 T-2009,WASA,Pure Water Corp,OTM,30000000,29990000,2,Dhaka,Bridge,2023-03-22,1 T-2010,Education Engineering,Khan Builders,RFQ,400000,395000,3,Chattogram,School Repair,2023-04-05,0 T-2011,City Corporation,Techno Bangla,OTM,2000000,1980000,4,Rangpur,ICT Equipment,2023-04-12,0 T-2012,LGED,M/S Salam Enterprise,Direct,1000000,990000,1,Dhaka,Road,2023-04-20,1 T-2013,Health Engineering,Surgical Mart,OTM,8000000,7800000,3,Mymensingh,Hospital Maintenance,2023-05-02,0 T-2014,PWD,Elite Constructors,LTM,20000000,19999000,1,Sylhet,Building,2023-05-10,1 T-2015,WASA,Aqua Tech Solutions,RFQ,600000,590000,2,Dhaka,Hospital Maintenance,2023-05-18,0 T-2016,Education Engineering,Rainbow Construction,OTM,35000000,34000000,5,Rajshahi,School Repair,2023-06-01,0 T-2017,City Corporation,City Traders,OTM,5000000,8500000,1,Khulna,Road,2023-06-15,1 T-2018,LGED,Rural Builders,OTM,15000000,14500000,4,Barishal,Bridge,2023-06-25,0 T-2019,PWD,Khan Builders,LTM,10000000,9950000,1,Chattogram,Building,2023-07-05,1 T-2020,Health Engineering,MediCare Supplies,OTM,25000000,24800000,3,Rangpur,Hospital Maintenance,2023-07-12,0 T-2021,WASA,Pipe Line Experts,OTM,40000000,39000000,6,Dhaka,Road,2023-07-20,0 T-2022,Education Engineering,Alpha Construction,RFQ,300000,290000,3,Mymensingh,School Repair,2023-08-01,0 T-2023,City Corporation,Green Delta Traders,Direct,200000,500000,1,Rajshahi,ICT Equipment,2023-08-10,1 T-2024,LGED,M/S Salam Enterprise,LTM,8000000,7950000,1,Dhaka,Road,2023-08-15,1 T-2025,PWD,Modern Structures,OTM,60000000,55000000,7,Sylhet,Building,2023-08-25,0 T-2026,Health Engineering,Surgical Mart,RFQ,700000,690000,2,Khulna,Hospital Maintenance,2023-09-05,0 T-2027,WASA,Pure Water Corp,LTM,25000000,24995000,1,Dhaka,Bridge,2023-09-12,1 T-2028,Education Engineering,Rainbow Construction,OTM,18000000,17500000,4,Barishal,School Repair,2023-09-20,0 T-2029,City Corporation,Techno Bangla,OTM,3000000,2950000,3,Chattogram,ICT Equipment,2023-10-01,0 T-2030,LGED,Rural Builders,Direct,1200000,1190000,1,Rangpur,Bridge,2023-10-10,0 T-2031,PWD,Elite Constructors,OTM,45000000,55000000,1,Dhaka,Building,2023-10-15,1 T-2032,Health Engineering,MediCare Supplies,LTM,12000000,11900000,1,Rajshahi,Hospital Maintenance,2023-10-25,1 T-2033,WASA,Pipe Line Experts,OTM,35000000,34500000,5,Sylhet,Road,2023-11-05,0 T-2034,Education Engineering,Khan Builders,RFQ,500000,490000,3,Mymensingh,School Repair,2023-11-12,0 T-2035,City Corporation,City Traders,OTM,7000000,6900000,4,Khulna,Road,2023-11-20,0 T-2036,LGED,M/S Salam Enterprise,OTM,9000000,8950000,2,Dhaka,Road,2023-12-01,1 T-2037,PWD,Build Well Ltd,LTM,30000000,29900000,1,Barishal,Building,2023-12-10,1 T-2038,Health Engineering,Surgical Mart,Direct,400000,395000,1,Rangpur,Hospital Maintenance,2023-12-15,0 T-2039,WASA,Aqua Tech Solutions,OTM,22000000,21500000,3,Chattogram,Hospital Maintenance,2023-12-25,0 T-2040,Education Engineering,Alpha Construction,LTM,15000000,14990000,1,Rajshahi,School Repair,2024-01-05,1 T-2041,City Corporation,Green Delta Traders,RFQ,900000,880000,2,Sylhet,ICT Equipment,2024-01-12,0 T-2042,LGED,Rural Builders,OTM,20000000,19500000,5,Mymensingh,Bridge,2024-01-20,0 T-2043,PWD,Modern Structures,OTM,70000000,68000000,6,Dhaka,Building,2024-01-28,0 T-2044,Health Engineering,MediCare Supplies,LTM,18000000,17990000,1,Khulna,Hospital Maintenance,2024-02-05,1 T-2045,WASA,Pure Water Corp,OTM,28000000,27800000,3,Barishal,Bridge,2024-02-12,0 T-2046,Education Engineering,Khan Builders,Direct,600000,1200000,1,Rangpur,School Repair,2024-02-20,1 T-2047,City Corporation,Techno Bangla,OTM,4000000,3950000,4,Chattogram,ICT Equipment,2024-03-01,0 T-2048,LGED,M/S Salam Enterprise,RFQ,300000,295000,3,Dhaka,Road,2024-03-10,0 T-2049,PWD,Elite Constructors,OTM,55000000,54000000,5,Rajshahi,Building,2024-03-15,0 T-2050,Health Engineering,Surgical Mart,LTM,10000000,9990000,1,Sylhet,Hospital Maintenance,2024-03-25,1 GOVERNMENT OF THE PEOPLE'S REPUBLIC OF BANGLADESH Local Government Engineering Department (LGED) District: Dhaka
+
+BILL NO: LGED/DK/2023/504 DATE: 12 Oct 2023
+
+PROJECT: Rural Road Maintenance (Road ID: 4502) CONTRACTOR: M/S Bhuiyan Constructions ENGINEER: Md. Rafiqul Islam
+
+DESCRIPTION OF WORK:
+
+    Earth filling: 5000 cft @ 45 BDT = 225,000 BDT
+
+    Brick Soling: 2000 sqft @ 80 BDT = 160,000 BDT
+
+    Bituminous Carpeting: 1500 sqft @ 120 BDT = 180,000 BDT
+
+TOTAL: 665,000 BDT (Overwritten as 865,000 BDT in hand) PASSED FOR PAYMENT: 865,000 BDT
+SIGNATURE: [Illegible Scrawl] RED FLAG: Total amount overwritten and does not match sum of items.
+
+INVOICE Vendor: Star Tech Solutions Date: 05/11/2023 To: Project Director, ICT Division Project
+
+Items:
+
+    Dell Laptops (Core i5) - Qty 10 - Unit Price: 150,000 BDT - Total: 1,500,000 BDT
+
+    HP Laser Printer - Qty 5 - Unit Price: 85,000 BDT - Total: 425,000 BDT
+
+    UPS 650VA - Qty 10 - Unit Price: 12,000 BDT - Total: 120,000 BDT
+
+Grand Total: 2,045,000 BDT
+RED FLAG: Unit prices are approx 2-3x higher than market rate (Laptop market rate 60k).
+
+PAYMENT VOUCHER Ministry of Health & Family Welfare Date: 22/09/2023 Voucher No: MH/DEV/299
+
+Pay to: Global Medico Ltd. Amount: 5,000,000 BDT (Five Crore Taka Only) Purpose: Supply of ICU Ventilators
+
+Note: Advance payment processed without delivery challan. Approval: Director General (Signed)
+RED FLAG: Amount in words 'Five Crore' does not match figure '5,000,000' (50 Lakh). Advance paid without delivery.
+
+WORK COMPLETION CERTIFICATE Department of Public Health Engineering (DPHE) District: Barishal
+
+Contract Name: Installation of 50 Deep Tube Wells Contractor: Hasan Traders Date of Completion: 30 Feb 2023
+
+This is to certify that the work has been completed satisfactorily.
+
+Signed: Executive Engineer
+RED FLAG: Date '30 Feb 2023' is an impossible date.
+
+SUPPLY CHALLAN Challan No: 0045 Date: 15-08-2023 (National Mourning Day Holiday) Received From: Master Builders
+
+Material:
+
+    Cement: 500 Bags
+
+    Sand: 1000 cft
+
+Received By: Store Keeper, PWD
+RED FLAG: Goods received on a national holiday when government offices and stores are typically closed.
+
+MUSTER ROLL (LABOR PAYMENT) Project: Canal Re-excavation, Noakhali Period: 01 Nov - 07 Nov 2023
+
+    Rahim Mia - Thumb Impression
+
+    Karim Ullah - Thumb Impression
+
+    Salam Sheikh - Thumb Impression
+
+    Jamal Uddin - Thumb Impression ... [List of 50 laborers]
+
+RED FLAG: All thumb impressions appear to be identical/duplicated (smudge patterns match perfectly).
+
+TENDER EVALUATION REPORT Procuring Entity: City Corporation Tender ID: 55021 Date: 10 Dec 2023
+
+Bidders:
+
+    M/S Alpha Construction - Price: 1.20 Crore
+
+    M/S Beta Builders - Price: 1.25 Crore
+
+    M/S Gamma Tech - Price: 1.15 Crore
+
+Evaluation: Gamma Tech disqualified for missing trade license. Beta Builders disqualified for typo. Recommended for Award: M/S Alpha Construction (Bid Price 1.20 Crore)
+RED FLAG: Lowest bidder (Gamma) disqualified on flimsy grounds to favor Alpha.
+
+PETTY CASH VOUCHER Date: 18-10-2023 Department: Land Record Office
+
+Description:
+
+    Refreshment for Guest: 15,000 BDT
+
+    Stationery: 5,000 BDT
+
+    Repair of Chair: 20,000 BDT
+
+Total: 40,000 BDT
+
+Approved By: AC Land
+RED FLAG: Exorbitant amount for 'Refreshment' and 'Chair Repair' via petty cash.
+
+INVOICE Vendor: National Furnitures Date: 01/12/2023 Invoice No: 1122
+
+Item: Decorative Wooden Chair Qty: 10 Rate: 50,000 BDT Total: 500,000 BDT
+
+Note: Same invoice number '1122' was submitted for a different claim in November 2023.
+RED FLAG: Duplicate invoice number submitted for payment.
+
+BANK STATEMENT EXTRACT Account: Project Fund Account, Sonali Bank Period: Dec 2023
+
+Date Particulars Debit Credit 10-12-23 Trf to Contractor 50,00,000 10-12-23 Cash Withdrawal 20,00,000 (Self) 12-12-23 Trf to Contractor 30,00,000
+RED FLAG: Large cash withdrawal (20 Lakh) from project fund account is highly suspicious.
+
+MEASUREMENT BOOK (MB) PAGE Project: School Boundary Wall Page No: 45
+
+Measurements: Length: 100 ft Height: 6 ft Width: 10 inch
+
+Calculation: 100 x 6 x 0.83 = 498 cft Previous Bill Quantity: 300 cft Since Previous Bill: 198 cft
+
+Signature of SAE: Signed Signature of XEN: Signed (Dated before SAE signature)
+RED FLAG: Executive Engineer signed/approved before the Sub-Assistant Engineer measured.
+
+QUOTATION SUMMARY Procurement of Office Supplies Method: RFQ
+
+    Supplier A: 99,500 BDT
+
+    Supplier B: 99,800 BDT
+
+    Supplier C: 99,900 BDT
+
+Winner: Supplier A
+RED FLAG: All quotes are suspiciously close to the 1 Lakh limit for RFQ and close to each other, indicating collusion.
+
+VEHICLE LOG BOOK Vehicle No: Dhaka Metro Gha-15-2233 Date: 05-01-2024
+
+Route: Dhaka to Chittagong and back. Distance Recorded: 600 KM Fuel Consumed: 200 Liters
+
+Calculated Mileage: 3 km/liter Standard Mileage: 8-10 km/liter
+RED FLAG: Excessive fuel consumption recorded (fuel theft).
+
+APPOINTMENT LETTER Ref: REC/2023/501 Date: 25 Dec 2023 (Christmas Day)
+
+To: Mr. X Position: Office Assistant
+
+You are hereby appointed...
+RED FLAG: Official letter issued on a public holiday (Christmas).
+
+CHECK COUNTERFOIL Check No: 455011 Date: 12/11/2023 Payee: [Blank] Amount: 1,500,000 BDT
+
+Note: "For office expenses"
+RED FLAG: Bearer check of large amount with blank payee or vague purpose.
+
+STOCK REGISTER Item: Bleaching Powder Date In Out Balance 01-01-24 100kg - 100kg 05-01-24 - 200kg -100kg
+RED FLAG: Stock balance shows negative quantity (impossible).
+
+TRAINING ATTENDANCE SHEET Project: Skill Development Date: 15 Oct 2023
+
+Name Signature
+
+    Abdur Rahman [Signed]
+
+    Kamal Hossain [Signed]
+
+    ...
+
+    ...
+
+Note: All signatures appear to be in the same handwriting/ink.
+RED FLAG: Fake attendance sheet created to claim training allowance.
+
+REPAIR ESTIMATE Vehicle: Toyota Prado Component: Engine Overhaul Estimated Cost: 1,200,000 BDT
+
+Note: Vehicle was purchased new 6 months ago.
+RED FLAG: Major engine overhaul claimed for a brand new vehicle.
+
+ELECTRICITY BILL (Office) Month: January 2024 Units Consumed: 50,000 Units Amount: 500,000 BDT
+
+Note: Office was closed for renovation during January.
+RED FLAG: High consumption during closed period.
+
+LEASE AGREEMENT Property: Govt Khas Land Plot 55 Lessee: Mrs. Y (Wife of UNO) Rent: 100 BDT / year Duration: 99 years
+RED FLAG: Conflict of interest (leased to officer's wife) and undervaluation.
+
+AUDIT OBJECTION REPLY Ref: Audit/2023/Obj-5 Date: 20-11-2023
+
+Subject: Missing Laptop
+
+Reply: "The laptop was eaten by termites."
+RED FLAG: Absurd explanation for missing asset.
+
+MONEY RECEIPT Received from: Mr. Client Amount: 50,000 BDT Purpose: "Speed Money"
+
+Signed: Office Peon
+RED FLAG: Explicit admission of bribe (highly rare, but evidence).
+
+COMPARATIVE STATEMENT (CS) Item: Generator 50KVA
+
+    Company X: 500,000 BDT
+
+    Company Y: 1,500,000 BDT
+
+    Company Z: 1,600,000 BDT
+
+Selection: Company Y (Reason: Company X machine specs not matching - minor deviation)
+RED FLAG: Lowest bidder rejected on minor technicality to award contract at 3x price.
+
+TRAVEL ALLOWANCE BILL Name: Project Director Route: Dhaka -> London -> Dhaka Purpose: Inspection of Bridge Construction Materials Date: 10-15 Oct 2023
+
+Note: Materials are locally sourced (Brick/Sand).
+RED FLAG: Foreign trip for inspection of locally available materials.
+
+HOSPITAL DIET BILL Date: 15-11-2023 Patients Admitted: 50 Diet Supplied: 200 packets (Lunch)
+RED FLAG: Diet supplied exceeds number of patients significantly.
+
+PROMOTION ORDER Name: Mr. A Post: Clerk to Section Officer Date: Backdated to 2020
+
+Note: Issued in 2023 but backdated to give arrears benefit.
+RED FLAG: Backdated promotion order to claim arrears illegally.
+
+CONSTABLE DEPLOYMENT ROSTER Location: VIP House Number of Constables: 20
+
+Note: VIP is not entitled to house guard.
+RED FLAG: Illegal deployment of force for personal service.
+
+TAX ASSESSMENT FORM Property: 5 Story Building, Gulshan Assessed Annual Value: 50,000 BDT Tax: 6,000 BDT
+RED FLAG: Gross undervaluation of prime property to evade tax.
+
+BANK LOAN COLLATERAL Property: 10 Katha Land, Savar Valuation Report: 10 Crore BDT Actual Market Value: 50 Lakh BDT
+RED FLAG: Inflated valuation of collateral to secure larger loan.
+
+GD ENTRY Police Station: Dhanmondi Date: 12-12-2023 Subject: Lost File
+
+"The file containing original tender documents for Project X is lost from the secure locker."
+RED FLAG: Convenient loss of critical evidence files.
+
+SERVICE BOOK Employee: Mr. B Date of Birth: 01-01-1980 (Corrected from 01-01-1975)
+
+Note: Correction made with white fluid, no countersign.
+RED FLAG: Tampering with age to extend service period.
+
+FUEL SLIP Station: XYZ Filling Station Vehicle: Crane Fuel: Octane
+RED FLAG: Crane runs on Diesel, slip shows Octane (petrol personal car usage).
+
+LIBRARY BOOK PURCHASE LIST
+
+    "Advanced Physics" - 50 copies - Rate: 5000 BDT Actual Rate on Book Cover: 500 BDT
+
+RED FLAG: Book price inflated by 10x.
+
+SALARY SHEET (Master Roll) Name: Ghost Employee 1 Account No: 123456 Name: Ghost Employee 2 Account No: 123456
+RED FLAG: Multiple employees having the same bank account number.
+
+PROJECT SIGNBOARD PHOTO Cost of Signboard: 50,000 BDT Actual Cost estimate: 2,000 BDT
+RED FLAG: Excessive billing for trivial items.
+
+LAB TEST REPORT (Roads) Sample: Bitumen Result: 80/100 Grade (Pass)
+
+Note: Lab report date is after the road construction date.
+RED FLAG: Quality control test done after work completion.
+
+FOOD GRAIN DISTRIBUTION LIST Beneficiary: Rahim (NID 111) Beneficiary: Karim (NID 111) Beneficiary: Sadek (NID 111)
+RED FLAG: Same NID used for multiple beneficiaries.
+
+MEETING MINUTES Project Implementation Committee Date: 10-10-2023
+
+"Decided to award contract to M/S Z directly due to urgency." Urgency Reason: "Minister is visiting next month."
+RED FLAG: Misuse of 'Urgency' clause to bypass competitive tendering.
+
+EQUIPMENT USAGE LOG X-Ray Machine Date: 01-11-2023 Status: "Out of Order"
+
+Private Clinic Receipt (Same Date) Referred by: Dr. (Govt Hospital) Test: X-Ray
+RED FLAG: Machine sabotaged to refer patients to private business.
+
+TELEPHONE BILL Office Landline Amount: 50,000 BDT Call Log: International calls to Canada (Personal).
+RED FLAG: Personal international calls on office expense.
+
+SECURITY DEPOSIT RELEASE Contractor: M/S Fail Construction Status: Work Incomplete Action: Security Deposit Released
+RED FLAG: Releasing security money before work completion/defect liability period.
+
+OVERTIME SHEET Employee: Driver Hours: 20 hours/day for 30 days
+RED FLAG: Physically impossible overtime hours claimed.
+
+ASSET DECLARATION Officer: Mr. C Year 2022: Wealth 50 Lakh Year 2023: Wealth 5 Crore Source: "Gift from mother-in-law"
+RED FLAG: Abnormal wealth accumulation with dubious source.
+
+INSPECTION REPORT School Building "Found 10 fans installed." Physical Verification: Found 2 fans.
+RED FLAG: Discrepancy between report and physical reality.
+
+RECEIPT OF DOCUMENTS "Received 5 sealed tender bids." Time: 2:05 PM Closing Time: 2:00 PM
+RED FLAG: Accepting bids after closing time.
+
+BANK CHEQUE Pay to: "Self" Signed by: School Headmaster Account: School Development Fund
+RED FLAG: Cash withdrawal from restricted development fund.
+
+COMPUTER GENERATED ESTIMATE Total: 1,000,000 VAT (7.5%): 7,500 (Calculated wrong, should be 75,000)
+RED FLAG: Manipulation of tax calculation.
+
+LETTER OF CREDIT (LC) Goods: Capital Machinery Inspection: "Old and rusty machinery arrived." Bill of Entry: New Machinery Declared.
+RED FLAG: Money laundering via over-invoicing/shipping junk.
+
+NOTE SHEET "File put up for approval." "Approved." (Signed by officer on leave)
+RED FLAG: Officer signing files while officially on leave.
+
+CONTRACT AGREEMENT Clause 5: "Warranty 1 year" Modified to: "Warranty 1 month" (Handwritten)
+
+RED FLAG: Unauthorized alteration of contract terms. [ { "rule_name": "Single_Bidder_Anomaly", "description": "Tender awarded to a single bidder in an Open Tendering Method (OTM) which requires competition.", "trigger": "method == 'OTM' AND bidders_count == 1", "severity": "High" }, { "rule_name": "Cost_Inflation_High", "description": "Contract value is significantly higher than the estimated official cost estimate.", "trigger": "contract_value > (estimated_value * 1.25)", "severity": "High" }, { "rule_name": "Cost_Undervaluation_Risk", "description": "Contract value is suspiciously low, indicating potential quality compromise or 'low-balling' to win.", "trigger": "contract_value < (estimated_value * 0.75)", "severity": "Medium" }, { "rule_name": "Repeated_Winner_Bias", "description": "The same supplier wins consecutive tenders from the same procuring entity.", "trigger": "supplier == prev_supplier AND procuring_entity == prev_entity", "severity": "High" }, { "rule_name": "Split_Tendering_RFQ", "description": "Large procurement split into small values to use RFQ method and bypass OTM.", "trigger": "method == 'RFQ' AND estimated_value > 500000 AND estimated_value < 1000000", "severity": "Medium" }, { "rule_name": "Holiday_Procurement", "description": "Tender opening or award date falls on a weekend or public holiday.", "trigger": "is_holiday(award_date) == True", "severity": "Medium" }, { "rule_name": "Emergency_Direct_Procurement", "description": "High value contract awarded via Direct method citing emergency without clear justification.", "trigger": "method == 'Direct' AND contract_value > 5000000", "severity": "High" }, { "rule_name": "Land_Mutation_Bribe_Signal", "description": "Complaint text contains keywords related to mutation and cash amounts.", "trigger": "contains(complaint_text, ['mutation', 'namjari', 'khajna']) AND amount > 0", "severity": "Medium" }, { "rule_name": "Ghost_Project_Indicator", "description": "Complaint alleging payment made but no work done.", "trigger": "contains(complaint_text, ['no work', 'bill paid', 'fake project'])", "severity": "High" }, { "rule_name": "Loan_Scam_High_Value", "description": "High value banking complaint regarding fake documents or collateral.", "trigger": "sector == 'Banking' AND amount > 10000000", "severity": "High" }, { "rule_name": "Recruitment_Bribery", "description": "Allegations of money exchange for job appointments.", "trigger": "sector == 'Recruitment' AND contains(complaint_text, ['job', 'appointment', 'bribe', 'taka'])", "severity": "High" }, { "rule_name": "Police_Extortion_Small", "description": "Pattern of small amounts demanded by police for GD/traffic clearance.", "trigger": "sector == 'Police' AND amount < 50000", "severity": "Medium" }, { "rule_name": "Health_Referral_Commission", "description": "Doctors referring patients to private clinics for commission.", "trigger": "sector == 'Health' AND contains(complaint_text, ['diagnostic', 'clinic', 'commission'])", "severity": "Medium" }, { "rule_name": "VGF_Embezzlement", "description": "Misappropriation of relief materials (VGF/VGD) by local representatives.", "trigger": "accused_type IN ['Chairman', 'Member'] AND contains(complaint_text, ['rice', 'wheat', 'relief'])", "severity": "High" }, { "rule_name": "Sub_Registrar_Undervaluation", "description": "Land deed undervaluation to evade tax and take bribes.", "trigger": "accused_type == 'Sub-Registrar' AND contains(complaint_text, ['deed', 'register', 'value'])", "severity": "High" }, { "rule_name": "Education_Fund_Misuse", "description": "Misuse of school development funds or exam fees.", "trigger": "sector == 'Education' AND accused_type == 'Headmaster'", "severity": "Medium" }, { "rule_name": "Duplicate_Invoice_Check", "description": "Same invoice number used for multiple payments.", "trigger": "is_duplicate(invoice_number) == True", "severity": "High" }, { "rule_name": "Round_Number_Bribe", "description": "Suspicious exact round amounts in personal accounts often indicate bribes.", "trigger": "amount % 100000 == 0 AND sector == 'Banking'", "severity": "Medium" }, { "rule_name": "Benami_Transaction", "description": "Assets or contracts awarded to relatives (Nepotism/Conflict of Interest).", "trigger": "contains(complaint_text, ['relative', 'brother', 'wife', 'nephew'])", "severity": "High" }, { "rule_name": "Fuel_Theft_Log", "description": "Mileage calculation in log book shows abnormal fuel consumption.", "trigger": "fuel_consumed / distance_traveled > standard_consumption_rate", "severity": "Low" } ]
