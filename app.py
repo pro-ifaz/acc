@@ -6,12 +6,14 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+# Sklearn Imports
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
+from sklearn.impute import SimpleImputer  # নতুন যোগ করা হয়েছে (NaN হ্যান্ডলিং এর জন্য)
 
 # --- কনফিগারেশন এবং বাংলা টাইটেল ---
 APP_TITLE = "দুদক (ACC) দুর্নীতি বিরোধী অ্যানালিটিক্স ডেমো"
@@ -25,7 +27,8 @@ def enrich_complaints(acc_df: pd.DataFrame) -> pd.DataFrame:
     if "complaint_id" not in df.columns:
         df["complaint_id"] = [f"C-{i+1:04d}" for i in range(len(df))]
 
-    df["amount"] = pd.to_numeric(df.get("amount", np.nan), errors="coerce")
+    # ফিক্স: মিসিং অ্যামাউন্ট ০ দিয়ে পূর্ণ করা হলো যাতে চার্টে সমস্যা না হয়
+    df["amount"] = pd.to_numeric(df.get("amount", np.nan), errors="coerce").fillna(0)
 
     if "date" in df.columns:
         df["date"] = pd.to_datetime(df["date"], errors="coerce")
@@ -35,7 +38,7 @@ def enrich_complaints(acc_df: pd.DataFrame) -> pd.DataFrame:
     text_series = df["complaint_text"].fillna("").astype(str)
 
     if "amount_log" not in df.columns:
-        df["amount_log"] = np.log1p(df["amount"].fillna(0).clip(lower=0))
+        df["amount_log"] = np.log1p(df["amount"].clip(lower=0))
 
     if "text_length" not in df.columns:
         df["text_length"] = text_series.str.len()
@@ -44,7 +47,7 @@ def enrich_complaints(acc_df: pd.DataFrame) -> pd.DataFrame:
         df["word_count"] = text_series.apply(lambda s: len(re.findall(r"\w+", s)))
 
     if "amount_band" not in df.columns:
-        amt = df["amount"].fillna(0).clip(lower=0)
+        amt = df["amount"].clip(lower=0)
         try:
             df["amount_band"] = pd.qcut(
                 amt,
@@ -138,6 +141,7 @@ def load_data():
             raise FileNotFoundError(f"Missing {label}: {p.name}. Keep it beside app.py.")
         return p
 
+    # ফাইলের নামগুলো আপনার ফোল্ডারের সাথে মিলিয়ে নিন
     acc_df = pd.read_csv(must_exist(root / "ACC_COMPLAINTS.csv", "complaints dataset"))
     proc_df = pd.read_csv(must_exist(root / "PROCUREMENT_FRAUD.csv", "procurement dataset"))
     rules = json.loads(_read_text(must_exist(root / "FRAUD_PATTERNS.json", "fraud rules json")))
@@ -156,8 +160,7 @@ def load_data():
     return enrich_complaints(acc_df), enrich_procurement(proc_df), enrich_evidence(ev_df), rules
 
 
-# FIX 1: এখান থেকে @st.cache_... ডেকোরেটর সম্পূর্ণ সরিয়ে দেওয়া হয়েছে।
-# এটি TypeError (pickling error) সমাধান করবে।
+# --- সংশোধিত ট্রেনিং ফাংশন (Imputer সহ) ---
 def train_risk_model(df: pd.DataFrame):
     feature_cols_cat = ["sector", "accused_type", "channel", "division", "amount_band"]
     feature_cols_num = ["amount", "amount_log", "text_length", "word_count"]
@@ -165,21 +168,33 @@ def train_risk_model(df: pd.DataFrame):
     X = df[feature_cols_cat + feature_cols_num]
     y = df["risk_label"].astype(str)
 
+    # নিউমেরিক ভ্যালুর জন্য Imputer পাইপলাইন (NaN ভ্যালু হ্যান্ডেল করার জন্য)
+    numeric_transformer = Pipeline(steps=[
+        ('imputer', SimpleImputer(strategy='median'))
+    ])
+
     preprocessor = ColumnTransformer(
         transformers=[
             ("cat", OneHotEncoder(handle_unknown="ignore"), feature_cols_cat),
-            ("num", "passthrough", feature_cols_num),
+            ("num", numeric_transformer, feature_cols_num), # এখানে imputer ব্যবহার করা হলো
         ]
     )
 
+    # মূল পাইপলাইন (এখানে কমা ফিক্স করা হয়েছে)
     model = Pipeline(
         steps=[
-            ("preprocessor", preprocessor),
+            ("preprocessor", preprocessor),  # <--- কমা (comma) নিশ্চিত করা হলো
             ("clf", LogisticRegression(max_iter=2000, multi_class="auto", solver='lbfgs')),
         ]
     )
 
-    strat = y if y.nunique() > 1 else None
+    # Stratification হ্যান্ডলিং (যদি কোনো ক্লাসে খুব কম ডেটা থাকে)
+    strat = None
+    if y.nunique() > 1:
+        class_counts = y.value_counts()
+        if class_counts.min() > 1:
+            strat = y
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=strat
     )
@@ -403,8 +418,8 @@ def module_procurement(proc_df: pd.DataFrame):
     ir = proc_df["inflation_ratio"].replace([np.inf, -np.inf], np.nan).dropna()
     if len(ir):
         bins = pd.cut(ir.clip(upper=5), bins=[0, 0.8, 1.0, 1.1, 1.25, 1.5, 2.0, 5.0], include_lowest=True)
-        # FIX 2: Altair Schema Error সমাধান - ইনডেক্সকে জোরপূর্বক স্ট্রিং এ রূপান্তর
         counts = bins.value_counts().sort_index()
+        # ফিক্স: Altair এরর এড়াতে ইনডেক্স স্ট্রিং করা হলো
         counts.index = counts.index.astype(str)
         st.bar_chart(counts)
     else:
