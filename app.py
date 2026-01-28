@@ -18,7 +18,6 @@ APP_TITLE = "দুদক (ACC) দুর্নীতি বিরোধী অ�
 
 # --- বাংলা ম্যাপিং ডিকশনারি (চার্ট ও ডিসপ্লের জন্য) ---
 RISK_MAP = {"High": "উচ্চ", "Medium": "মাঝারি", "Low": "নিম্ন", "Very High": "খুব উচ্চ"}
-FRAUD_MAP = {0: "স্বাভাবিক", 1: "সন্দেহজনক"}
 
 def enrich_complaints(acc_df: pd.DataFrame) -> pd.DataFrame:
     df = acc_df.copy()
@@ -157,11 +156,9 @@ def load_data():
     return enrich_complaints(acc_df), enrich_procurement(proc_df), enrich_evidence(ev_df), rules
 
 
-# FIX: cache_resource -> cache_data for better compatibility with dictionary returns and pickling
-@st.cache_data(show_spinner=False)
+# FIX 1: cache_resource ব্যবহার করা হচ্ছে কারণ এটি একটি মডেল (Resource), সাধারণ ডেটা নয়।
+@st.cache_resource(show_spinner=False)
 def train_risk_model(df: pd.DataFrame):
-    # নোট: এখানে পুনরায় enrich_complaints কল করা অপ্রয়োজনীয় কারণ load_data তে একবার করা হয়েছে।
-    
     feature_cols_cat = ["sector", "accused_type", "channel", "division", "amount_band"]
     feature_cols_num = ["amount", "amount_log", "text_length", "word_count"]
 
@@ -175,7 +172,6 @@ def train_risk_model(df: pd.DataFrame):
         ]
     )
 
-    # FIX: Explicit solver to avoid version conflicts, though default is usually fine
     model = Pipeline(
         steps=[
             ("preprocessor", preprocessor),
@@ -310,7 +306,6 @@ def module_complaints(acc_df: pd.DataFrame):
     ]
     show_cols = [c for c in show_cols if c in filtered.columns]
     
-    # ডিসপ্লের জন্য বাংলা কলাম নাম
     display_df = filtered[show_cols].copy()
     if "date" in display_df.columns:
         display_df = display_df.sort_values("date", ascending=False)
@@ -361,7 +356,6 @@ def module_complaints(acc_df: pd.DataFrame):
     pred = model.predict(X_one)[0]
     proba = model.predict_proba(X_one)[0]
     
-    # প্রোবাবিলিটি টেবিল
     proba_tbl = pd.DataFrame({
         "লেভেল": [RISK_MAP.get(c, c) for c in model.classes_], 
         "সম্ভাবনা": [f"{x*100:.1f}%" for x in proba]
@@ -409,7 +403,10 @@ def module_procurement(proc_df: pd.DataFrame):
     ir = proc_df["inflation_ratio"].replace([np.inf, -np.inf], np.nan).dropna()
     if len(ir):
         bins = pd.cut(ir.clip(upper=5), bins=[0, 0.8, 1.0, 1.1, 1.25, 1.5, 2.0, 5.0], include_lowest=True)
-        st.bar_chart(bins.value_counts().sort_index())
+        # FIX 2: Altair Schema Error সমাধান - ইনডেক্সকে স্ট্রিং এ রূপান্তর
+        counts = bins.value_counts().sort_index()
+        counts.index = counts.index.astype(str)
+        st.bar_chart(counts)
     else:
         st.info("মূল্যস্ফীতির অনুপাত পাওয়া যায়নি।")
 
