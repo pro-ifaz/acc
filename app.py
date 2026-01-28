@@ -13,9 +13,12 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 
+# --- কনফিগারেশন এবং বাংলা টাইটেল ---
+APP_TITLE = "দুদক (ACC) দুর্নীতি বিরোধী অ্যানালিটিক্স ডেমো"
 
-APP_TITLE = "ACC Anti Corruption Analytics Demo"
-
+# --- বাংলা ম্যাপিং ডিকশনারি (চার্ট ও ডিসপ্লের জন্য) ---
+RISK_MAP = {"High": "উচ্চ", "Medium": "মাঝারি", "Low": "নিম্ন", "Very High": "খুব উচ্চ"}
+FRAUD_MAP = {0: "স্বাভাবিক", 1: "সন্দেহজনক"}
 
 def enrich_complaints(acc_df: pd.DataFrame) -> pd.DataFrame:
     df = acc_df.copy()
@@ -154,10 +157,11 @@ def load_data():
     return enrich_complaints(acc_df), enrich_procurement(proc_df), enrich_evidence(ev_df), rules
 
 
-@st.cache_resource(show_spinner=False)
-def train_risk_model(acc_df: pd.DataFrame):
-    df = enrich_complaints(acc_df)
-
+# FIX: cache_resource -> cache_data for better compatibility with dictionary returns and pickling
+@st.cache_data(show_spinner=False)
+def train_risk_model(df: pd.DataFrame):
+    # নোট: এখানে পুনরায় enrich_complaints কল করা অপ্রয়োজনীয় কারণ load_data তে একবার করা হয়েছে।
+    
     feature_cols_cat = ["sector", "accused_type", "channel", "division", "amount_band"]
     feature_cols_num = ["amount", "amount_log", "text_length", "word_count"]
 
@@ -171,10 +175,11 @@ def train_risk_model(acc_df: pd.DataFrame):
         ]
     )
 
+    # FIX: Explicit solver to avoid version conflicts, though default is usually fine
     model = Pipeline(
         steps=[
             ("preprocessor", preprocessor),
-            ("clf", LogisticRegression(max_iter=2000, multi_class="auto")),
+            ("clf", LogisticRegression(max_iter=2000, multi_class="auto", solver='lbfgs')),
         ]
     )
 
@@ -194,7 +199,7 @@ def df_value_counts(series: pd.Series, limit=12) -> pd.Series:
     vc = series.dropna().astype(str).value_counts()
     if limit and len(vc) > limit:
         top = vc.head(limit).copy()
-        top.loc["Other"] = int(vc.iloc[limit:].sum())
+        top.loc["অন্যান্য (Other)"] = int(vc.iloc[limit:].sum())
         return top
     return vc
 
@@ -203,6 +208,10 @@ def inject_css():
     st.markdown(
         """
         <style>
+          @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap');
+          html, body, [class*="css"] {
+            font-family: 'Hind Siliguri', sans-serif;
+          }
           @media (max-width: 640px) {
             .block-container { padding-left: 0.9rem !important; padding-right: 0.9rem !important; }
             h1 { font-size: 2.0rem !important; }
@@ -228,31 +237,33 @@ def footer():
 
 
 def debug_expander(name: str, df: pd.DataFrame):
-    with st.expander(f"Debug: {name} columns + sample", expanded=False):
-        st.write("Columns:", list(df.columns))
+    with st.expander(f"ডিবাগ: {name} কলাম + স্যাম্পল", expanded=False):
+        st.write("কলামসমূহ:", list(df.columns))
         st.dataframe(df.head(10), use_container_width=True)
 
 
 def module_complaints(acc_df: pd.DataFrame):
-    st.header("Complaint Intelligence")
+    st.header("অভিযোগ ইন্টেলিজেন্স (Complaint Intelligence)")
 
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total complaints", len(acc_df))
-    c2.metric("High risk", int((acc_df["risk_label"] == "High").sum()))
-    c3.metric("Medium risk", int((acc_df["risk_label"] == "Medium").sum()))
-    c4.metric("Low risk", int((acc_df["risk_label"] == "Low").sum()))
+    c1.metric("মোট অভিযোগ", len(acc_df))
+    c2.metric("উচ্চ ঝুঁকি (High)", int((acc_df["risk_label"] == "High").sum()))
+    c3.metric("মাঝারি ঝুঁকি (Medium)", int((acc_df["risk_label"] == "Medium").sum()))
+    c4.metric("নিম্ন ঝুঁকি (Low)", int((acc_df["risk_label"] == "Low").sum()))
 
     st.divider()
 
     left, right = st.columns(2)
     with left:
-        st.subheader("Risk distribution")
-        st.bar_chart(df_value_counts(acc_df["risk_label"], limit=None))
+        st.subheader("ঝুঁকির বণ্টন")
+        risk_counts = df_value_counts(acc_df["risk_label"], limit=None)
+        risk_counts.index = risk_counts.index.map(lambda x: RISK_MAP.get(x, x))
+        st.bar_chart(risk_counts)
     with right:
-        st.subheader("Amount bands")
+        st.subheader("টাকার পরিমাণ (ব্যান্ড)")
         st.bar_chart(df_value_counts(acc_df["amount_band"], limit=None))
 
-    st.subheader("Complaints over time")
+    st.subheader("সময়ের সাথে অভিযোগের ধারা")
     if acc_df["date"].notna().any():
         ts = (
             acc_df.dropna(subset=["date"])
@@ -262,49 +273,54 @@ def module_complaints(acc_df: pd.DataFrame):
         )
         st.line_chart(ts)
     else:
-        st.info("No valid 'date' values available for time series chart.")
+        st.info("চার্টের জন্য পর্যাপ্ত তারিখের তথ্য পাওয়া যায়নি।")
 
     st.divider()
 
-    st.subheader("Filters")
+    st.subheader("ফিল্টার অপশন")
     f1, f2, f3, f4 = st.columns(4)
     with f1:
-        division = st.selectbox("Division", ["All"] + sorted(acc_df["division"].unique().tolist()))
+        division = st.selectbox("বিভাগ", ["সব (All)"] + sorted(acc_df["division"].unique().tolist()))
     with f2:
-        sector = st.selectbox("Sector", ["All"] + sorted(acc_df["sector"].unique().tolist()))
+        sector = st.selectbox("খাত (Sector)", ["সব (All)"] + sorted(acc_df["sector"].unique().tolist()))
     with f3:
-        channel = st.selectbox("Channel", ["All"] + sorted(acc_df["channel"].unique().tolist()))
+        channel = st.selectbox("মাধ্যম (Channel)", ["সব (All)"] + sorted(acc_df["channel"].unique().tolist()))
     with f4:
-        amount_band = st.selectbox("Amount band", ["All"] + sorted(acc_df["amount_band"].unique().tolist()))
+        amount_band = st.selectbox("টাকার ব্যান্ড", ["সব (All)"] + sorted(acc_df["amount_band"].unique().tolist()))
 
     filtered = acc_df.copy()
-    if division != "All":
+    if division != "সব (All)":
         filtered = filtered[filtered["division"] == division]
-    if sector != "All":
+    if sector != "সব (All)":
         filtered = filtered[filtered["sector"] == sector]
-    if channel != "All":
+    if channel != "সব (All)":
         filtered = filtered[filtered["channel"] == channel]
-    if amount_band != "All":
+    if amount_band != "সব (All)":
         filtered = filtered[filtered["amount_band"] == amount_band]
 
-    st.caption(f"Showing {len(filtered)} complaints after filters.")
+    st.caption(f"ফিল্টার করার পর {len(filtered)} টি অভিযোগ পাওয়া গেছে।")
 
-    st.subheader("Top sectors (filtered)")
+    st.subheader("শীর্ষ খাতসমূহ (ফিল্টার করা)")
     st.bar_chart(df_value_counts(filtered["sector"], limit=12))
 
-    st.subheader("Filtered table")
+    st.subheader("ফিল্টার করা তালিকা")
     show_cols = [
         "complaint_id","date","division","district","channel","sector","accused_type",
-        "amount","amount_band","risk_label","complaint_text"
+        "amount","risk_label","complaint_text"
     ]
     show_cols = [c for c in show_cols if c in filtered.columns]
-    filtered = filtered.sort_values("date", ascending=False) if "date" in filtered.columns else filtered
-    st.dataframe(filtered[show_cols], use_container_width=True, height=340)
+    
+    # ডিসপ্লের জন্য বাংলা কলাম নাম
+    display_df = filtered[show_cols].copy()
+    if "date" in display_df.columns:
+        display_df = display_df.sort_values("date", ascending=False)
+        
+    st.dataframe(display_df, use_container_width=True, height=340)
 
     st.divider()
 
-    st.subheader("Risk prediction model (baseline)")
-    with st.spinner("Training model..."):
+    st.subheader("ঝুঁকি পূর্বাভাস মডেল (AI Model)")
+    with st.spinner("মডেল ট্রেনিং হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন..."):
         model, report = train_risk_model(acc_df)
 
     rows = []
@@ -315,19 +331,19 @@ def module_complaints(acc_df: pd.DataFrame):
             continue
         rows.append(
             {
-                "label": label,
-                "precision": round(metrics.get("precision", 0), 2),
-                "recall": round(metrics.get("recall", 0), 2),
-                "f1": round(metrics.get("f1-score", 0), 2),
-                "support": int(metrics.get("support", 0)),
+                "ঝুঁকি লেভেল": RISK_MAP.get(label, label),
+                "প্রিসিশন (Precision)": round(metrics.get("precision", 0), 2),
+                "রিকল (Recall)": round(metrics.get("recall", 0), 2),
+                "এফ১ স্কোর (F1)": round(metrics.get("f1-score", 0), 2),
+                "সংখ্যা (Support)": int(metrics.get("support", 0)),
             }
         )
     if rows:
         st.dataframe(pd.DataFrame(rows), use_container_width=True, height=220)
 
-    st.subheader("Inspect one complaint + prediction")
+    st.subheader("একটি অভিযোগ যাচাই করুন")
     pick_pool = filtered if len(filtered) else acc_df
-    selected_id = st.selectbox("Select complaint_id", options=pick_pool["complaint_id"].astype(str).tolist())
+    selected_id = st.selectbox("অভিযোগ আইডি নির্বাচন করুন", options=pick_pool["complaint_id"].astype(str).tolist())
     row = acc_df[acc_df["complaint_id"].astype(str) == str(selected_id)].iloc[0]
 
     X_one = pd.DataFrame([{
@@ -344,82 +360,87 @@ def module_complaints(acc_df: pd.DataFrame):
 
     pred = model.predict(X_one)[0]
     proba = model.predict_proba(X_one)[0]
-    proba_tbl = pd.DataFrame({"label": list(model.classes_), "probability": [float(x) for x in proba]}).sort_values("probability", ascending=False)
+    
+    # প্রোবাবিলিটি টেবিল
+    proba_tbl = pd.DataFrame({
+        "লেভেল": [RISK_MAP.get(c, c) for c in model.classes_], 
+        "সম্ভাবনা": [f"{x*100:.1f}%" for x in proba]
+    })
 
-    st.write(f"True label: **{row['risk_label']}**")
-    st.write(f"Predicted: **{pred}**")
+    st.write(f"আসল লেভেল: **{RISK_MAP.get(row['risk_label'], row['risk_label'])}**")
+    st.write(f"মডেলের পূর্বাভাস: **{RISK_MAP.get(pred, pred)}**")
     st.dataframe(proba_tbl, use_container_width=True, height=160)
-    st.write("Complaint text:")
-    st.write(row.get("complaint_text", ""))
+    st.write("অভিযোগের বিবরণ:")
+    st.info(row.get("complaint_text", ""))
 
     debug_expander("ACC_COMPLAINTS", acc_df)
 
 
 def module_procurement(proc_df: pd.DataFrame):
-    st.header("Procurement Fraud Overview")
+    st.header("ক্রয় দুর্নীতি ওভারভিউ (Procurement Fraud)")
 
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total tenders", len(proc_df))
-    c2.metric("Flagged (fraud_flag=1)", int(proc_df["fraud_flag"].sum()))
-    c3.metric("Single bidder", int(proc_df["is_single_bidder"].sum()))
-    c4.metric("High inflation", int(proc_df["is_high_inflation"].sum()))
+    c1.metric("মোট টেন্ডার", len(proc_df))
+    c2.metric("চিহ্নিত ফ্রড", int(proc_df["fraud_flag"].sum()))
+    c3.metric("একক বিডার", int(proc_df["is_single_bidder"].sum()))
+    c4.metric("উচ্চ মূল্যস্ফীতি", int(proc_df["is_high_inflation"].sum()))
 
     st.divider()
 
     left, right = st.columns(2)
     with left:
-        st.subheader("Suspicious signals (count)")
+        st.subheader("সন্দেহজনক সংকেত (সংখ্যা)")
         signals = pd.Series({
-            "fraud_flag=1": int(proc_df["fraud_flag"].sum()),
-            "single bidder": int(proc_df["is_single_bidder"].sum()),
-            "high inflation": int(proc_df["is_high_inflation"].sum()),
-            "any rule hit": int((proc_df["rule_risk_score"] > 0).sum()),
+            "ফ্রড ফ্ল্যাগ (Flagged)": int(proc_df["fraud_flag"].sum()),
+            "একক বিডার (Single Bidder)": int(proc_df["is_single_bidder"].sum()),
+            "উচ্চ মূল্যস্ফীতি (High Inflation)": int(proc_df["is_high_inflation"].sum()),
+            "রুল ভায়োলেশন (Any Rule Hit)": int((proc_df["rule_risk_score"] > 0).sum()),
         })
         st.bar_chart(signals)
     with right:
-        st.subheader("Bidders count distribution")
+        st.subheader("বিডার সংখ্যার বণ্টন")
         st.bar_chart(df_value_counts(proc_df["bidders_count"], limit=None))
 
-    st.subheader("Top sectors by flagged count")
+    st.subheader("শীর্ষ খাত (ফ্রড ফ্ল্যাগ অনুযায়ী)")
     by_sector = proc_df.groupby("sector")["fraud_flag"].sum().sort_values(ascending=False).head(12)
     st.bar_chart(by_sector)
 
-    st.subheader("Inflation ratio buckets (contract / estimate)")
+    st.subheader("মূল্যস্ফীতির অনুপাত (চুক্তি / প্রাক্কলন)")
     ir = proc_df["inflation_ratio"].replace([np.inf, -np.inf], np.nan).dropna()
     if len(ir):
         bins = pd.cut(ir.clip(upper=5), bins=[0, 0.8, 1.0, 1.1, 1.25, 1.5, 2.0, 5.0], include_lowest=True)
         st.bar_chart(bins.value_counts().sort_index())
     else:
-        st.info("No inflation_ratio values available.")
+        st.info("মূল্যস্ফীতির অনুপাত পাওয়া যায়নি।")
 
     st.divider()
 
-    st.subheader("Filters")
+    st.subheader("ফিল্টার অপশন")
     f1, f2, f3 = st.columns(3)
     with f1:
-        entity = st.selectbox("Procuring entity", ["All"] + sorted(proc_df["procuring_entity"].unique().tolist()))
+        entity = st.selectbox("ক্রয়কারী প্রতিষ্ঠান", ["সব (All)"] + sorted(proc_df["procuring_entity"].unique().tolist()))
     with f2:
-        sector = st.selectbox("Sector", ["All"] + sorted(proc_df["sector"].unique().tolist()))
+        sector = st.selectbox("খাত", ["সব (All)"] + sorted(proc_df["sector"].unique().tolist()))
     with f3:
-        method = st.selectbox("Method", ["All"] + sorted(proc_df["method"].unique().tolist()))
-    only_suspicious = st.checkbox("Show only suspicious (fraud_flag=1 OR rule_risk_score>0)", value=True)
+        method = st.selectbox("পদ্ধতি (Method)", ["সব (All)"] + sorted(proc_df["method"].unique().tolist()))
+    only_suspicious = st.checkbox("শুধুমাত্র সন্দেহজনক দেখান (Show only suspicious)", value=True)
 
     df = proc_df.copy()
-    if entity != "All":
+    if entity != "সব (All)":
         df = df[df["procuring_entity"] == entity]
-    if sector != "All":
+    if sector != "সব (All)":
         df = df[df["sector"] == sector]
-    if method != "All":
+    if method != "সব (All)":
         df = df[df["method"] == method]
     if only_suspicious:
         df = df[(df["fraud_flag"] == 1) | (df["rule_risk_score"] > 0)]
 
-    st.caption(f"Showing {len(df)} tenders after filters.")
+    st.caption(f"ফিল্টার করার পর {len(df)} টি টেন্ডার পাওয়া গেছে।")
 
     show_cols = [
         "tender_id","award_date","procuring_entity","supplier","method",
         "estimated_value","contract_value","bidders_count","sector","district",
-        "fraud_flag","inflation_ratio","is_single_bidder","is_high_inflation","rule_risk_score"
+        "fraud_flag","rule_risk_score"
     ]
     show_cols = [c for c in show_cols if c in df.columns]
     if "award_date" in df.columns:
@@ -430,89 +451,89 @@ def module_procurement(proc_df: pd.DataFrame):
 
 
 def module_evidence(ev_df: pd.DataFrame):
-    st.header("Evidence Viewer (OCR-like dataset)")
+    st.header("প্রমাণ ভিউয়ার (Evidence Viewer)")
 
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total documents", len(ev_df))
-    c2.metric("Overwritten flags", int(ev_df["flag_overwritten"].sum()))
-    c3.metric("Mismatch total flags", int(ev_df["flag_mismatch_total"].sum()))
-    c4.metric("Duplicate invoice flags", int(ev_df["flag_duplicate_invoice"].sum()))
+    c1.metric("মোট নথি", len(ev_df))
+    c2.metric("ওভাররাইট ফ্ল্যাগ", int(ev_df["flag_overwritten"].sum()))
+    c3.metric("অমিল ফ্ল্যাগ", int(ev_df["flag_mismatch_total"].sum()))
+    c4.metric("ডুপ্লিকেট ইনভয়েস", int(ev_df["flag_duplicate_invoice"].sum()))
 
     st.divider()
 
-    st.subheader("Flag distribution (count)")
+    st.subheader("ফ্ল্যাগ ডিস্ট্রিবিউশন")
     flags = pd.Series({
-        "overwritten": int(ev_df["flag_overwritten"].sum()),
-        "mismatch_total": int(ev_df["flag_mismatch_total"].sum()),
-        "duplicate_invoice": int(ev_df["flag_duplicate_invoice"].sum()),
-        "impossible_date": int(ev_df["flag_impossible_date"].sum()),
+        "কাটাকাটি/ওভাররাইট": int(ev_df["flag_overwritten"].sum()),
+        "হিসাবে অমিল": int(ev_df["flag_mismatch_total"].sum()),
+        "ডুপ্লিকেট ইনভয়েস": int(ev_df["flag_duplicate_invoice"].sum()),
+        "অসম্ভব তারিখ": int(ev_df["flag_impossible_date"].sum()),
     })
     st.bar_chart(flags)
 
     if ev_df["doc_type"].astype(str).str.strip().replace("", np.nan).notna().any():
-        st.subheader("Document type distribution")
+        st.subheader("নথির ধরন")
         st.bar_chart(df_value_counts(ev_df["doc_type"], limit=12))
 
     st.divider()
 
-    st.subheader("Browse a document")
-    doc_id = st.selectbox("Select sample_id", options=ev_df["sample_id"].astype(str).tolist())
+    st.subheader("নথি যাচাই করুন")
+    doc_id = st.selectbox("স্যাম্পল আইডি নির্বাচন করুন", options=ev_df["sample_id"].astype(str).tolist())
     row = ev_df[ev_df["sample_id"].astype(str) == str(doc_id)].iloc[0]
 
     left, right = st.columns([1, 1])
     with left:
-        st.write("Issuing entity:", row.get("issuing_entity", ""))
-        st.write("Doc type:", row.get("doc_type", ""))
+        st.write("ইস্যুকারী প্রতিষ্ঠান:", row.get("issuing_entity", ""))
+        st.write("নথির ধরন:", row.get("doc_type", ""))
         if str(row.get("date_raw", "")).strip():
-            st.write("Date:", row.get("date_raw", ""))
+            st.write("তারিখ:", row.get("date_raw", ""))
 
-        st.subheader("Binary flags")
+        st.subheader("অটোমেটেড ফ্ল্যাগ")
         st.json({
-            "flag_overwritten": bool(int(row.get("flag_overwritten", 0))),
-            "flag_mismatch_total": bool(int(row.get("flag_mismatch_total", 0))),
-            "flag_duplicate_invoice": bool(int(row.get("flag_duplicate_invoice", 0))),
-            "flag_impossible_date": bool(int(row.get("flag_impossible_date", 0))),
+            "কাটাকাটি আছে?": bool(int(row.get("flag_overwritten", 0))),
+            "টাকার অংকে অমিল?": bool(int(row.get("flag_mismatch_total", 0))),
+            "ডুপ্লিকেট?": bool(int(row.get("flag_duplicate_invoice", 0))),
+            "তারিখ ভুল?": bool(int(row.get("flag_impossible_date", 0))),
         })
 
         if str(row.get("red_flag", "")).strip():
-            st.subheader("Red flag summary")
-            st.write(row.get("red_flag", ""))
+            st.subheader("রেড ফ্ল্যাগ সারাংশ")
+            st.warning(row.get("red_flag", ""))
 
     with right:
-        st.subheader("Raw OCR text")
-        st.text(str(row.get("raw_text", ""))[:20000])
+        st.subheader("OCR টেক্সট (Raw)")
+        st.text_area("টেক্সট কন্টেন্ট", str(row.get("raw_text", ""))[:20000], height=400)
 
     debug_expander("EVIDENCE_OCR_DATASET", ev_df)
 
 
 def module_rules(fraud_rules):
-    st.header("Fraud Rules Library")
+    st.header("ফ্রড রুলস লাইব্রেরি")
 
     if not isinstance(fraud_rules, list):
-        st.warning("FRAUD_PATTERNS.json is not a list. Showing raw JSON.")
+        st.warning("FRAUD_PATTERNS.json সঠিক ফরম্যাটে নেই।")
         st.json(fraud_rules)
         return
 
     df = pd.DataFrame([r for r in fraud_rules if isinstance(r, dict)])
     if df.empty:
-        st.info("No rules found.")
+        st.info("কোনো রুল পাওয়া যায়নি।")
         return
 
-    st.subheader("Severity distribution")
+    st.subheader("তীব্রতা অনুযায়ী রুলস (Severity)")
     if "severity" in df.columns:
         st.bar_chart(df_value_counts(df["severity"], limit=None))
     else:
-        st.info("No 'severity' field in rules dataset.")
+        st.info("'severity' ফিল্ড পাওয়া যায়নি।")
 
-    st.subheader("Category distribution")
+    st.subheader("ক্যাটাগরি অনুযায়ী")
     if "category" in df.columns:
         st.bar_chart(df_value_counts(df["category"], limit=12))
     else:
-        st.info("No 'category' field in rules dataset.")
+        st.info("'category' ফিল্ড পাওয়া যায়নি।")
 
     st.divider()
 
-    search = st.text_input("Search rules", "")
+    search = st.text_input("রুল খুঁজুন (Search Rules)", "")
     filtered = df.copy()
     if search.strip():
         needle = search.strip().lower()
@@ -523,14 +544,14 @@ def module_rules(fraud_rules):
 
     if "category" in filtered.columns:
         cats = sorted(filtered["category"].astype(str).fillna("Uncategorized").unique().tolist())
-        selected = st.selectbox("Filter by category", ["All"] + cats)
-        if selected != "All":
+        selected = st.selectbox("ক্যাটাগরি ফিল্টার", ["সব (All)"] + cats)
+        if selected != "সব (All)":
             filtered = filtered[filtered["category"].astype(str) == selected]
 
-    st.caption(f"Showing {len(filtered)} rules.")
+    st.caption(f"{len(filtered)} টি রুল দেখানো হচ্ছে।")
     st.dataframe(filtered, use_container_width=True, height=420)
 
-    with st.expander("Raw JSON"):
+    with st.expander("র 'জেসন' (Raw JSON) দেখুন"):
         st.json(fraud_rules)
 
     debug_expander("FRAUD_PATTERNS", df)
@@ -541,31 +562,31 @@ def main():
     inject_css()
 
     st.title(APP_TITLE)
-    st.caption("Built on synthetic datasets for interview demonstration.")
+    st.caption("ইন্টারভিউ ডেমোনস্ট্রেশনের জন্য সিনথেটিক ডেটাসেট দ্বারা তৈরি।")
 
     try:
         acc_df, proc_df, ev_df, fraud_rules = load_data()
     except Exception as e:
-        st.error(str(e))
+        st.error(f"ডেটা লোড করতে সমস্যা হয়েছে: {str(e)}")
         st.stop()
 
     page = st.selectbox(
-        "Select module",
+        "মডিউল নির্বাচন করুন",
         [
-            "Complaint Intelligence",
-            "Procurement Fraud Overview",
-            "Evidence Viewer",
-            "Fraud Rules Library",
+            "অভিযোগ ইন্টেলিজেন্স (Complaint Intelligence)",
+            "ক্রয় দুর্নীতি ওভারভিউ (Procurement Fraud)",
+            "প্রমাণ ভিউয়ার (Evidence Viewer)",
+            "ফ্রড রুলস লাইব্রেরি (Rules Library)",
         ],
     )
 
     st.divider()
 
-    if page == "Complaint Intelligence":
+    if "অভিযোগ" in page:
         module_complaints(acc_df)
-    elif page == "Procurement Fraud Overview":
+    elif "ক্রয়" in page:
         module_procurement(proc_df)
-    elif page == "Evidence Viewer":
+    elif "প্রমাণ" in page:
         module_evidence(ev_df)
     else:
         module_rules(fraud_rules)
