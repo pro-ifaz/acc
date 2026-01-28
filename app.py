@@ -156,8 +156,8 @@ def load_data():
     return enrich_complaints(acc_df), enrich_procurement(proc_df), enrich_evidence(ev_df), rules
 
 
-# FIX 1: cache_resource ব্যবহার করা হচ্ছে কারণ এটি একটি মডেল (Resource), সাধারণ ডেটা নয়।
-@st.cache_resource(show_spinner=False)
+# FIX: এখানে ক্যাশিং (@st.cache...) সরিয়ে ফেলা হয়েছে। 
+# ডেমো অ্যাপে ছোট ডেটাসেটের জন্য ক্যাশিং প্রয়োজন নেই এবং এটি TypeError সৃষ্টি করছে।
 def train_risk_model(df: pd.DataFrame):
     feature_cols_cat = ["sector", "accused_type", "channel", "division", "amount_band"]
     feature_cols_num = ["amount", "amount_log", "text_length", "word_count"]
@@ -315,7 +315,7 @@ def module_complaints(acc_df: pd.DataFrame):
     st.divider()
 
     st.subheader("ঝুঁকি পূর্বাভাস মডেল (AI Model)")
-    with st.spinner("মডেল ট্রেনিং হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন..."):
+    with st.spinner("মডেল ট্রেনিং হচ্ছে..."):
         model, report = train_risk_model(acc_df)
 
     rows = []
@@ -403,7 +403,7 @@ def module_procurement(proc_df: pd.DataFrame):
     ir = proc_df["inflation_ratio"].replace([np.inf, -np.inf], np.nan).dropna()
     if len(ir):
         bins = pd.cut(ir.clip(upper=5), bins=[0, 0.8, 1.0, 1.1, 1.25, 1.5, 2.0, 5.0], include_lowest=True)
-        # FIX 2: Altair Schema Error সমাধান - ইনডেক্সকে স্ট্রিং এ রূপান্তর
+        # FIX: Altair Schema Error সমাধান - ইনডেক্সকে স্ট্রিং এ রূপান্তর
         counts = bins.value_counts().sort_index()
         counts.index = counts.index.astype(str)
         st.bar_chart(counts)
